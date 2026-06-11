@@ -1,0 +1,26 @@
+{
+  "active": {
+    "headers": 0,
+    "cookies": 0,
+    "tokens": 0,
+    "extraDataTemplates": 0
+  },
+  "tokens": [
+    {
+      "key": "超级管理员",
+      "value": "087da772112a96240838d48fa3b962fc"
+    },
+    {
+      "key": "test1",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNjM3YzJmZS05YzNiLTRhNzktODI4OC02OTdjYWZhYjRlNDUiLCJleHAiOjE4MDc1OTU2MzcsIm5iZiI6MTc3NjA1OTYzNywiaWF0IjoxNzc2MDU5NjM3LCJqdGkiOiI1ZmY4NTgzYS0yZmM3LTQ5ZTUtYTA3OS03YzIwZmU5MGExYmIiLCJ1c2VyX2lkIjoiMDYzN2MyZmUtOWMzYi00YTc5LTgyODgtNjk3Y2FmYWI0ZTQ1IiwidXNlcm5hbWUiOiJ0ZXN0IiwidG9rZW5fdHlwZSI6ImFjY2VzcyJ9.u2L2q_MbnVgoV6neunawJKxBQAyEkf92Mm6N3CPRUmE\n"
+    }
+  ],
+  "adspowerEndpoint": "http://127.0.0.1:50325",
+  "automation": {
+    "send_enabled": false,
+    "highlight_selector": "div div div div div div[role=\"button\"] svg[aria-label=\"Send\"][role=\"img\"]"
+  },
+  "extraDataTemplates": [],
+  "headers": [],
+  "cookies": []
+}

@@ -1,0 +1,5270 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AdsPower API Document",
+    "description": "Local API 允许:\n1. 实现基本功能，如获取浏览器配置数据、启动和关闭浏览器、借助基本 API 查询浏览器；\n2. 使用 Selenium 和 Puppeteer 等自动化框架自动化基于 Web 的操作；\n\n## **请求限制**\n\n| 浏览器数量 | 请求限制 |\n| --- | --- |\n| 0 ~ 200 | 2 次/秒 |\n| 200 ~ 5000 | 5 次/秒 |\n| 5000 及以上 | 10 次/秒 |\n\n**固定速率限制的特殊 API 接口（1 次/秒）：**\n\n| 接口 |\n| --- |\n| GET /api/v1/user/list |\n| POST /api/v2/browser-profile/list |\n| GET /api/v1/group/list |\n| GET /api/v2/browser-profile/cookies |\n\n## 准备工作\n\n- 检查您的套餐是否包含 API 访问权限；\n- 检查 API 连接状态。\n    - 默认地址：[<code>http://local.adspower.net</code>](http://local.adspower.net:50325/) 或 [<code>http://localhost</code>](http://localhost:50325/)\n    - 默认端口：`50325`\n\n- 支持在 CLI 模式下运行 API 服务。在 CLI 模式下，所有调用都需要进行 API Key 认证。\n- 开启安全验证时，所有调用都需要进行 API Key 认证。\n- API 授权方式使用 AUTHORIZATION Bearer Token。",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Connection Status"
+    },
+    {
+      "name": "Profiles"
+    },
+    {
+      "name": "Tags"
+    },
+    {
+      "name": "Groups"
+    },
+    {
+      "name": "Proxies"
+    },
+    {
+      "name": "Extensions"
+    }
+  ],
+  "paths": {
+    "/status": {
+      "get": {
+        "summary": "连接状态",
+        "deprecated": false,
+        "description": "用于检查当前设备 API 接口的可用性。",
+        "tags": [
+          "Connection Status"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "code": 0,
+                  "msg": "success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/browser/start": {
+      "get": {
+        "summary": "打开环境",
+        "deprecated": false,
+        "description": "通过指定 user_id 或 serial_number 来启动指定的浏览器环境。两者不能同时为空。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "serial_number",
+            "in": "query",
+            "description": "选填 字符串 填写 user_id 时优先使用 user_id。",
+            "required": false,
+            "example": "环境序号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "open_tabs",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 \n 1: 否 \n 0: 是",
+            "required": false,
+            "example": "打开平台或历史页面。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip_tab",
+            "in": "query",
+            "description": "选填 字符串 默认: 1 \n 1: 是 \n 0: 否",
+            "required": false,
+            "example": "是否打开IP检测页面",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "new_first_tab",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 \n 1: 是 \n 0: 否",
+            "required": false,
+            "example": "是否使用新版IP检测页面",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "launch_args",
+            "in": "query",
+            "description": "选填 字符串 详情参考 Chromium 命令行开关。示例: [\"--window-position=400,0\", \"--blink-settings=imagesEnabled=false\", \"--disable-notifications\"]",
+            "required": false,
+            "example": "浏览器启动参数[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "headless",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 0`  \n`1`：Yes  \n`0`：No",
+            "required": false,
+            "example": "是否启动无头浏览器",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "disable_password_filling",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 0`  \n`1`：Yes  \n`0`：No",
+            "required": false,
+            "example": "是否禁用自动填充密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "clear_cache_after_closing",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 磁盘空间不足时可设置为1。 1: 是 0: 否",
+            "required": false,
+            "example": "关闭浏览器后是否删除缓存",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "enable_password_saving",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 仅限 Chrome 内核。 1: 是 0: 否",
+            "required": false,
+            "example": "是否允许保存密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cdp_mask",
+            "in": "query",
+            "description": "选填 字符串 默认: 1 在 iOS 和 Android 上强制启用。 1: 是 0: 否",
+            "required": false,
+            "example": "是否屏蔽CDP检测。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "device_scale",
+            "in": "query",
+            "description": "选填 字符串 设为1代表100%原始大小。范围: 0.1 ~ 2。仅当 Chrome 128及以上 且 UA为 Android 或 iOS 时有效。",
+            "required": false,
+            "example": "设置移动模式下的缩放比例。",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "ws": {
+                          "type": "object",
+                          "properties": {
+                            "puppeteer": {
+                              "type": "string"
+                            },
+                            "selenium": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "debug_port": {
+                          "type": "string"
+                        },
+                        "webdriver": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/start": {
+      "post": {
+        "summary": "打开环境 v2",
+        "deprecated": false,
+        "description": "通过指定 profile_id 或 profile_no 启动浏览器。两者不能同时为空。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 字符串 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "环境序号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "launch_args",
+            "in": "query",
+            "description": "选填 字符串 详情参考 Chromium 命令行开关。示例: [\"--window-position=400,0\", \"--blink-settings=imagesEnabled=false\", \"--disable-notifications\"]",
+            "required": false,
+            "example": "浏览器启动参数[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "headless",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 0`  \n`1`：Yes  \n`0`：No",
+            "required": false,
+            "example": "是否以无头模式打开。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "last_opened_tabs",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 1`  \n`1`：Yes  \n`0`：No",
+            "required": false,
+            "example": "是否继续浏览上次打开的页面。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxy_detection",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 1`  \n`1`：Yes  \n`0`：No",
+            "required": false,
+            "example": "是否打开代理检测页面。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password_filling",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 仅在首次打开浏览器时有效。 1: 是 0: 否",
+            "required": false,
+            "example": "是否启用密码填充功能。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password_saving",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 仅限 Chrome 内核。 1: 是 0: 否",
+            "required": false,
+            "example": "是否保存密码。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cdp_mask",
+            "in": "query",
+            "description": "选填 字符串 默认: 1 在 iOS 和 Android 上强制启用。 1: 是 0: 否",
+            "required": false,
+            "example": "是否屏蔽CDP检测。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "device_scale",
+            "in": "query",
+            "description": "选填 字符串 设为1代表100%原始大小。范围: 0.1 ~ 2。仅当 Chrome 128及以上 且 UA为 Android 或 iOS 时有效。",
+            "required": false,
+            "example": "设置移动操作系统环境的缩放比例。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "delete_cache",
+            "in": "query",
+            "description": "选填 字符串 默认: 0 磁盘空间不足时可设置为1。 1: 是 0: 否",
+            "required": false,
+            "example": "关闭环境后是否清除缓存。",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "string"
+                  },
+                  "launch_args": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "headless": {
+                    "type": "string"
+                  },
+                  "last_opened_tabs": {
+                    "type": "string"
+                  },
+                  "proxy_detection": {
+                    "type": "string"
+                  },
+                  "password_filling": {
+                    "type": "string"
+                  },
+                  "password_saving": {
+                    "type": "string"
+                  },
+                  "cdp_mask": {
+                    "type": "string"
+                  },
+                  "delete_cache": {
+                    "type": "string"
+                  },
+                  "device_scale": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "launch_args",
+                  "headless",
+                  "last_opened_tabs",
+                  "proxy_detection",
+                  "password_filling",
+                  "password_saving",
+                  "cdp_mask",
+                  "delete_cache",
+                  "device_scale"
+                ]
+              },
+              "example": "{\n    \"profile_id\": \"abcdefg\",\n    // \"profile_no\": \"1234\",\n    \"launch_args\": [\"--window-position=400,0\",\"--blink-settings=imagesEnabled=false\", \"--disable-notifications\"],\n    \"headless\": \"0\",\n    \"last_opened_tabs\": \"1\",\n    \"proxy_detection\": \"1\",\n    \"password_filling\": \"0\",\n    \"password_saving\": \"0\",\n    \"cdp_mask\": \"1\",\n    \"delete_cache\": \"0\",\n    \"device_scale\": \"1\"\n}"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "ws": {
+                          "type": "object",
+                          "properties": {
+                            "puppeteer": {
+                              "type": "string"
+                            },
+                            "selenium": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "debug_port": {
+                          "type": "string"
+                        },
+                        "webdriver": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": "{\n    \"code\": 0,\n    \"msg\": \"success\",\n    \"data\": {\n        \"ws\": {\n            \"puppeteer\": \"ws://127.0.0.1:xxxx/devtools/browser/xxxxxxxx\",// 浏览器调试接口，用于 puppeteer 自动化\n            \"selenium\": \"127.0.0.1:xxxx\"  // 浏览器调试接口，用于 selenium 自动化\n        },\n         \"debug_port\": \"xxxx\", // 调试端口\n        \"webdriver\": \"xxxxxxxxxxxx\" // webdriver 路径\n    }\n}"
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/browser/stop": {
+      "get": {
+        "summary": "关闭环境",
+        "deprecated": false,
+        "description": "通过 user_id 或 serial_number 关闭指定的浏览器环境。两者不能同时为空。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "serial_number",
+            "in": "query",
+            "description": "选填 字符串 填写 user_id 时优先使用 user_id。",
+            "required": false,
+            "example": "环境序号",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/stop": {
+      "post": {
+        "summary": "关闭环境 v2",
+        "deprecated": false,
+        "description": "通过 profile_id 或 profile_no 关闭指定的浏览器环境。两者不能同时为空。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "选填 字符串 环境创建成功后生成的唯一ID。profile_id 和 profile_no 必须提供其一。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 字符串 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "环境序号",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profile_id"
+                ]
+              },
+              "example": "{\n    // \"profile_no\": \"1234\",\n    \"profile_id\": \"abcdefg\"\n}"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "code": 0,
+                  "msg": "success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/browser/active": {
+      "get": {
+        "summary": "检查启动状态 (当前设备)",
+        "deprecated": false,
+        "description": "用于检查环境启动状态。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "xxxxx",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "serial_number",
+            "in": "query",
+            "description": "选填 字符串 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "123",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string"
+                        },
+                        "ws": {
+                          "type": "object",
+                          "properties": {
+                            "puppeteer": {
+                              "type": "string"
+                            },
+                            "selenium": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "debug_port": {
+                          "type": "string"
+                        },
+                        "webdriver": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": "{\n    \"code\": 0,\n    \"msg\": \"success\",\n    \"data\": {\n        \"status\": \"Active\", // “Active” 表示环境已打开；“Inactive” 表示未打开。\n        \"ws\": {\n            \"puppeteer\": \"ws://127.0.0.1:xxxx/devtools/browser/xxxxxx\", // 浏览器调试 API，用于 Puppeteer 自动化。\n            \"selenium\": \"127.0.0.1:xxxx\" // 浏览器调试 API，用于 Selenium 自动化。\n        },\n        \"debug_port\": \"xxxx\",\n        \"webdriver\": \"xxxxxxx\"\n    }\n}"
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/active": {
+      "get": {
+        "summary": "检查启动状态 (当前设备) v2",
+        "deprecated": false,
+        "description": "用于检查环境启动状态。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "选填 字符串 环境创建成功后生成的唯一ID。profile_id 和 profile_no 必须提供其一。",
+            "required": false,
+            "example": "xxxxx",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 字符串 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "123",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string"
+                        },
+                        "ws": {
+                          "type": "object",
+                          "properties": {
+                            "puppeteer": {
+                              "type": "string"
+                            },
+                            "selenium": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "debug_port": {
+                          "type": "string"
+                        },
+                        "webdriver": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "code": 0,
+                  "msg": "success",
+                  "data": {
+                    "status": "Inactive"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/browser/cloud-active": {
+      "post": {
+        "summary": "检查环境状态 (跨设备)",
+        "deprecated": false,
+        "description": "通过 user_id 查询浏览器环境状态，每次请求最多 100 个环境。如果团队开启了“多设备模式”，则无法获取具体状态，且响应会提示“环境未打开”。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_ids",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_ids": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "user_ids"
+                ]
+              },
+              "example": {
+                "user_ids": "xxx"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": "{\n    \"code\": 0,\n    \"msg\": \"success\",\n    \"data\": [\n        {\n            \"user_id\": \"xxx\", // 环境 ID\n            \"account\": \"user_xxx\" // 打开该环境的用户账号。\n        }\n    ]\n}"
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "查询活动环境",
+        "deprecated": false,
+        "description": "查询当前设备上所有活动环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": "{\n    \"code\": 0,\n    \"msg\": \"success\",\n    \"data\": {\n        \"list\": [\n            {\n                \"user_id\": \"xxxx\",\n                \"ws\": {\n                    \"puppeteer\": \"ws://127.0.0.1:xxxx/devtools/browser/xxxxxx\",  // 浏览器调试 API，用于 Puppeteer \n                    \"selenium\": \"127.0.0.1:xxxx\" // 浏览器调试 API，用于 Selenium 自动化。\n                },\n                \"debug_port\": \"xxxx\",\n                \"webdriver\": \"xxxxxx\"\n            }\n        ]\n    }\n}"
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/list": {
+      "get": {
+        "summary": "查询环境",
+        "deprecated": false,
+        "description": "通过组合多个参数精准检索浏览器环境列表。使用 page 参数翻页。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "选填 数组 通过环境ID查询。示例: [\"abcd01\",\"abcd02\",\"abcd03\"]",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "serial_number",
+            "in": "query",
+            "description": "选填 数组 通过环境序号查询。示例: [\"1\",\"2\",\"3\"]",
+            "required": false,
+            "example": "环境序号[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "选填 字符串 通过分组ID查询。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 整数 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "description": "选填 整数 默认: 1 每页返回的环境数量，范围 1 ~ 1000。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_sort",
+            "in": "query",
+            "description": "选填 对象 默认: {\"serial_number\":\"desc\"} 查询结果按指定类型排序，支持 serial_number、last_open_time、created_time 字段，可选 asc (升序) 和 desc (降序)。",
+            "required": false,
+            "example": "排序类型",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "list": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "user_id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "group_name": {
+                                "type": "string"
+                              },
+                              "domain_name": {
+                                "type": "string"
+                              },
+                              "remark": {
+                                "type": "string"
+                              }
+                            },
+                            "additionalProperties": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "data": {
+                    "list": [
+                      {
+                        "name": "",
+                        "created_time": "1754534006",
+                        "ip": "xxx",
+                        "ip_country": "cn",
+                        "password": "1",
+                        "fbcc_proxy_acc_id": "",
+                        "ipchecker": "ipapi",
+                        "fakey": "",
+                        "user_proxy_config": {
+                          "proxy_soft": "no_proxy"
+                        },
+                        "group_id": "xxx",
+                        "group_name": "xxx",
+                        "remark": "",
+                        "last_open_time": "0",
+                        "username": "1",
+                        "platform": "facebook.com",
+                        "category_id": "0",
+                        "profile_no": "xxx",
+                        "profile_id": "xxx"
+                      }
+                    ],
+                    "page": 1,
+                    "page_size": 1
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/list": {
+      "post": {
+        "summary": "查询环境 v2",
+        "deprecated": false,
+        "description": "通过组合多个参数精准检索浏览器环境列表。使用 page 参数翻页。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "选填 数组 通过环境ID查询。示例: [\"abcd01\",\"abcd02\",\"abcd03\"]",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 数组 通过环境序号查询。示例: [\"1\",\"2\",\"3\"]",
+            "required": false,
+            "example": "环境序号[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "选填 字符串 通过分组ID查询。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "选填 整数 默认: 1 每页返回的环境数量，范围 1 ~ 1000。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 整数 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort_type",
+            "in": "query",
+            "description": "选填 字符串 默认: profile_no 按特定类型排序。支持的值: profile_no(序号), last_open_time(最后打开时间), created_time(创建时间)",
+            "required": false,
+            "example": "应用的排序类型。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort_order",
+            "in": "query",
+            "description": "选填 字符串 默认: desc 排序顺序: asc(升序), desc(降序)",
+            "required": false,
+            "example": "排序方向。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tag_ids",
+            "in": "query",
+            "description": "选填 数组 通过标签查询环境",
+            "required": false,
+            "example": "标签 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tags_filter",
+            "in": "query",
+            "description": "选填 字符串 标签过滤逻辑。支持的值: include(默认，包含指定标签), exclude(排除指定标签)",
+            "required": false,
+            "example": "标签匹配方式",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 通过名称查询环境",
+            "required": false,
+            "example": "环境名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name_filter",
+            "in": "query",
+            "description": "选填 字符串 名称过滤逻辑。支持的值: include(默认，包含指定名称), exclude(排除指定名称)",
+            "required": false,
+            "example": "环境名称匹配方式",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "list": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "created_time": {
+                                "type": "string"
+                              },
+                              "ip": {
+                                "type": "string"
+                              },
+                              "ip_country": {
+                                "type": "string"
+                              },
+                              "password": {
+                                "type": "string"
+                              },
+                              "fbcc_proxy_acc_id": {
+                                "type": "string"
+                              },
+                              "ipchecker": {
+                                "type": "string"
+                              },
+                              "fakey": {
+                                "type": "string"
+                              },
+                              "user_proxy_config": {
+                                "type": "object",
+                                "properties": {
+                                  "proxy_soft": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "proxy_soft"
+                                ]
+                              },
+                              "group_id": {
+                                "type": "string"
+                              },
+                              "group_name": {
+                                "type": "string"
+                              },
+                              "remark": {
+                                "type": "string"
+                              },
+                              "last_open_time": {
+                                "type": "string"
+                              },
+                              "username": {
+                                "type": "string"
+                              },
+                              "platform": {
+                                "type": "string"
+                              },
+                              "category_id": {
+                                "type": "string"
+                              },
+                              "profile_no": {
+                                "type": "string"
+                              },
+                              "profile_id": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "page": {
+                          "type": "integer"
+                        },
+                        "page_size": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "list",
+                        "page",
+                        "page_size"
+                      ]
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {
+                    "list": [
+                      {
+                        "name": "",
+                        "created_time": "1754534006",
+                        "ip": "xxx",
+                        "ip_country": "cn",
+                        "password": "1",
+                        "fbcc_proxy_acc_id": "",
+                        "ipchecker": "ipapi",
+                        "fakey": "",
+                        "user_proxy_config": {
+                          "proxy_soft": "no_proxy"
+                        },
+                        "group_id": "xxx",
+                        "group_name": "xxx",
+                        "remark": "",
+                        "last_open_time": "0",
+                        "username": "1",
+                        "platform": "facebook.com",
+                        "category_id": "0",
+                        "profile_no": "xxx",
+                        "profile_id": "xxx"
+                      }
+                    ],
+                    "page": 1,
+                    "page_size": 1
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/create": {
+      "post": {
+        "summary": "创建环境",
+        "deprecated": false,
+        "description": "创建一个带有可配置凭证、Cookies、代理、指纹信息等配置的新浏览器环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 环境名称，最多100个字符",
+            "required": false,
+            "example": "环境名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "domain_name",
+            "in": "query",
+            "description": "选填 字符串 示例: facebook.com",
+            "required": false,
+            "example": "平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "username",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台账号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "open_urls",
+            "in": "query",
+            "description": "选填 数组 示例: [\"http://www.baidu.com\",\"https://www.google.com\"]",
+            "required": false,
+            "example": "标签页",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "repeat_config",
+            "in": "query",
+            "description": "选填 字符串 0: 允许重复(默认) 2: 按账号密码去重 3: 按Cookies去重 4: 按c_user(Facebook专有标识)去重",
+            "required": false,
+            "example": "账号去重",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fakey",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "输入 2FA 密钥",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cookie",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "Cookie",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ignore_cookie_error",
+            "in": "query",
+            "description": "选填 字符串 0(默认): 格式错误也原样返回数据 1: 过滤格式错误的Cookies并只保留有效项(仅支持Netscape格式)。",
+            "required": false,
+            "example": "指定 Cookie 验证失败时的处理方式。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "必填 字符串 设置分配环境的分组ID。未分组使用 0。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "IP",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "国家/地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "城市",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 1500 字符。",
+            "required": false,
+            "example": "环境备注",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ipchecker",
+            "in": "query",
+            "description": "选填 字符串 如果为空，将使用全局设置。支持: ip2location/ipapi/ipfoxy",
+            "required": false,
+            "example": "IP 检测器",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sys_app_cate_id",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "分类 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_proxy_config",
+            "in": "query",
+            "description": "选填 对象 user_proxy_config 和 proxyid 必须提供其一。",
+            "required": false,
+            "example": "代理配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxyid",
+            "in": "query",
+            "description": "选填 字符串 user_proxy_config 和 proxyid 必须提供其一。",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fingerprint_config",
+            "in": "query",
+            "description": "必填 对象",
+            "required": false,
+            "example": "指纹配置",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "domain_name": {
+                    "type": "string"
+                  },
+                  "repeat_config": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "ipchecker": {
+                    "type": "string"
+                  },
+                  "open_urls": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "cookie": {
+                    "type": "string"
+                  },
+                  "group_id": {
+                    "type": "string"
+                  },
+                  "ip": {
+                    "type": "string"
+                  },
+                  "user_proxy_config": {
+                    "type": "object",
+                    "properties": {
+                      "proxy_soft": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "proxy_soft"
+                    ]
+                  },
+                  "country": {
+                    "type": "string"
+                  },
+                  "region": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  },
+                  "fingerprint_config": {
+                    "type": "object",
+                    "properties": {
+                      "automatic_timezone": {
+                        "type": "string"
+                      },
+                      "flash": {
+                        "type": "string"
+                      },
+                      "scan_port_type": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "string"
+                      },
+                      "location_switch": {
+                        "type": "string"
+                      },
+                      "accuracy": {
+                        "type": "string"
+                      },
+                      "canvas": {
+                        "type": "string"
+                      },
+                      "webgl": {
+                        "type": "string"
+                      },
+                      "webgl_image": {
+                        "type": "string"
+                      },
+                      "audio": {
+                        "type": "string"
+                      },
+                      "longitude": {
+                        "type": "string"
+                      },
+                      "latitude": {
+                        "type": "string"
+                      },
+                      "webrtc": {
+                        "type": "string"
+                      },
+                      "do_not_track": {
+                        "type": "string"
+                      },
+                      "hardware_concurrency": {
+                        "type": "string"
+                      },
+                      "device_memory": {
+                        "type": "string"
+                      },
+                      "gpu": {
+                        "type": "string"
+                      },
+                      "mac_address_config": {
+                        "type": "object",
+                        "properties": {
+                          "model": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "model",
+                          "address"
+                        ]
+                      },
+                      "browser_kernel_config": {
+                        "type": "object",
+                        "properties": {
+                          "version": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "version",
+                          "type"
+                        ]
+                      },
+                      "random_ua": {
+                        "type": "object",
+                        "properties": {
+                          "ua_system_version": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "required": [
+                          "ua_system_version"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "automatic_timezone",
+                      "flash",
+                      "scan_port_type",
+                      "location",
+                      "location_switch",
+                      "accuracy",
+                      "canvas",
+                      "webgl",
+                      "webgl_image",
+                      "audio",
+                      "longitude",
+                      "latitude",
+                      "webrtc",
+                      "do_not_track",
+                      "hardware_concurrency",
+                      "device_memory",
+                      "gpu",
+                      "mac_address_config",
+                      "browser_kernel_config",
+                      "random_ua"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "domain_name",
+                  "repeat_config",
+                  "username",
+                  "password",
+                  "ipchecker",
+                  "open_urls",
+                  "cookie",
+                  "group_id",
+                  "ip",
+                  "user_proxy_config",
+                  "country",
+                  "region",
+                  "city",
+                  "remark",
+                  "fingerprint_config"
+                ]
+              },
+              "example": {
+                "name": "profile name",
+                "domain_name": "facebook.com",
+                "repeat_config": [
+                  "0"
+                ],
+                "username": "",
+                "password": "",
+                "ipchecker": "ip2location",
+                "open_urls": [
+                  "http://www.baidu.com",
+                  "https://www.google.com"
+                ],
+                "cookie": "[{\"domain\": \".baidu.com\",\"expirationDate\": 1724188800,\"name\": \"BAIDUID\",\"path\": \"/\",\"sameSite\": \"unspecified\",\"secure\": true,\"value\": \"xxxxxxxxxx\",\"id\": 1}]",
+                "group_id": "0",
+                "ip": "",
+                "user_proxy_config": {
+                  "proxy_soft": "no_proxy"
+                },
+                "country": "us",
+                "region": "california ",
+                "city": "riverside",
+                "remark": "remark",
+                "fingerprint_config": {
+                  "automatic_timezone": "1",
+                  "flash": "block",
+                  "scan_port_type": "1",
+                  "location": "ask",
+                  "location_switch": "1",
+                  "accuracy": "1000",
+                  "canvas": "0",
+                  "webgl": "0",
+                  "webgl_image": "0",
+                  "audio": "0",
+                  "longitude": "180",
+                  "latitude": "90",
+                  "webrtc": "local",
+                  "do_not_track": "true",
+                  "hardware_concurrency": "default",
+                  "device_memory": "default",
+                  "gpu": "2",
+                  "mac_address_config": {
+                    "model": "1",
+                    "address": ""
+                  },
+                  "browser_kernel_config": {
+                    "version": "latest",
+                    "type": "firefox"
+                  },
+                  "random_ua": {
+                    "ua_system_version": [
+                      "Android"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "serial_number": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "serial_number"
+                      ]
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {
+                    "id": "xxx",
+                    "serial_number": "xxx"
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/create": {
+      "post": {
+        "summary": "创建环境 v2",
+        "deprecated": false,
+        "description": "创建一个带有可配置信息(凭证、Cookies、代理、指纹等)的新浏览器环境。成功后将返回环境ID。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 环境名称，最多100个字符",
+            "required": false,
+            "example": "环境名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "必填 字符串 设置分配环境的分组ID。未分组使用 0。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 1500 字符。",
+            "required": false,
+            "example": "环境备注",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "description": "选填 字符串 示例: facebook.com 账号平台字段仅适用于单账号平台配置。如果需要配置多个账号平台，请使用 platform_account。",
+            "required": false,
+            "example": "平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "username",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台账号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fakey",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "输入 2FA 密钥",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "platform_account",
+            "in": "query",
+            "description": "选填 数组 JS版本需升级到 2.8.8.4 及以上。domain_name: 账号平台, login_user: 账号, password: 密码, fakey: 2FA密钥。1. 适用于单/多账号平台场景。 2. 数组中每个对象代表一组独立账号。 3. 多平台需传入对象数组。",
+            "required": true,
+            "example": "多账号平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cookie",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "Cookie",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "repeat_config",
+            "in": "query",
+            "description": "选填 字符串 0: 允许重复(默认) 2: 按账号密码去重 3: 按Cookies去重 4: 按c_user(Facebook专有)去重",
+            "required": false,
+            "example": "账号去重",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ignore_cookie_error",
+            "in": "query",
+            "description": "选填 字符串 0(默认): 格式错误也原样返回 1: 过滤格式错误的Cookies(仅支持Netscape)。",
+            "required": false,
+            "example": "指定 Cookie 验证失败时的处理方式。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tabs",
+            "in": "query",
+            "description": "选填 数组 示例: [\"http://www.baidu.com\",\"https://www.google.com\"]",
+            "required": false,
+            "example": "标签页",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_proxy_config",
+            "in": "query",
+            "description": "`object` `Optional`  Either user_proxy_config or proxyid must be provided. Only one is required.",
+            "required": false,
+            "example": "代理配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxyid",
+            "in": "query",
+            "description": "选填 字符串 user_proxy_config 和 proxyid 必须提供其一。",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "IP",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "国家/地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "城市",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ipchecker",
+            "in": "query",
+            "description": "选填 字符串 如果为空，将使用全局设置。支持: ip2location/ipapi/ipfoxy",
+            "required": false,
+            "example": "IP 检测器",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fingerprint_config",
+            "in": "query",
+            "description": "必填 对象",
+            "required": false,
+            "example": "指纹配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category_id",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "分类 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_tag_ids",
+            "in": "query",
+            "description": "选填 字符串 每个环境最多分配 30 个标签。",
+            "required": false,
+            "example": "标签 ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "platform": {
+                    "type": "string"
+                  },
+                  "tabs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "repeat_config": {
+                    "type": "array",
+                    "items": {}
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "fakey": {
+                    "type": "string"
+                  },
+                  "platform_account": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "domain_name": {
+                          "type": "string"
+                        },
+                        "login_user": {
+                          "type": "string"
+                        },
+                        "password": {
+                          "type": "string"
+                        },
+                        "fakey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "domain_name",
+                        "login_user",
+                        "password",
+                        "fakey"
+                      ]
+                    }
+                  },
+                  "cookie": {
+                    "type": "string"
+                  },
+                  "ignore_cookie_error": {
+                    "type": "string"
+                  },
+                  "group_id": {
+                    "type": "string"
+                  },
+                  "ip": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  },
+                  "region": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  },
+                  "ipchecker": {
+                    "type": "string"
+                  },
+                  "proxyid": {
+                    "type": "string"
+                  },
+                  "fingerprint_config": {
+                    "type": "object",
+                    "properties": {
+                      "automatic_timezone": {
+                        "type": "string"
+                      },
+                      "flash": {
+                        "type": "string"
+                      },
+                      "scan_port_type": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "string"
+                      },
+                      "location_switch": {
+                        "type": "string"
+                      },
+                      "accuracy": {
+                        "type": "string"
+                      },
+                      "canvas": {
+                        "type": "string"
+                      },
+                      "webgl": {
+                        "type": "string"
+                      },
+                      "webgl_image": {
+                        "type": "string"
+                      },
+                      "audio": {
+                        "type": "string"
+                      },
+                      "longitude": {
+                        "type": "string"
+                      },
+                      "latitude": {
+                        "type": "string"
+                      },
+                      "webrtc": {
+                        "type": "string"
+                      },
+                      "do_not_track": {
+                        "type": "string"
+                      },
+                      "hardware_concurrency": {
+                        "type": "string"
+                      },
+                      "device_memory": {
+                        "type": "string"
+                      },
+                      "gpu": {
+                        "type": "string"
+                      },
+                      "mac_address_config": {
+                        "type": "object",
+                        "properties": {
+                          "model": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "model",
+                          "address"
+                        ]
+                      },
+                      "browser_kernel_config": {
+                        "type": "object",
+                        "properties": {
+                          "version": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "version",
+                          "type"
+                        ]
+                      },
+                      "random_ua": {
+                        "type": "object",
+                        "properties": {
+                          "ua_system_version": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "required": [
+                          "ua_system_version"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "automatic_timezone",
+                      "flash",
+                      "scan_port_type",
+                      "location",
+                      "location_switch",
+                      "accuracy",
+                      "canvas",
+                      "webgl",
+                      "webgl_image",
+                      "audio",
+                      "longitude",
+                      "latitude",
+                      "webrtc",
+                      "do_not_track",
+                      "hardware_concurrency",
+                      "device_memory",
+                      "gpu",
+                      "mac_address_config",
+                      "browser_kernel_config",
+                      "random_ua"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "platform",
+                  "tabs",
+                  "repeat_config",
+                  "username",
+                  "password",
+                  "fakey",
+                  "platform_account",
+                  "cookie",
+                  "ignore_cookie_error",
+                  "group_id",
+                  "ip",
+                  "country",
+                  "region",
+                  "city",
+                  "remark",
+                  "ipchecker",
+                  "proxyid",
+                  "fingerprint_config"
+                ]
+              },
+              "example": "{\n    \"name\": \"profile name\",\n    \"platform\": \"baidu.com\", \n    \"tabs\": [\"https://google.com\", \"https://yuanbao.com\"], \n    \"repeat_config\": [],\n    \"username\": \"123\",\n    \"password\": \"123\",\n    \"fakey\": \"\",\n    \"platform_account\": [\n    {\n      \"domain_name\": \"https://www.google.com\",\n      \"login_user\": \"abc\",\n      \"password\": \"123\",\n      \"fakey\": \"abc123\"\n    },\n    {\n      \"domain_name\": \"https://www.facebook.com\",\n      \"login_user\": \"def\",\n      \"password\": \"456\",\n      \"fakey\": \"def456\"\n    }\n  ],\n    \"cookie\":\"[{\\\"domain\\\": \\\".baidu.com\\\",\\\"expirationDate\\\": 1724188800,\\\"name\\\": \\\"BAIDUID\\\",\\\"path\\\": \\\"/\\\",\\\"sameSite\\\": \\\"unspecified\\\",\\\"secure\\\": true,\\\"value\\\": \\\"xxxxxxxxxx\\\",\\\"id\\\": 1}]\",\n    \"ignore_cookie_error\": \"1\",\n    \"group_id\": \"0\",\n    \"ip\": \"\",\n    \"country\": \"sg\",\n    \"region\": \"\",\n    \"city\": \"sg\",\n    \"remark\": \"remarks\",\n    \"ipchecker\": \"ip2location\",\n    //\"category_id\": \"4\",\n    // \"user_proxy_config\":{\"proxy_soft\":\"proxy302auto\",\"global_config\":\"1\"},\n    \"proxyid\": \"random\",\n    \"fingerprint_config\": {\n        \"automatic_timezone\": \"1\",\n        \"flash\": \"block\",\n        \"scan_port_type\": \"1\",\n        \"location\": \"ask\",\n        \"location_switch\": \"1\",\n        \"accuracy\": \"1000\",\n        \"canvas\": \"0\",\n        \"webgl\": \"0\",\n        \"webgl_image\": \"0\",\n        \"audio\": \"0\",\n        \"longitude\":\"180\",\n        \"latitude\":\"90\",\n        \"webrtc\": \"local\",\n        \"do_not_track\": \"true\",\n        \"hardware_concurrency\": \"default\",\n        \"device_memory\": \"default\",\n        \"gpu\": \"2\",\n        \"mac_address_config\": {\n            \"model\": \"1\",\n            \"address\": \"\"\n        },\n        \"browser_kernel_config\": {\n            \"version\": \"latest\",\n            \"type\":\"firefox\"\n        },\n        \"random_ua\":{\n            \"ua_system_version\": [\"Android\"]\n        }\n    }\n}"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "profile_id": {
+                          "type": "string"
+                        },
+                        "profile_no": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "profile_id",
+                        "profile_no"
+                      ]
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {
+                    "profile_id": "xxx",
+                    "profile_no": "xxx"
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/update": {
+      "post": {
+        "summary": "更新环境",
+        "deprecated": false,
+        "description": "更新指定浏览器环境的配置，包括名称、备注、账号信息、代理设置、指纹参数等。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 环境名称，最多100个字符",
+            "required": false,
+            "example": "环境名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "domain_name",
+            "in": "query",
+            "description": "`string` `Optional`  \nExample:`facebook.com`",
+            "required": false,
+            "example": "平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "username",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台账号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "open_urls",
+            "in": "query",
+            "description": "选填 数组 示例: [\"http://www.baidu.com\",\"https://www.google.com\"]",
+            "required": false,
+            "example": "标签页",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fakey",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "输入 2FA 密钥",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cookie",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "Cookie",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ignore_cookie_error",
+            "in": "query",
+            "description": "选填 字符串 0(默认): 格式错误也原样返回数据 1: 过滤格式错误的Cookies并只保留有效项(仅支持Netscape格式)。",
+            "required": false,
+            "example": "指定 Cookie 验证失败时的处理方式。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "IP",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "国家/地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "城市",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 1500 字符。",
+            "required": false,
+            "example": "环境备注",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sys_app_cate_id",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "分类 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_proxy_config",
+            "in": "query",
+            "description": "选填 对象",
+            "required": false,
+            "example": "代理配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxyid",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fingerprint_config",
+            "in": "query",
+            "description": "选填 对象",
+            "required": false,
+            "example": "指纹配置",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "user_id",
+                  "name"
+                ]
+              },
+              "example": {
+                "user_id": "xxx",
+                "name": "profile name"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/update": {
+      "post": {
+        "summary": "更新环境 v2",
+        "deprecated": false,
+        "description": "更新指定浏览器环境的配置，包括名称、备注、账号信息、代理设置、指纹参数等。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "必填 字符串 创建环境后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 环境名称，最多100个字符",
+            "required": false,
+            "example": "环境名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 1500 字符。",
+            "required": false,
+            "example": "环境备注",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "description": "选填 字符串 示例: facebook.com 账号平台字段仅适用于单账号平台配置。如果需要配置多个账号平台，请使用 platform_account。",
+            "required": false,
+            "example": "平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "username",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台账号",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "平台密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fakey",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "输入 2FA 密钥",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "platform_account",
+            "in": "query",
+            "description": "选填 数组 详情参考创建API的说明。",
+            "required": true,
+            "example": "多账号平台",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cookie",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "Cookie",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ignore_cookie_error",
+            "in": "query",
+            "description": "选填 字符串 0(默认): 格式错误也原样返回数据 1: 过滤格式错误的Cookies并只保留有效项(仅支持Netscape格式)。",
+            "required": false,
+            "example": "指定 Cookie 验证失败时的处理方式。",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tabs",
+            "in": "query",
+            "description": "选填 数组 示例: [\"http://www.baidu.com\",\"https://www.google.com\"]",
+            "required": false,
+            "example": "标签页",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_proxy_config",
+            "in": "query",
+            "description": "选填 对象",
+            "required": false,
+            "example": "代理配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxyid",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "IP",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "国家/地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "地区",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "城市",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fingerprint_config",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "指纹配置",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category_id",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "分类 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "launch_args",
+            "in": "query",
+            "description": "`string` `Optional` Refer to Chromium command-line switches for details.(https://peter.sh/experiments/chromium-command-line-switches/)   \nExample: [\"--window-position=400,0\", \"--blink-settings=imagesEnabled=false\", \"--disable-notifications\"]",
+            "required": false,
+            "example": "浏览器启动参数[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_tag_ids",
+            "in": "query",
+            "description": "选填 数组",
+            "required": false,
+            "example": "标签 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tags_update_type",
+            "in": "query",
+            "description": "选填 字符串 1(默认): 替换 — 替换环境所有标签。 2: 追加 — 添加标签(若总数超30则截断)。",
+            "required": false,
+            "example": "环境标签更新方式",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "name"
+                ]
+              },
+              "example": {
+                "profile_id": "xxx",
+                "name": "profile name"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/delete": {
+      "post": {
+        "summary": "删除环境",
+        "deprecated": false,
+        "description": "删除指定的浏览器环境，支持批量删除。一次最多可删除100个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_ids",
+            "in": "query",
+            "description": "必填 数组 环境创建后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "user_ids"
+                ]
+              },
+              "example": {
+                "user_ids": [
+                  "xxx",
+                  "xxx"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/delete": {
+      "post": {
+        "summary": "删除环境 v2",
+        "deprecated": false,
+        "description": "删除指定的浏览器环境，支持批量删除。一次最多可删除100个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "必填 数组 环境创建后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "profile_id"
+                ]
+              },
+              "example": {
+                "profile_id": [
+                  "xxx",
+                  "xxx"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/regroup": {
+      "post": {
+        "summary": "移动环境",
+        "deprecated": false,
+        "description": "通过指定目标分组ID，将浏览器环境重新分配到不同的分组。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "user_ids",
+            "in": "query",
+            "description": "必填 数组 环境创建后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "必填 字符串 分组创建成功后生成的唯一ID。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "group_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "user_ids",
+                  "group_id"
+                ]
+              },
+              "example": {
+                "user_ids": [
+                  "xxx",
+                  "xxx"
+                ],
+                "group_id": "123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/user/delete-cache": {
+      "post": {
+        "summary": "清除缓存",
+        "deprecated": false,
+        "description": "用于清除所有打开的浏览器生成的本地缓存。为了账号安全，请确保使用此接口时设备上没有打开的浏览器。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/delete-cache": {
+      "post": {
+        "summary": "清除缓存 v2",
+        "deprecated": false,
+        "description": "清除特定环境的本地缓存。为了账号安全，请确保设备上没有打开这些浏览器。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "必填 数组 环境创建后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "必填 数组 可选: local_storage, indexeddb, extension_cache, cookie, history, image_file",
+            "required": false,
+            "example": "要清除的缓存类型。[]",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "type": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "type"
+                ]
+              },
+              "example": {
+                "profile_id": [
+                  "xxx"
+                ],
+                "type": [
+                  "history",
+                  "image_file"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/share": {
+      "post": {
+        "summary": "分享环境",
+        "deprecated": false,
+        "description": "通过账号邮箱或手机号分享环境。每次最多分享 200 个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "必填 数组 环境创建后生成的唯一环境ID。",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "receiver",
+            "in": "query",
+            "description": "必填 字符串 接收者的账号邮箱或手机号(不含区号)",
+            "required": false,
+            "example": "接收者",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "share_type",
+            "in": "query",
+            "description": "选填 整数 1: 邮箱分享(默认) 2: 手机号分享",
+            "required": false,
+            "example": "分享类型",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "content",
+            "in": "query",
+            "description": "选填 字符串 默认分享凭证、Cookies、指纹等。可额外分享: name(名称), proxy(代理), remark(备注), tabs(书签标签)",
+            "required": false,
+            "example": "分享内容[]",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "share_type": {
+                    "type": "integer"
+                  },
+                  "receiver": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "share_type",
+                  "receiver",
+                  "content"
+                ]
+              },
+              "example": {
+                "profile_id": [
+                  "xxx",
+                  "xxx",
+                  "xxx"
+                ],
+                "share_type": 1,
+                "receiver": "123@123.com",
+                "content": [
+                  "name",
+                  "proxy",
+                  "remark",
+                  "tabs"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/cookies": {
+      "get": {
+        "summary": "查询环境 Cookies",
+        "deprecated": false,
+        "description": "查询并返回指定环境的 Cookies。每次请求只能查询一个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "选填 字符串 环境创建成功后生成的唯一ID。profile_id 和 profile_no 必须提供其一。",
+            "required": false,
+            "example": "环境 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 字符串 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "环境序号",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/ua": {
+      "post": {
+        "summary": "查询环境 User-Agent",
+        "deprecated": false,
+        "description": "查询并返回指定环境的 User-Agent。每次最多查询 10 个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "`array` `Optional` A unique ID generated after the profile is successfully created. Either profile_id or profile_no must be provided.",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "选填 数组 填写 profile_id 时优先使用 user_id (或 profile_id)。",
+            "required": false,
+            "example": "环境序号[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "profile_no": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "profile_no"
+                ]
+              },
+              "example": {
+                "profile_id": [
+                  "xxx",
+                  "xxx"
+                ],
+                "profile_no": [
+                  "xxx",
+                  "xxx"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/stop-all": {
+      "post": {
+        "summary": "关闭所有环境",
+        "deprecated": false,
+        "description": "关闭当前设备上所有打开的环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "text/plain": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/new-fingerprint": {
+      "post": {
+        "summary": "生成新指纹",
+        "deprecated": false,
+        "description": "为指定环境生成新指纹。每次请求最多支持 10 个环境。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "description": "`array` `Optional` A unique ID generated after the profile is successfully created. Either profile_id or profile_no must be provided.",
+            "required": false,
+            "example": "环境 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile_no",
+            "in": "query",
+            "description": "`array` `Optional` Priority will be given to user id when profile_id is filled.",
+            "required": false,
+            "example": "环境序号[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "profile_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "profile_no": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "profile_id",
+                  "profile_no"
+                ]
+              },
+              "example": {
+                "profile_id": [
+                  "xxx",
+                  "xxx"
+                ],
+                "profile_no": [
+                  "xxx",
+                  "xxx"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/kernels": {
+      "get": {
+        "summary": "获取内核列表",
+        "deprecated": false,
+        "description": "获取支持的内核列表，可按 Chrome 或 Firefox 过滤，并指示是否在本地安装。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "kernel_type",
+            "in": "query",
+            "description": "选填 字符串 支持 Chrome 或 Firefox。默认返回所有内核类型。",
+            "required": false,
+            "example": "内核类型",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/download-kernel": {
+      "post": {
+        "summary": "下载内核",
+        "deprecated": false,
+        "description": "下载或更新指定的浏览器内核版本。一次只能请求一个版本。请确保下载前没有环境正在使用该内核，否则安装将失败。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "kernel_type",
+            "in": "query",
+            "description": "必填 字符串 浏览器内核类型。允许值: Chrome, Firefox。",
+            "required": false,
+            "example": "内核类型",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "kernel_version",
+            "in": "query",
+            "description": "必填 字符串 浏览器内核版本号，如: 141。",
+            "required": false,
+            "example": "内核版本",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "kernel_type": {
+                    "type": "string"
+                  },
+                  "kernel_version": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kernel_type",
+                  "kernel_version"
+                ]
+              },
+              "example": {
+                "kernel_type": "Chrome",
+                "kernel_version": "143"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-profile/update-patch": {
+      "post": {
+        "summary": "更新到最新补丁",
+        "deprecated": false,
+        "description": "更新到最新的补丁版本。stable(默认) 更稳定; beta 为预览版。更新前请确保没有环境打开。",
+        "tags": [
+          "Profiles"
+        ],
+        "parameters": [
+          {
+            "name": "version_type",
+            "in": "query",
+            "description": "选填 字符串 补丁版本类型。支持: stable (默认) 或 beta。",
+            "required": false,
+            "example": "版本类型",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "version_type": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "version_type"
+                ]
+              },
+              "example": {
+                "version_type": "beta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "before_version": {
+                          "type": "string"
+                        },
+                        "after_version": {
+                          "type": "string"
+                        },
+                        "version_type": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "before_version",
+                        "after_version",
+                        "version_type"
+                      ]
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "data",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "code": 0,
+                  "data": {
+                    "before_version": "v2.8.4.6",
+                    "after_version": "v2.8.4.7",
+                    "version_type": "stable"
+                  },
+                  "msg": "Please pause operations for 60 seconds and wait for the restart to complete. Check availability via the status API."
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-tags/create": {
+      "post": {
+        "summary": "创建标签",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Tags"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "必填 字符串 标签名称，最多50个字符。",
+            "required": false,
+            "example": "标签名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "color",
+            "in": "query",
+            "description": "选填 字符串 标签颜色。可选: darkBlue(默认), blue, purple, red, yellow, orange, green, lightGreen。",
+            "required": false,
+            "example": "标签颜色",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "color": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "tags"
+                ]
+              },
+              "example": "{\n  \"tags\": [\n    {\n      \"name\": \"1\", // 标签名称\n      \"color\": \"lightGreen\" // 标签颜色\n    }\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-tags/update": {
+      "post": {
+        "summary": "更新标签",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Tags"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "必填 字符串 标签 ID",
+            "required": false,
+            "example": "标签 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "选填 字符串 标签名称",
+            "required": false,
+            "example": "标签名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "color",
+            "in": "query",
+            "description": "选填 字符串 标签颜色。可选: darkBlue(默认), blue, purple, red, yellow, orange, green, lightGreen。",
+            "required": false,
+            "example": "标签颜色",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "color": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "tags"
+                ]
+              },
+              "example": "{\n  \"tags\": [\n    {\n      \"id\": \"1\",\n      \"name\": \"name\", // 标签名称\n      \"color\": \"lightGreen\" // 标签颜色\n    }\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-tags/delete": {
+      "post": {
+        "summary": "删除标签",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Tags"
+        ],
+        "parameters": [
+          {
+            "name": "ids",
+            "in": "query",
+            "description": "必填 数组 标签 ID; 每次请求最多 100 个。",
+            "required": false,
+            "example": "标签 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "ids"
+                ]
+              },
+              "example": {
+                "ids": [
+                  "1"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/browser-tags/list": {
+      "post": {
+        "summary": "查询标签",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Tags"
+        ],
+        "parameters": [
+          {
+            "name": "ids",
+            "in": "query",
+            "description": "选填 数组 标签 ID",
+            "required": false,
+            "example": "Tag id[]",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 字符串 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "选填 字符串 默认: 50 每页返回标签数量，范围: 1–200。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "{{Authorization}}",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "page": {
+                    "type": "integer"
+                  },
+                  "limit": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "ids",
+                  "page",
+                  "limit"
+                ]
+              },
+              "example": {
+                "ids": [
+                  "1"
+                ],
+                "page": 1,
+                "limit": 10
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/group/list": {
+      "get": {
+        "summary": "查询分组",
+        "deprecated": false,
+        "description": "查询分组信息，包括分组ID和分组名称。group_id 0 是系统默认分组。",
+        "tags": [
+          "Groups"
+        ],
+        "parameters": [
+          {
+            "name": "group_name",
+            "in": "query",
+            "description": "选填 字符串 指定分组名称查询。若留空则返回所有分组。",
+            "required": false,
+            "example": "分组名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 整数 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "description": "选填 整数 默认: 1 每页返回分组数量，范围 1 ~ 200。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "list": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "group_id": {
+                                "type": "string"
+                              },
+                              "group_name": {
+                                "type": "string"
+                              },
+                              "remark": {
+                                "type": "string"
+                              }
+                            },
+                            "additionalProperties": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/group/create": {
+      "post": {
+        "summary": "创建分组",
+        "deprecated": false,
+        "description": "创建环境分组。分组名称必须唯一。成功后将返回 group_id。group_id 0 是系统默认分组。",
+        "tags": [
+          "Groups"
+        ],
+        "parameters": [
+          {
+            "name": "group_name",
+            "in": "query",
+            "description": "必填 字符串 最多 30 个字符。分组名称必须唯一。",
+            "required": false,
+            "example": "分组名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 100 个字符。",
+            "required": false,
+            "example": "分组备注",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "group_name": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "group_name",
+                  "remark"
+                ]
+              },
+              "example": {
+                "group_name": "123",
+                "remark": "123456"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/group/update": {
+      "post": {
+        "summary": "更新分组",
+        "deprecated": false,
+        "description": "编辑分组信息（如名称），需确保唯一。",
+        "tags": [
+          "Groups"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "query",
+            "description": "必填 字符串 分组创建成功后生成的唯一ID。",
+            "required": false,
+            "example": "分组 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "group_name",
+            "in": "query",
+            "description": "必填 字符串 修改分组名称(最多30字符)。必须唯一。",
+            "required": false,
+            "example": "分组名称",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 修改分组备注(最多100字符)。",
+            "required": false,
+            "example": "分组备注",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "group_id": {
+                    "type": "string"
+                  },
+                  "group_name": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "group_id",
+                  "group_name",
+                  "remark"
+                ]
+              },
+              "example": {
+                "group_id": "6215915",
+                "group_name": "12345",
+                "remark": "123456"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/proxy-list/create": {
+      "get": {
+        "summary": "创建代理",
+        "deprecated": false,
+        "description": "将代理添加到保存的代理列表中。一次最多可添加 500 个代理。不支持重复验证。",
+        "tags": [
+          "Proxies"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "必填 字符串 支持: http/https/ssh/socks5",
+            "required": false,
+            "example": "代理类型",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "host",
+            "in": "query",
+            "description": "必填 字符串 支持: ipV4, ipV6",
+            "required": false,
+            "example": "代理主机",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "port",
+            "in": "query",
+            "description": "必填 字符串 范围: 0-65536",
+            "required": false,
+            "example": "端口",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理用户名",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxy_url",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "用于刷新代理的 URL",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ipchecker",
+            "in": "query",
+            "description": "选填 字符串 若留空则使用全局设置。支持: ip2location/ipapi/ipfoxy",
+            "required": false,
+            "example": "IP 检测器",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 200 个字符。",
+            "required": false,
+            "example": "代理备注",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "host": {
+                      "type": "string"
+                    },
+                    "port": {
+                      "type": "string"
+                    },
+                    "ipchecker": {
+                      "type": "string"
+                    },
+                    "remark": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "host",
+                    "port",
+                    "ipchecker",
+                    "remark"
+                  ]
+                }
+              },
+              "example": "[\n    {\n\t\"type\":\"http\", //http、https、socks5、ssh\n\t\"host\":\"192.168.0.1\", \n\t\"port\":\"8000\",\n\t//\"user\":\"username\",\n\t//\"password\":\"password\",\n\t//\"proxy_url\":\"https://www.baidu.com/\", \n\t\"ipchecker\":\"ip2location\",\n    \"remark\":\"remark1\"\n    },\n    {\n\t\"type\":\"http\", //http、https、socks5、ssh\n\t\"host\":\"192.168.0.1\", \n\t\"port\":\"8000\",\n\t//\"user\":\"username\",\n\t//\"password\":\"password\",\n\t//\"proxy_url\":\"https://www.baidu.com/\", \n\t\"ipchecker\":\"ip2location\",\n    \"remark\":\"remark1\"\n    },\n    {\n\t\"type\":\"http\", //http、https、socks5、ssh\n\t\"host\":\"192.168.0.1\", \n\t\"port\":\"8000\",\n\t//\"user\":\"username\",\n\t//\"password\":\"password\",\n\t//\"proxy_url\":\"https://www.baidu.com/\",\n\t\"ipchecker\":\"ip2location\",\n    \"remark\":\"remark1\"\n    }\n]"
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "proxy_id": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "required": [
+                        "proxy_id"
+                      ]
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {
+                    "proxy_id": [
+                      "369",
+                      "370",
+                      "371"
+                    ]
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/proxy-list/update": {
+      "post": {
+        "summary": "更新代理",
+        "deprecated": false,
+        "description": "更新指定代理的代理信息。对于 IPFoxy 代理，只能更新备注。",
+        "tags": [
+          "Proxies"
+        ],
+        "parameters": [
+          {
+            "name": "proxy_id",
+            "in": "query",
+            "description": "必填 字符串 代理创建成功后生成的唯一 ID。",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "选填 字符串 支持: http/https/ssh/socks5",
+            "required": false,
+            "example": "代理类型",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "host",
+            "in": "query",
+            "description": "选填 字符串 支持: ipV4, ipV6",
+            "required": false,
+            "example": "代理主机",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "port",
+            "in": "query",
+            "description": "选填 字符串 范围: 0-65536",
+            "required": false,
+            "example": "端口",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理用户名",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "代理密码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proxy_url",
+            "in": "query",
+            "description": "选填 字符串",
+            "required": false,
+            "example": "用于刷新代理的 URL",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ipchecker",
+            "in": "query",
+            "description": "选填 字符串 若留空则使用全局设置。支持: ip2location/ipapi/ipfoxy",
+            "required": false,
+            "example": "IP 检测器",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "remark",
+            "in": "query",
+            "description": "选填 字符串 最多 200 个字符。",
+            "required": false,
+            "example": "代理备注",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "proxy_id": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "port": {
+                    "type": "string"
+                  },
+                  "user": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "proxy_url": {
+                    "type": "string"
+                  },
+                  "ipchecker": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "proxy_id",
+                  "type",
+                  "port",
+                  "user",
+                  "password",
+                  "proxy_url",
+                  "ipchecker",
+                  "remark"
+                ]
+              },
+              "example": {
+                "proxy_id": "xxx",
+                "type": "https",
+                "port": "8001",
+                "user": "username",
+                "password": "password",
+                "proxy_url": "https://www.baidu.com/",
+                "ipchecker": "ipfoxy",
+                "remark": "remark"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/proxy-list/list": {
+      "post": {
+        "summary": "查询代理",
+        "deprecated": false,
+        "description": "查询已保存的代理信息",
+        "tags": [
+          "Proxies"
+        ],
+        "parameters": [
+          {
+            "name": "proxy_id",
+            "in": "query",
+            "description": "选填 数组 每次请求最多 100 个代理 ID。",
+            "required": false,
+            "example": "代理 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "选填 字符串 默认: 50 每页返回代理数量，范围 1 ~ 200。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "`string` `Optional` `Default: 1` View data on the specified page.",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "proxy_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "limit": {
+                    "type": "string"
+                  },
+                  "page": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "proxy_id",
+                  "limit",
+                  "page"
+                ]
+              },
+              "example": {
+                "proxy_id": [
+                  "xxx",
+                  "xxx"
+                ],
+                "limit": "10",
+                "page": "1"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "list": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "proxy_id": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "host": {
+                                "type": "string"
+                              },
+                              "port": {
+                                "type": "string"
+                              },
+                              "user": {
+                                "type": "string"
+                              },
+                              "password": {
+                                "type": "string"
+                              },
+                              "proxy_url": {
+                                "type": "string"
+                              },
+                              "remark": {
+                                "type": "string"
+                              },
+                              "ipchecker": {
+                                "type": "string"
+                              },
+                              "proxy_partner": {
+                                "type": "string"
+                              },
+                              "profile_count": {
+                                "type": "string"
+                              },
+                              "related_profile_no": {
+                                "type": "array",
+                                "items": {}
+                              },
+                              "proxy_tags": {
+                                "type": "array",
+                                "items": {}
+                              }
+                            },
+                            "required": [
+                              "proxy_id",
+                              "type",
+                              "host",
+                              "port",
+                              "user",
+                              "password",
+                              "proxy_url",
+                              "remark",
+                              "ipchecker",
+                              "proxy_partner",
+                              "profile_count",
+                              "related_profile_no",
+                              "proxy_tags"
+                            ]
+                          }
+                        },
+                        "total": {
+                          "type": "integer"
+                        },
+                        "page": {
+                          "type": "integer"
+                        },
+                        "page_size": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "list",
+                        "total",
+                        "page",
+                        "page_size"
+                      ]
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {
+                    "list": [
+                      {
+                        "proxy_id": "371",
+                        "type": "https",
+                        "host": "192.168.0.1",
+                        "port": "8001",
+                        "user": "username",
+                        "password": "password",
+                        "proxy_url": "https://www.baidu.com/",
+                        "remark": "remark",
+                        "ipchecker": "ipfoxy",
+                        "proxy_partner": "",
+                        "profile_count": "0",
+                        "related_profile_no": [],
+                        "proxy_tags": []
+                      },
+                      {
+                        "proxy_id": "370",
+                        "type": "http",
+                        "host": "192.168.0.1",
+                        "port": "8000",
+                        "user": "",
+                        "password": "",
+                        "proxy_url": "",
+                        "remark": "remark1",
+                        "ipchecker": "ip2location",
+                        "proxy_partner": "",
+                        "profile_count": "0",
+                        "related_profile_no": [],
+                        "proxy_tags": []
+                      }
+                    ],
+                    "total": 2,
+                    "page": 1,
+                    "page_size": 10
+                  },
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/proxy-list/delete": {
+      "post": {
+        "summary": "删除代理",
+        "deprecated": false,
+        "description": "Delete the specified proxies. Up to 100 proxies can be deleted at one time. Unexpired proxies of IPFoxy cannot be deleted. \n\nNote: If the deleted proxies were configured in the profies, after delection, the proxy setting will become \"Non proxy\" in these profiles. Please pay attention to this modification.",
+        "tags": [
+          "Proxies"
+        ],
+        "parameters": [
+          {
+            "name": "proxy_id",
+            "in": "query",
+            "description": "`array` `Required` The unique ID generated upon successful proxy creation.",
+            "required": false,
+            "example": "代理 ID[]",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "proxy_id": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "proxy_id"
+                ]
+              },
+              "example": {
+                "proxy_id": [
+                  "xxx"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "code": {
+                      "type": "integer"
+                    },
+                    "msg": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "code",
+                    "msg"
+                  ]
+                },
+                "example": {
+                  "data": {},
+                  "code": 0,
+                  "msg": "Success"
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v1/application/list": {
+      "get": {
+        "summary": "应用分类列表",
+        "deprecated": false,
+        "description": "查询应用分类列表，用于创建或编辑环境。",
+        "tags": [
+          "Extensions"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 整数 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "description": "选填 整数 默认: 50 每页返回数量，范围 1 ~ 200。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/v2/category/list": {
+      "get": {
+        "summary": "插件分类列表 v2",
+        "deprecated": false,
+        "description": "查询插件分类列表，可获取分类ID或详情。",
+        "tags": [
+          "Extensions"
+        ],
+        "parameters": [
+          {
+            "name": "category_id",
+            "in": "query",
+            "description": "选填 字符串 提供分类ID以获取其详情。",
+            "required": false,
+            "example": "分类 ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "选填 整数 默认: 50 每页返回数量，范围 1 ~ 200。",
+            "required": false,
+            "example": "每页数量",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "选填 整数 默认: 1 查看指定页面的数据。",
+            "required": false,
+            "example": "页码",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "webhooks": {},
+  "components": {
+    "schemas": {},
+    "responses": {
+      "记录不存在": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "message"
+              ]
+            }
+          }
+        }
+      },
+      "参数不正确": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "message"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {}
+  },
+  "servers": [],
+  "security": []
+}

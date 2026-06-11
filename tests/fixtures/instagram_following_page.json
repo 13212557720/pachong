@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "users": [
+    {
+      "pk": "101",
+      "id": "101",
+      "username": "mexicocreator",
+      "full_name": "Mexico Creator",
+      "is_private": false,
+      "is_verified": true,
+      "followers_count": 350000,
+      "biography": "Travel and food in Mexico"
+    },
+    {
+      "pk": "102",
+      "username": "smallcreator",
+      "full_name": "Small Creator",
+      "is_private": true,
+      "is_verified": false,
+      "followers_count": 12000
+    }
+  ],
+  "next_max_id": "QVFB"
+}

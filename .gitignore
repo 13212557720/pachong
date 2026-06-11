@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+chrome-cdp-profile/
+output/
+output_*/
+*.pyc
+*.egg-info/
+browser_templates/

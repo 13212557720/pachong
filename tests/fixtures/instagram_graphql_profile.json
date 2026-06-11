@@ -1,0 +1,13 @@
+{
+  "data": {
+    "user": {
+      "id": "101",
+      "username": "mexicocreator",
+      "full_name": "Mexico Creator",
+      "follower_count": 350000,
+      "biography": "Travel and food in Mexico",
+      "is_private": false,
+      "is_verified": true
+    }
+  }
+}

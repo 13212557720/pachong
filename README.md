@@ -60,10 +60,36 @@ python -m src.main --platform youtube --country mexico --youtube-min-subscribers
 `--api-enrich` is optional and only applies to YouTube rows when an official channel id is available. It is not required for the default public-page export.
 
 Mexico Instagram public mode combines HypeAuditor category ranking pages with Scrumball rows to reach up to 1000 unique records.
-Facebook Mexico uses logged-in browser search mode for large exports:
+Facebook Mexico uses logged-in browser search mode for large exports. Browser mode now searches
+people first with Mexico flag/country keywords, then fills the remaining rows from page search.
+The default Facebook follower filter is `0` because personal profiles often do not expose follower
+counts.
 
 ```bash
-python -m src.main --platform facebook --country mexico --use-login-browser --max-browser-items 1000 --facebook-scrolls 5
+python -m src.main --platform facebook --country mexico --use-login-browser --max-browser-items 200 --facebook-scrolls 5
+```
+
+Optional query files:
+
+```bash
+python -m src.main --platform facebook --country mexico --use-login-browser \
+  --facebook-people-query-file people_queries.txt \
+  --facebook-page-query-file page_queries.txt \
+  --max-browser-items 200
+```
+
+Facebook browser exports include extra Chinese columns for `结果类型`, `好友数`, `所在地/地址`,
+`工作/学校`, `邮箱`, `来源关键词`, `原始文本`, and `信息完整度评分`.
+
+To collect only users with a visible follower count of at least 5,000:
+
+```bash
+python -m src.main --platform facebook --country mexico --use-login-browser \
+  --facebook-result-scope people \
+  --facebook-min-followers 5000 \
+  --max-browser-items 200 \
+  --facebook-scrolls 8 \
+  --out-dir output_facebook_5k_users
 ```
 
 ## Test

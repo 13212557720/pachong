@@ -3,7 +3,13 @@ from argparse import Namespace
 
 import pytest
 
-from src.main import build_parser, load_instagram_seed_handles, scrape_platform
+from src.main import (
+    build_parser,
+    load_facebook_page_queries,
+    load_facebook_people_queries,
+    load_instagram_seed_handles,
+    scrape_platform,
+)
 from src.models import CreatorRecord
 from src.scraper import ScrapeError
 
@@ -39,6 +45,8 @@ def test_build_parser_accepts_browser_mode_options() -> None:
             "browser-first",
             "--facebook-mode",
             "browser-search",
+            "--facebook-result-scope",
+            "people",
             "--max-browser-items",
             "25",
         ]
@@ -48,7 +56,9 @@ def test_build_parser_accepts_browser_mode_options() -> None:
     assert args.browser_cdp == "http://127.0.0.1:9222"
     assert args.instagram_mode == "browser-first"
     assert args.facebook_mode == "browser-search"
+    assert args.facebook_result_scope == "people"
     assert args.max_browser_items == 25
+    assert args.facebook_min_followers == 0
 
 
 def test_load_instagram_seed_handles_from_args_and_file(tmp_path: Path) -> None:
@@ -57,6 +67,21 @@ def test_load_instagram_seed_handles_from_args_and_file(tmp_path: Path) -> None:
     args = Namespace(instagram_seed_handles="@first, second", instagram_seed_file=str(seed_file))
 
     assert load_instagram_seed_handles(args) == ["first", "second", "third", "fourth"]
+
+
+def test_load_facebook_people_and_page_queries(tmp_path: Path) -> None:
+    people_file = tmp_path / "people.txt"
+    page_file = tmp_path / "pages.txt"
+    people_file.write_text("🇲🇽\n# comment\nMexico USA\n", encoding="utf-8")
+    page_file.write_text("mexico creator\nmexico media\n", encoding="utf-8")
+    args = Namespace(
+        facebook_people_query_file=str(people_file),
+        facebook_page_query_file=str(page_file),
+        facebook_query_file=None,
+    )
+
+    assert load_facebook_people_queries(args) == ["🇲🇽", "Mexico USA"]
+    assert load_facebook_page_queries(args) == ["mexico creator", "mexico media"]
 
 
 def test_instagram_browser_first_falls_back_to_public(monkeypatch) -> None:
@@ -120,7 +145,7 @@ def test_facebook_browser_search_requires_login_browser() -> None:
     args = Namespace(
         use_login_browser=False,
         facebook_mode="browser-search",
-        facebook_min_followers=200_000,
+        facebook_min_followers=0,
         browser_cdp="http://127.0.0.1:9222",
         max_browser_items=10,
     )
@@ -137,7 +162,7 @@ def test_facebook_public_only_uses_global_source() -> None:
     args = Namespace(
         use_login_browser=False,
         facebook_mode="public-only",
-        facebook_min_followers=200_000,
+        facebook_min_followers=0,
         browser_cdp="http://127.0.0.1:9222",
         max_browser_items=10,
     )

@@ -22,6 +22,14 @@ class CreatorRecord:
     scraped_at: str
     description: str = ""
     platform_user_id: str = ""
+    result_type: str = ""
+    friend_count: int = 0
+    location: str = ""
+    work_school: str = ""
+    email: str = ""
+    source_query: str = ""
+    raw_text: str = ""
+    info_score: int = 0
     ip_location: str = ""
     is_verified: bool | None = None
     is_private: bool | None = None

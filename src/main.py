@@ -42,7 +42,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--facebook-min-followers",
         type=int,
-        default=200_000,
+        default=0,
         help="Minimum Facebook follower count to keep.",
     )
     parser.add_argument(
@@ -106,6 +106,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Facebook collection mode.",
     )
     parser.add_argument(
+        "--facebook-result-scope",
+        choices=["mixed", "people", "pages"],
+        default="mixed",
+        help="Facebook browser-search result scope.",
+    )
+    parser.add_argument(
         "--instagram-seed-handles",
         default="",
         help="Comma-separated Instagram handles used as browser-mode seeds.",
@@ -136,7 +142,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--facebook-query-file",
         default=None,
-        help="Text file with one Facebook search query per line.",
+        help="Backward-compatible alias for --facebook-page-query-file.",
+    )
+    parser.add_argument(
+        "--facebook-people-query-file",
+        default=None,
+        help="Text file with one Facebook people-search query per line.",
+    )
+    parser.add_argument(
+        "--facebook-page-query-file",
+        default=None,
+        help="Text file with one Facebook page-search query per line.",
     )
     return parser
 
@@ -271,12 +287,16 @@ def scrape_platform(
                 "Use --facebook-mode public-only only if you explicitly want the global Wikipedia list."
             )
         browser_scraper = FacebookBrowserScraper(cdp_url=args.browser_cdp)
-        records = browser_scraper.scrape_pages(
+        records = browser_scraper.scrape_search(
             country_slug=country_slug,
             min_followers=args.facebook_min_followers,
             max_items=args.max_browser_items,
-            queries=load_facebook_queries(args),
+            people_queries=load_facebook_people_queries(args),
+            page_queries=load_facebook_page_queries(args),
             scroll_rounds=getattr(args, "facebook_scrolls", 8),
+            include_people=args.facebook_result_scope in {"mixed", "people"},
+            include_pages=args.facebook_result_scope in {"mixed", "pages"},
+            require_min_followers_during_collection=args.facebook_min_followers > 0,
         )
         metadata = make_browser_metadata(
             platform="facebook",
@@ -305,14 +325,25 @@ def load_instagram_seed_handles(args: argparse.Namespace) -> list[str]:
     return normalize_handles(handles)
 
 
-def load_facebook_queries(args: argparse.Namespace) -> list[str] | None:
-    query_file = getattr(args, "facebook_query_file", None)
+def load_facebook_people_queries(args: argparse.Namespace) -> list[str] | None:
+    query_file = getattr(args, "facebook_people_query_file", None)
+    return load_query_file(query_file, label="Facebook people query file")
+
+
+def load_facebook_page_queries(args: argparse.Namespace) -> list[str] | None:
+    query_file = getattr(args, "facebook_page_query_file", None) or getattr(
+        args, "facebook_query_file", None
+    )
+    return load_query_file(query_file, label="Facebook page query file")
+
+
+def load_query_file(query_file: str | None, *, label: str) -> list[str] | None:
     if not query_file:
         return None
 
     path = Path(query_file)
     if not path.exists():
-        raise ScrapeError(f"Facebook query file not found: {path}")
+        raise ScrapeError(f"{label} not found: {path}")
     queries = [line.strip() for line in path.read_text(encoding="utf-8").splitlines()]
     return [query for query in queries if query and not query.startswith("#")]
 

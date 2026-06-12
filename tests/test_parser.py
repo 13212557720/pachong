@@ -28,6 +28,7 @@ INSTAGRAM_FOLLOWING_FIXTURE = FIXTURE_DIR / "instagram_following_page.json"
 INSTAGRAM_GRAPHQL_FIXTURE = FIXTURE_DIR / "instagram_graphql_profile.json"
 INSTAGRAM_WBLOKS_FIXTURE = FIXTURE_DIR / "instagram_wbloks_about.txt"
 FACEBOOK_SEARCH_FIXTURE = FIXTURE_DIR / "facebook_search_sample.html"
+FACEBOOK_PEOPLE_SEARCH_FIXTURE = FIXTURE_DIR / "facebook_people_search_sample.html"
 
 
 def read_fixture(path: Path) -> str:
@@ -215,18 +216,50 @@ def test_parse_facebook_search_cards() -> None:
         country="mexico",
         source_url="https://www.facebook.com/search/pages/?q=mexico%20creator",
         scraped_at="2026-06-10T00:00:00+00:00",
+        result_type="主页",
+        source_query="mexico creator",
     )
 
     assert len(records) == 3
     assert records[0].platform == "facebook"
     assert records[0].country == "mexico"
+    assert records[0].result_type == "主页"
     assert records[0].name == "Mexico Creator"
     assert records[0].handle == "mexico.creator"
     assert records[0].follower_count == 350_000
+    assert records[0].source_query == "mexico creator"
     assert records[0].source_mode == "browser_search"
     assert records[1].follower_count == 1_200_000
     assert records[2].handle == "AlejandraMezaDIY"
     assert records[2].follower_count == 2_670_000
+
+
+def test_parse_facebook_people_search_cards() -> None:
+    records = parse_facebook_search_cards(
+        read_fixture(FACEBOOK_PEOPLE_SEARCH_FIXTURE),
+        country="mexico",
+        source_url="https://www.facebook.com/search/people/?q=%F0%9F%87%B2%F0%9F%87%BD",
+        scraped_at="2026-06-10T00:00:00+00:00",
+        result_type="用户",
+        source_query="🇲🇽",
+    )
+
+    assert len(records) == 2
+    first = records[0]
+    assert first.result_type == "用户"
+    assert first.name == "Juan Perez 🇲🇽"
+    assert first.profile_url == "https://www.facebook.com/profile.php?id=123"
+    assert first.handle == "123"
+    assert first.friend_count == 58
+    assert first.location == "Chicago"
+    assert first.work_school == "Taqueria Mexico"
+    assert first.email == "juan@example.com"
+    assert first.source_query == "🇲🇽"
+    assert first.raw_text
+    assert first.info_score == 5
+    assert records[1].profile_url == "https://www.facebook.com/maria.mx"
+    assert records[1].location == "Guadalajara"
+    assert records[1].work_school == "Universidad de Guadalajara"
 
 
 def test_parse_detail_page() -> None:

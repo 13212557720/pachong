@@ -41,6 +41,12 @@ def test_export_records_writes_chinese_headers(tmp_path: Path) -> None:
     assert "平台用户ID" in csv_columns
     assert "IP属地" in csv_columns
     assert "采集方式" in csv_columns
+    assert "结果类型" in csv_columns
+    assert "好友数" in csv_columns
+    assert "邮箱" in csv_columns
+    assert "来源关键词" in csv_columns
+    assert "原始文本" in csv_columns
+    assert "信息完整度评分" in csv_columns
     assert pd.read_excel(xlsx_path).iloc[0]["名称"] == "Creator"
 
 

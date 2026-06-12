@@ -5,7 +5,7 @@ from urllib.parse import quote_plus
 
 from .browser_session import BrowserSession
 from .models import CreatorRecord
-from .parser import filter_by_followers, parse_facebook_search_cards
+from .parser import parse_facebook_search_cards
 from .scraper import ScrapeError, utc_now_iso
 
 
@@ -71,6 +71,25 @@ FACEBOOK_PAGE_TERMS = [
     "fotografo",
 ]
 
+FACEBOOK_FLAG_USER_QUERIES = [
+    "🇲🇽",
+    "Mexico",
+    "Mexicano",
+    "Mexicana",
+    "Michoacan",
+    "Jalisco",
+    "CDMX",
+    "Guadalajara",
+    "Monterrey",
+    "Tijuana",
+    "🇲🇽 influencer",
+    "🇲🇽 creator",
+    "🇲🇽 viajes",
+    "🇲🇽 ventas",
+    "🇲🇽 estados unidos",
+    "Mexico USA",
+]
+
 
 def build_default_facebook_mexico_queries() -> List[str]:
     queries: List[str] = []
@@ -90,6 +109,18 @@ def build_default_facebook_mexico_queries() -> List[str]:
 DEFAULT_FACEBOOK_MEXICO_QUERIES = build_default_facebook_mexico_queries()
 
 
+def dedupe_queries(queries: Iterable[str]) -> List[str]:
+    seen = set()
+    deduped: List[str] = []
+    for query in queries:
+        normalized = query.strip()
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        deduped.append(normalized)
+    return deduped
+
+
 class FacebookBrowserScraper:
     def __init__(self, *, cdp_url: str, timeout_ms: int = 30_000) -> None:
         self.cdp_url = cdp_url
@@ -104,44 +135,84 @@ class FacebookBrowserScraper:
         queries: Iterable[str] | None = None,
         scroll_rounds: int = 8,
     ) -> List[CreatorRecord]:
+        return self.scrape_search(
+            country_slug=country_slug,
+            min_followers=min_followers,
+            max_items=max_items,
+            page_queries=queries,
+            scroll_rounds=scroll_rounds,
+            include_people=False,
+            include_pages=True,
+        )
+
+    def scrape_search(
+        self,
+        *,
+        country_slug: str,
+        min_followers: int,
+        max_items: int,
+        people_queries: Iterable[str] | None = None,
+        page_queries: Iterable[str] | None = None,
+        scroll_rounds: int = 8,
+        include_people: bool = True,
+        include_pages: bool = True,
+        require_min_followers_during_collection: bool = False,
+    ) -> List[CreatorRecord]:
         scraped_at = utc_now_iso()
-        search_queries = list(queries or DEFAULT_FACEBOOK_MEXICO_QUERIES)
+        search_batches: list[tuple[str, str, list[str]]] = []
+        if include_people:
+            search_batches.append(
+                ("people", "用户", dedupe_queries(people_queries or FACEBOOK_FLAG_USER_QUERIES))
+            )
+        if include_pages:
+            search_batches.append(
+                ("pages", "主页", dedupe_queries(page_queries or DEFAULT_FACEBOOK_MEXICO_QUERIES))
+            )
         records: List[CreatorRecord] = []
         seen_urls = set()
 
         with BrowserSession(self.cdp_url, timeout_ms=self.timeout_ms) as browser:
-            for query in search_queries:
-                if len(records) >= max_items:
-                    break
-                url = f"https://www.facebook.com/search/pages/?q={quote_plus(query)}"
-                page = browser.new_page()
-                try:
-                    page.goto(url, wait_until="domcontentloaded")
-                    page.wait_for_timeout(2_000)
-                    self._scroll_results(page, scroll_rounds=scroll_rounds)
-                    html = page.content()
-                finally:
-                    page.close()
-
-                parsed = parse_facebook_search_cards(
-                    html,
-                    country=country_slug,
-                    source_url=url,
-                    scraped_at=scraped_at,
-                )
-                for record in parsed:
-                    if record.profile_url in seen_urls:
-                        continue
-                    seen_urls.add(record.profile_url)
-                    record.rank = len(records) + 1
-                    records.append(record)
+            for search_type, result_type, search_queries in search_batches:
+                for query in search_queries:
                     if len(records) >= max_items:
                         break
+                    url = f"https://www.facebook.com/search/{search_type}/?q={quote_plus(query)}"
+                    page = browser.new_page()
+                    try:
+                        page.goto(url, wait_until="domcontentloaded")
+                        page.wait_for_timeout(2_000)
+                        self._scroll_results(page, scroll_rounds=scroll_rounds)
+                        html = page.content()
+                    finally:
+                        page.close()
 
-        filtered = filter_by_followers(records, min_followers)
-        if not filtered and not records:
+                    parsed = parse_facebook_search_cards(
+                        html,
+                        country=country_slug,
+                        source_url=url,
+                        scraped_at=scraped_at,
+                        result_type=result_type,
+                        source_query=query,
+                    )
+                    for record in parsed:
+                        if record.profile_url in seen_urls:
+                            continue
+                        seen_urls.add(record.profile_url)
+                        if (
+                            require_min_followers_during_collection
+                            and record.follower_count < min_followers
+                        ):
+                            continue
+                        record.rank = len(records) + 1
+                        records.append(record)
+                        if len(records) >= max_items:
+                            break
+                if len(records) >= max_items:
+                    break
+
+        if not records:
             raise ScrapeError("No Facebook browser-search records found")
-        return filtered or records
+        return records
 
     @staticmethod
     def _scroll_results(page, *, scroll_rounds: int) -> None:

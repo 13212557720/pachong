@@ -419,9 +419,13 @@ def parse_facebook_search_cards(
     country: str,
     source_url: str,
     scraped_at: str,
+    result_type: str = "主页",
+    source_query: str = "",
 ) -> List[CreatorRecord]:
     soup = BeautifulSoup(html, "lxml")
     cards = soup.select(".facebook-page-card")
+    if not cards:
+        cards = soup.select(".facebook-user-card")
     if not cards:
         cards = soup.select('[role="article"]')
 
@@ -435,28 +439,50 @@ def parse_facebook_search_cards(
         profile_url = _normalize_facebook_url(anchor.get("href", ""))
         card_text = card.get_text(" ", strip=True)
         follower_count = _parse_facebook_followers(card_text)
-        if not name or not profile_url or not follower_count:
+        friend_count = _parse_facebook_friends(card_text)
+        if not name or not profile_url:
+            continue
+        if result_type == "主页" and not follower_count:
             continue
 
+        location = _parse_facebook_location(card_text)
+        work_school = _parse_facebook_work_school(card_text)
+        email = _parse_email(card_text)
+        description = _card_description(card, name)
         records.append(
             CreatorRecord(
                 platform="facebook",
                 country=country,
                 rank=index,
+                result_type=result_type,
                 name=name,
                 handle=_facebook_handle(profile_url),
                 platform_user_id=_facebook_handle(profile_url),
                 follower_count=follower_count,
+                friend_count=friend_count,
                 subscriber_count=0,
                 view_count=0,
                 video_count=0,
                 category="",
                 profile_url=profile_url,
+                location=location,
+                work_school=work_school,
+                email=email,
                 source_url=source_url,
                 source_name="Facebook",
+                source_query=source_query,
                 source_mode="browser_search",
                 scraped_at=scraped_at,
-                description=_card_description(card, name),
+                description=description,
+                raw_text=card_text,
+                info_score=_facebook_info_score(
+                    profile_url=profile_url,
+                    follower_count=follower_count,
+                    friend_count=friend_count,
+                    location=location,
+                    email=email,
+                    description=description,
+                ),
             )
         )
 
@@ -647,6 +673,8 @@ def _card_description(card, name: str) -> str:
     text = re.sub(re.escape(name), "", text, count=1).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*[KMB]?\s+followers", "", text, flags=re.IGNORECASE).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*万?位粉丝", "", text).strip()
+    text = re.sub(r"\d+(?:\.\d+)?\s*[KMB]?\s+friends", "", text, flags=re.IGNORECASE).strip()
+    text = re.sub(r"\d+(?:\.\d+)?\s*万?位好友", "", text).strip()
     return re.sub(r"\s+", " ", text)
 
 
@@ -661,3 +689,86 @@ def _parse_facebook_followers(text: str) -> int:
         if match:
             return parse_compact_number(match.group(1))
     return 0
+
+
+def _parse_facebook_friends(text: str) -> int:
+    patterns = [
+        r"(\d+(?:\.\d+)?\s*[KMB]?)\s+friends",
+        r"(\d+(?:\.\d+)?\s*万?)位好友",
+        r"(\d+(?:\.\d+)?\s*万?)\s*位好友",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, flags=re.IGNORECASE)
+        if match:
+            return parse_compact_number(match.group(1))
+    return 0
+
+
+def _parse_email(text: str) -> str:
+    match = re.search(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", text or "")
+    return match.group(0) if match else ""
+
+
+def _parse_facebook_location(text: str) -> str:
+    patterns = [
+        r"所在地[:：]\s*([^·|,，]+)",
+        r"住在\s*([^·|,，]+)",
+        r"来自\s*([^·|,，]+)",
+        r"currently lives in\s+([^·|,，]+)",
+        r"lives in\s+([^·|,，]+)",
+        r"from\s+([^·|,，]+)",
+    ]
+    return _first_text_match(text, patterns)
+
+
+def _parse_facebook_work_school(text: str) -> str:
+    patterns = [
+        r"目前就职[:：]\s*([^·|,，]+)",
+        r"就职于\s*([^·|,，]+)",
+        r"毕业于\s*([^·|,，]+)",
+        r"works at\s+([^·|,，]+)",
+        r"studied at\s+([^·|,，]+)",
+        r"studies at\s+([^·|,，]+)",
+    ]
+    return _first_text_match(text, patterns)
+
+
+def _first_text_match(text: str, patterns: list[str]) -> str:
+    for pattern in patterns:
+        match = re.search(pattern, text or "", flags=re.IGNORECASE)
+        if match:
+            value = re.sub(r"\s+", " ", match.group(1)).strip()
+            value = re.split(
+                r"\s{2,}|[\n\r]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+|"
+                r"\b(?:currently lives in|lives in|from|works at|studied at|studies at)\b|"
+                r"\b(?:contact|contacto|viajes|digital creator)\b|"
+                r"(?:所在地|住在|来自|目前就职|就职于|毕业于)[:：]?",
+                value,
+                maxsplit=1,
+                flags=re.IGNORECASE,
+            )[0].strip(" ·|,，-")
+            return value
+    return ""
+
+
+def _facebook_info_score(
+    *,
+    profile_url: str,
+    follower_count: int,
+    friend_count: int,
+    location: str,
+    email: str,
+    description: str,
+) -> int:
+    score = 0
+    if profile_url:
+        score += 1
+    if follower_count or friend_count:
+        score += 1
+    if location:
+        score += 1
+    if email:
+        score += 1
+    if description:
+        score += 1
+    return score

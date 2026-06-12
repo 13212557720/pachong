@@ -18,7 +18,7 @@ PLATFORMS = ("youtube", "instagram", "facebook")
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Collect public creator ranking data and export Chinese CSV/XLSX files."
+        description="Collect public creator ranking data and export Chinese CSV/XLSX files分."
     )
     parser.add_argument(
         "--platform",

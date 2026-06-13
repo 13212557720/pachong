@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import time
+import argparse
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Any
@@ -19,24 +20,125 @@ MIN_SUBSCRIBERS = 10_000
 MAX_SUBSCRIBERS = 100_000
 TARGET_ROWS = 20
 
-SEARCH_QUERIES = [
-    "mexico vlog",
-    "mexico youtuber",
-    "mexican youtuber",
-    "cdmx vlog",
-    "guadalajara vlog",
-    "monterrey vlog",
-    "mexico food vlog",
-    "mexico travel vlog",
-    "mexico lifestyle",
-    "mexico beauty youtuber",
-    "mexico fitness youtuber",
-    "mexico tech youtuber",
-    "mexico small youtuber",
-    "emprendedor mexico youtube",
-    "viajes mexico youtuber",
-    "comida mexicana youtuber",
+BASE_QUERY_PREFIXES = [
+    "mexico",
+    "mexican",
+    "méxico",
+    "cdmx",
+    "ciudad de mexico",
+    "guadalajara",
+    "monterrey",
+    "jalisco",
+    "puebla",
+    "tijuana",
+    "queretaro",
+    "yucatan",
+    "cancun",
+    "guanajuato",
+    "oaxaca",
+    "veracruz",
+    "nuevo leon",
+    "baja california",
+    "michoacan",
+    "sinaloa",
+    "sonora",
+    "chiapas",
+    "chihuahua",
+    "coahuila",
+    "durango",
+    "hidalgo",
+    "morelos",
+    "nayarit",
+    "san luis potosi",
+    "tabasco",
+    "tamaulipas",
+    "tlaxcala",
 ]
+
+BASE_QUERY_TOPICS = [
+    "vlog",
+    "youtuber",
+    "lifestyle",
+    "travel vlog",
+    "food vlog",
+    "comida",
+    "cocina",
+    "recetas",
+    "beauty youtuber",
+    "maquillaje",
+    "fitness",
+    "tech youtuber",
+    "gaming",
+    "moda",
+    "familia vlog",
+    "mama vlog",
+    "emprendedor",
+    "negocios",
+    "real estate",
+    "relocation",
+    "news",
+    "musica",
+    "educacion",
+    "autos",
+    "motos",
+    "podcast",
+    "humor",
+    "finanzas",
+    "marketing",
+    "fotografia",
+    "viajes",
+    "turismo",
+    "medicina",
+    "salud",
+    "arquitectura",
+    "diseño",
+    "manualidades",
+    "anime",
+    "kpop",
+    "futbol",
+    "baseball",
+    "historia",
+    "misterio",
+    "noticias",
+    "review",
+    "unboxing",
+    "tutorial",
+    "musica regional",
+    "corridos",
+    "banda",
+    "mariachi",
+]
+
+
+def build_search_queries() -> list[str]:
+    queries = [
+        "mexico vlog",
+        "mexico youtuber",
+        "mexican youtuber",
+        "small youtuber mexico",
+        "creador de contenido mexico",
+        "influencer mexico youtube",
+        "youtube channel mexico 100k subscribers",
+        "canal mexicano 100 mil suscriptores",
+        "canales mexicanos pequeños",
+        "youtubers mexicanos 2025",
+        "youtubers mexicanos 2026",
+        "mexico creator business email",
+    ]
+    for prefix in BASE_QUERY_PREFIXES:
+        for topic in BASE_QUERY_TOPICS:
+            queries.append(f"{prefix} {topic}")
+    seen = set()
+    deduped = []
+    for query in queries:
+        if query in seen:
+            continue
+        seen.add(query)
+        deduped.append(query)
+    return deduped
+
+
+SEARCH_QUERIES = build_search_queries()
 
 MEXICO_TERMS = [
     "mexico",
@@ -57,6 +159,16 @@ MEXICO_TERMS = [
     "yucatán",
     "cancun",
     "cancún",
+]
+
+EXCLUDE_TERMS = [
+    "new mexico",
+    "albuquerque",
+    "santa fe",
+    "las cruces",
+    "koat",
+    "krqe",
+    "kob 4",
 ]
 
 
@@ -133,6 +245,8 @@ def first_email(text: str) -> str:
 
 def mexico_evidence(*parts: str) -> str:
     haystack = "\n".join(part for part in parts if part).lower()
+    if any(term in haystack for term in EXCLUDE_TERMS):
+        return ""
     for term in MEXICO_TERMS:
         if term in haystack:
             return term
@@ -202,6 +316,17 @@ def extract_about_details(html: str) -> dict[str, str]:
     }
 
 
+def goto_with_retry(page, url: str, *, attempts: int = 3) -> bool:
+    for attempt in range(1, attempts + 1):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+            return True
+        except Exception as exc:
+            print(f"goto failed attempt={attempt} url={url} error={exc}")
+            page.wait_for_timeout(2_000 * attempt)
+    return False
+
+
 def write_outputs(rows: list[ChannelRow]) -> None:
     df = pd.DataFrame([asdict(row) for row in rows])
     if not df.empty:
@@ -230,11 +355,94 @@ def write_outputs(rows: list[ChannelRow]) -> None:
     df.to_excel(xlsx_path, index=False)
 
 
+def completed_queries_path() -> Path:
+    return OUT_DIR / "completed_queries.txt"
+
+
+def load_completed_queries() -> set[str]:
+    path = completed_queries_path()
+    if not path.exists():
+        return set()
+    return {line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()}
+
+
+def mark_query_completed(query: str) -> None:
+    path = completed_queries_path()
+    existing = load_completed_queries()
+    if query in existing:
+        return
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(query + "\n")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Crawl YouTube web search for Mexico channels.")
+    parser.add_argument("--out-dir", default=str(OUT_DIR))
+    parser.add_argument("--min-subscribers", type=int, default=MIN_SUBSCRIBERS)
+    parser.add_argument("--max-subscribers", type=int, default=MAX_SUBSCRIBERS)
+    parser.add_argument("--target-rows", type=int, default=TARGET_ROWS)
+    parser.add_argument("--scroll-rounds", type=int, default=3)
+    parser.add_argument("--about-wait-ms", type=int, default=1500)
+    parser.add_argument("--query-limit", type=int, default=0)
+    parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--skip-completed-queries", action="store_true")
+    return parser.parse_args()
+
+
+def load_existing_rows(out_dir: Path) -> list[ChannelRow]:
+    xlsx_path = out_dir / "youtube_mexico_web_10k_100k.xlsx"
+    csv_path = out_dir / "youtube_mexico_web_10k_100k.csv"
+    path = xlsx_path if xlsx_path.exists() else csv_path
+    if not path.exists():
+        return []
+    df = pd.read_excel(path) if path.suffix == ".xlsx" else pd.read_csv(path)
+    column_map = {
+        "平台": "platform",
+        "国家/地区": "country",
+        "名称": "name",
+        "账号": "handle",
+        "频道ID": "channel_id",
+        "订阅数": "subscriber_count",
+        "频道链接": "profile_url",
+        "来源关键词": "source_query",
+        "来源链接": "source_url",
+        "简介页链接": "about_url",
+        "邮箱": "email",
+        "所在地/地址": "location",
+        "简介": "description",
+        "墨西哥判断依据": "mexico_evidence",
+        "采集时间": "scraped_at",
+    }
+    df = df.rename(columns=column_map)
+    rows = []
+    for row in df.to_dict("records"):
+        clean = {field: row.get(field, "") for field in ChannelRow.__dataclass_fields__}
+        clean["subscriber_count"] = int(clean.get("subscriber_count") or 0)
+        for key, value in list(clean.items()):
+            if pd.isna(value):
+                clean[key] = "" if key != "subscriber_count" else 0
+        rows.append(ChannelRow(**clean))
+    return rows
+
+
 def main() -> int:
+    global OUT_DIR, MIN_SUBSCRIBERS, MAX_SUBSCRIBERS, TARGET_ROWS
+    args = parse_args()
+    OUT_DIR = Path(args.out_dir)
+    MIN_SUBSCRIBERS = args.min_subscribers
+    MAX_SUBSCRIBERS = args.max_subscribers
+    TARGET_ROWS = args.target_rows
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     rows: list[ChannelRow] = []
+    if args.resume:
+        rows = load_existing_rows(OUT_DIR)
     seen: set[str] = set()
+    for row in rows:
+        seen.add(row.channel_id or row.profile_url)
     scraped_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    queries = SEARCH_QUERIES[: args.query_limit] if args.query_limit else SEARCH_QUERIES
+    completed_queries = load_completed_queries() if args.skip_completed_queries else set()
 
     with sync_playwright() as p:
         try:
@@ -247,13 +455,18 @@ def main() -> int:
         context = browser.contexts[0] if browser.contexts else browser.new_context()
         page = context.new_page()
 
-        for query in SEARCH_QUERIES:
+        for query in queries:
             if len(rows) >= TARGET_ROWS:
                 break
+            if query in completed_queries:
+                continue
+            print(f"query={query} rows={len(rows)}")
             source_url = "https://www.youtube.com/results?search_query=" + quote_plus(query) + "&sp=EgIQAg%253D%253D"
-            page.goto(source_url, wait_until="domcontentloaded", timeout=60_000)
+            if not goto_with_retry(page, source_url):
+                mark_query_completed(query)
+                continue
             page.wait_for_timeout(4_000)
-            for _ in range(3):
+            for _ in range(max(args.scroll_rounds, 0)):
                 page.mouse.wheel(0, 4000)
                 page.wait_for_timeout(1_000)
 
@@ -273,9 +486,11 @@ def main() -> int:
                 about_url = item["profile_url"].rstrip("/") + "/about"
                 detail_page = context.new_page()
                 try:
-                    detail_page.goto(about_url, wait_until="domcontentloaded", timeout=60_000)
-                    detail_page.wait_for_timeout(1_500)
-                    details = extract_about_details(detail_page.content())
+                    if goto_with_retry(detail_page, about_url, attempts=2):
+                        detail_page.wait_for_timeout(args.about_wait_ms)
+                        details = extract_about_details(detail_page.content())
+                    else:
+                        details = {"email": "", "location": "", "description": ""}
                 except Exception:
                     details = {"email": "", "location": "", "description": ""}
                 finally:
@@ -313,6 +528,8 @@ def main() -> int:
                 )
                 print(f"{len(rows):02d} {item['subscriber_count']:>7} {item['name']} {details.get('email','')}")
                 write_outputs(rows)
+
+            mark_query_completed(query)
 
         page.close()
         browser.close()

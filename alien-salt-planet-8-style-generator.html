@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>外星盐星球｜A–H 八风格生成</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px; background: #0d1014; color: #edf1f4;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { max-width: 1500px; margin: 0 auto 24px; display:flex; gap:18px; align-items:end; justify-content:space-between; }
+  h1 { margin:0; font-size: clamp(24px, 3vw, 42px); letter-spacing:-.03em; }
+  .sub { margin-top:8px; color:#aab4bd; line-height:1.5; }
+  .all {
+    border:1px solid #52606c; color:#fff; background:#202832; border-radius:10px;
+    padding:10px 15px; cursor:pointer; white-space:nowrap;
+  }
+  .grid {
+    max-width:1500px; margin:auto; display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px;
+  }
+  .card { background:#151a20; border:1px solid #2b333d; border-radius:16px; overflow:hidden; box-shadow:0 12px 40px #0007; }
+  .visual { position:relative; aspect-ratio:16/9; background:linear-gradient(180deg,#677482,#d8dadd 55%,#babfc2); overflow:hidden; }
+  .visual::after {
+    content:"生成中…"; position:absolute; inset:0; display:grid; place-items:center;
+    color:#fff; background:linear-gradient(120deg,#ffffff08,#ffffff22,#ffffff08);
+    font-weight:650; letter-spacing:.08em; animation:pulse 1.5s infinite;
+  }
+  .visual.loaded::after { display:none; }
+  @keyframes pulse { 50% { opacity:.45; } }
+  img { width:100%; height:100%; object-fit:cover; display:block; opacity:0; transition:opacity .35s ease; }
+  .loaded img { opacity:1; }
+  .meta { padding:15px 17px 17px; }
+  .row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  h2 { margin:0; font-size:19px; }
+  .badge { display:inline-grid; place-items:center; width:29px; height:29px; border-radius:50%; background:#e4e9ed; color:#111820; margin-right:9px; }
+  .status { color:#93a0ab; font-size:13px; }
+  .actions { display:flex; gap:9px; margin-top:13px; }
+  button, a.btn {
+    border:1px solid #3c4752; color:#eaf0f4; background:#222a33; border-radius:9px;
+    padding:8px 11px; text-decoration:none; cursor:pointer; font-size:14px;
+  }
+  a.btn.disabled { opacity:.45; pointer-events:none; }
+  details { margin-top:12px; color:#aeb8c1; font-size:12px; }
+  summary { cursor:pointer; }
+  pre { white-space:pre-wrap; word-break:break-word; line-height:1.45; }
+  footer { max-width:1500px; margin:22px auto 0; color:#84909a; font-size:12px; line-height:1.6; }
+  @media(max-width:900px) { body{padding:16px} .grid{grid-template-columns:1fr} header{align-items:start;flex-direction:column} }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>外星盐星球｜A–H 八风格</h1>
+    <div class="sub">每种风格一张，统一 16:9。页面会依次生成，以避免同时请求造成失败。</div>
+  </div>
+  <button class="all" onclick="regenerateAll()">全部重新生成</button>
+</header>
+<main class="grid" id="grid"></main>
+<footer>
+  临时生成通道：imfinit / Gemini。提示词会发送给该第三方服务。生成失败时点“重新生成”；完成后点“打开原图”，再保存图片。
+</footer>
+<script>
+const items = [{"letter": "A", "name": "Natural Documentary", "prompt": "live-action natural history documentary still on a superflat alien salt planet, one surface surveyor standing quietly in ankle-deep tidal water on a vast white salt flat, a single distant sail-backed creature gliding low across the horizon, grey-blue overcast sky, strong steady wind, salt mist near the ground, cracked salt crust, realistic wet mud and mineral texture, neutral natural daylight, observational camera, long lens wildlife documentary feeling, no dramatic posing, no heroic composition, photorealistic, grounded hard sci-fi ecology, real actor on location, subtle CGI creature integrated into real landscape, quiet believable atmosphere. Strict exclusions: do not show cartoon, anime, illustration, concept art, fantasy monster, heroic poster, dramatic action pose, colorful alien sky, cyberpunk neon, purple glow, magic, giant kaiju, spaceship, city skyline, clean futuristic suit, glossy armor, overdesigned creature, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "B", "name": "Cinematic Epic", "prompt": "large-format live-action hard sci-fi film still on a superflat alien salt planet, one lone surface surveyor in weathered salt-resistant clothing standing on a reflective salt mirror flat, a single sail-backed alien creature gliding far behind them near the flat horizon, immense grey-blue sky, low sun breaking through clouds, wind dragging salt mist across the ground, vast scale, restrained epic composition, realistic shallow tidal water, cracked salt crust, cinematic natural light, 65mm film look, photorealistic, grounded alien ecology, real actor on location, subtle believable CGI creature, serious and majestic atmosphere. Strict exclusions: do not show cartoon, anime, illustration, fantasy poster, superhero pose, glowing weapon, neon science fiction, purple light, saturated colors, giant monster attack, spaceship battle, floating city, magical aura, clean armor, overdesigned alien creature, painterly concept art, game cinematic, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "C", "name": "Gritty Survival", "prompt": "gritty live-action survival sci-fi film still on a superflat alien salt flat, handheld camera close to one exhausted surface surveyor in salt-stained layered clothing and scratched goggles, wind whipping a torn grey-white cloak sideways, ankle-deep muddy salt water, cracked salt crust underfoot, a single sail-backed creature barely visible through salt mist in the distance, harsh overcast daylight, wet boots, corroded tools, practical costume, documentary realism, realistic location shooting, photorealistic textures, grounded hard sci-fi ecology, subtle CGI creature, tense survival atmosphere, no clean futuristic design. Strict exclusions: do not show cartoon, anime, illustration, clean sci-fi suit, glossy armor, cyberpunk neon, fantasy monster, heroic pose, fashion editorial, colorful sky, magic, glowing eyes, giant kaiju, spaceship, city, multiple creatures, perfect makeup, polished costume, painterly game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "D", "name": "Scientific Expedition", "prompt": "photorealistic live-action scientific expedition still on a superflat alien salt planet, one field surveyor in practical expedition gear standing beside compact measuring instruments on a white salt mirror flat, shallow tidal water around their boots, wind-resistant fabric layers, scratched goggles, data tags, sample containers, a single distant sail-backed alien creature gliding low across the horizon as if observed during field research, grey-blue overcast sky, natural light, documentary expedition photography, realistic equipment, grounded hard sci-fi worldbuilding, subtle CGI creature, calm observational mood, no action pose. Strict exclusions: do not show cartoon, anime, illustration, fantasy explorer, clean astronaut suit, glossy space armor, neon holograms, spaceship, laboratory interior, monsters attacking, heroic poster, magical aura, glowing crystals, colorful alien plants, cyberpunk, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "E", "name": "Cold Eco Horror", "prompt": "cold live-action ecological horror sci-fi film still on a superflat alien salt planet, one surface surveyor standing still in shallow water on a pale salt flat, black salt patches and narrow cracks in the foreground, a single distant sail-backed creature gliding silently through low fog near the horizon, grey-blue sky, weak natural light, wind almost invisible, eerie stillness, wet mineral textures, realistic salt crust, restrained horror atmosphere, documentary camera realism, photorealistic, grounded alien ecology, real actor on location, subtle CGI creature, no gore, no monster attack, quiet unease. Strict exclusions: do not show cartoon, anime, illustration, gore, blood, zombie, demon, fantasy horror, jump scare, roaring monster, giant kaiju, glowing red eyes, magic symbols, haunted house, neon light, colorful sky, spaceship, city, action poster, overdesigned creature, painterly game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "F", "name": "Ethnographic Frontier", "prompt": "live-action ethnographic hard sci-fi frontier still on a superflat alien salt planet, one local surface surveyor wearing practical handmade salt-resistant clothing, patched fabric layers, shell plates, leather straps, weathered goggles, standing in shallow tidal water on a white salt flat, small wind charms and measuring tools attached to the belt, a single distant sail-backed creature gliding low along the horizon, grey-blue overcast sky, strong wind, salt stains, lived-in costume details, natural documentary photography, photorealistic, grounded survival culture, subtle CGI creature, real actor on location, quiet frontier life atmosphere. Strict exclusions: do not show cartoon, anime, illustration, fantasy tribe, barbarian costume, ceremonial armor, cyberpunk outfit, neon, clean sci-fi uniform, magic ornaments, colorful feathers, monster attack, giant creature, spaceship, city, fashion editorial, painterly concept art, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "G", "name": "Minimal Art Film", "prompt": "minimalist live-action art-house hard sci-fi film still on a superflat alien salt planet, vast empty white salt mirror flat under a pale grey-blue sky, one tiny surface surveyor placed low in the frame, a single barely visible sail-backed creature far on the horizon, shallow water reflecting the sky, no mountains, no structures, almost no color, soft natural overcast light, long static composition, negative space, quiet wind, photorealistic, real location feeling, restrained alien ecology, subtle CGI creature, elegant austere atmosphere, cinematic but extremely minimal. Strict exclusions: do not show cartoon, anime, illustration, busy composition, action scene, dramatic monster pose, colorful sky, neon, fantasy landscape, mountains, city, spaceship, large foreground creature, heroic character, glossy armor, magical aura, overdesigned props, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}, {"letter": "H", "name": "Practical Effects Retro", "prompt": "live-action practical effects hard sci-fi film still on a superflat alien salt planet, one surface surveyor in weathered practical costume standing in shallow salt water, matte fabric cloak, scratched goggles, real mud and salt stains, a single sail-backed alien creature in the distance designed like a physical creature puppet enhanced with subtle CGI, translucent membrane sail, wet shell body, grey-blue overcast sky, wind and salt mist, realistic location shoot, analog 35mm film grain, grounded production design, tactile props, restrained color palette, believable 1980s practical sci-fi realism without retro futurism. Strict exclusions: do not show cartoon, anime, illustration, digital concept art, glossy modern CGI, clean futuristic armor, neon lights, cyberpunk, fantasy monster, giant kaiju, glowing eyes, spaceship, city, colorful sky, magic, heroic poster, multiple creatures, overdesigned creature, plastic toy look, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."}];
+const endpoint = "https://imfin.it/api/generate";
+const grid = document.getElementById("grid");
+
+function imageUrl(prompt, reroll=false) {
+  const q = new URLSearchParams({
+    prompt,
+    model: "gemini",
+    ar: "16:9"
+  });
+  if (reroll) {
+    q.set("reroll", "true");
+    q.set("_", Date.now().toString());
+  }
+  return endpoint + "?" + q.toString();
+}
+
+function cardTemplate(item, i) {
+  const safePrompt = item.prompt.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
+  return `
+  <article class="card" id="card-${i}">
+    <div class="visual" id="visual-${i}"><img id="img-${i}" alt="${item.letter} — ${item.name}"></div>
+    <div class="meta">
+      <div class="row">
+        <h2><span class="badge">${item.letter}</span>${item.name}</h2>
+        <span class="status" id="status-${i}">等待生成</span>
+      </div>
+      <div class="actions">
+        <button onclick="loadOne(${i}, true)">重新生成</button>
+        <a class="btn disabled" id="open-${i}" target="_blank" rel="noopener">打开原图</a>
+      </div>
+      <details><summary>查看实际提示词</summary><pre>${safePrompt}</pre></details>
+    </div>
+  </article>`;
+}
+
+grid.innerHTML = items.map(cardTemplate).join("");
+
+function loadOne(i, reroll=false) {
+  const item = items[i];
+  const img = document.getElementById(`img-${i}`);
+  const visual = document.getElementById(`visual-${i}`);
+  const status = document.getElementById(`status-${i}`);
+  const open = document.getElementById(`open-${i}`);
+  visual.classList.remove("loaded");
+  status.textContent = "生成中…";
+  open.classList.add("disabled");
+  const url = imageUrl(item.prompt, reroll);
+  img.onload = () => {
+    visual.classList.add("loaded");
+    status.textContent = "已完成";
+    open.href = url;
+    open.classList.remove("disabled");
+  };
+  img.onerror = () => {
+    status.textContent = "生成失败，请重试";
+    visual.classList.remove("loaded");
+  };
+  img.src = url;
+}
+
+async function generateSequentially() {
+  for (let i=0; i<items.length; i++) {
+    loadOne(i, false);
+    await new Promise(r => setTimeout(r, 1800));
+  }
+}
+function regenerateAll() {
+  items.forEach((_, i) => setTimeout(() => loadOne(i, true), i * 1800));
+}
+generateSequentially();
+</script>
+</body>
+</html>

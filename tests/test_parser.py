@@ -234,6 +234,31 @@ def test_parse_facebook_search_cards() -> None:
     assert records[2].follower_count == 2_670_000
 
 
+def test_parse_facebook_search_cards_thai_followers() -> None:
+    records = parse_facebook_search_cards(
+        """
+        <div class="facebook-page-card">
+          <a href="https://www.facebook.com/thai.vape.shop">ร้านบุหรี่ไฟฟ้าไทย</a>
+          <span>กรุงเทพมหานคร · 2.5 หมื่น ผู้ติดตาม · contact@example.com</span>
+        </div>
+        <div class="facebook-page-card">
+          <a href="https://www.facebook.com/pod.review.th">รีวิวพอตไฟฟ้า</a>
+          <span>เชียงใหม่ · 1.2 แสน คนถูกใจ</span>
+        </div>
+        """,
+        country="thailand",
+        source_url="https://www.facebook.com/search/pages/?q=vape%20thailand",
+        scraped_at="2026-06-13T00:00:00+00:00",
+        result_type="主页",
+        source_query="vape thailand",
+    )
+
+    assert len(records) == 2
+    assert records[0].follower_count == 25_000
+    assert records[0].email == "contact@example.com"
+    assert records[1].follower_count == 120_000
+
+
 def test_parse_facebook_people_search_cards() -> None:
     records = parse_facebook_search_cards(
         read_fixture(FACEBOOK_PEOPLE_SEARCH_FIXTURE),

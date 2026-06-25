@@ -1,0 +1,108 @@
+# frpc.toml
+serverAddr = "192.227.228.26"
+serverPort = 7000
+auth.method = "token"
+auth.token = "token123456"
+
+
+[[proxies]]
+name = "8000->https://58000-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 58000
+
+
+[[proxies]]
+name = "4096->https://54096-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 4096
+remotePort = 54096
+
+[[proxies]]
+name = "8081->http://192.227.228.26:58081"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8081
+remotePort = 58081
+
+[[proxies]]
+name = "8080->https://58080-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8080
+remotePort = 58080
+
+
+[[proxies]]
+name = "http://192.227.228.26:54173"
+type = "tcp"
+localIP = "localhost"
+localPort = 4173
+remotePort = 54173
+
+[[proxies]]
+name = "http://192.227.228.26:54174"
+type = "tcp"
+localIP = "localhost"
+localPort = 4174
+remotePort = 54174
+
+[[proxies]]
+name = "http://192.227.228.26:54175"
+type = "tcp"
+localIP = "localhost"
+localPort = 4175
+remotePort = 54175
+
+[[proxies]]
+name = "http://192.227.228.26:55173"
+type = "tcp"
+localIP = "localhost"
+localPort = 5173
+remotePort = 55173
+
+
+
+[[proxies]]
+name = "5500->https://55500-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 5500
+remotePort = 55500
+
+[[proxies]]
+name = "3306->https://533060-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3306
+remotePort = 53306
+
+[[proxies]]
+name = "3306->https://53007-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3007
+remotePort = 53007
+
+[[proxies]]
+name = "3456->https://53456-frp.aabbc.asia"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3456
+remotePort = 53456
+
+[[proxies]]
+name = "3306->https://53000-frp.aabbc.asia"
+type = "tcp"
+localIP = "localhost"
+localPort = 3000
+remotePort = 53000
+
+[[proxies]]
+name = "6379->http://192.227.228.26:56379"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 6379
+remotePort = 56379

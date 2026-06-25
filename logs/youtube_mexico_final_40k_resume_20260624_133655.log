@@ -1,0 +1,988 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+query=mexicana canal pages=3 candidates=40 unique_candidates=8258 accepted=613
+query=mexicana influencer pages=3 candidates=40 unique_candidates=8268 accepted=613
+query=mexicana turismo pages=3 candidates=40 unique_candidates=8287 accepted=613
+query=mexicana comida pages=3 candidates=41 unique_candidates=8293 accepted=613
+query=mexicana lifestyle pages=3 candidates=40 unique_candidates=8303 accepted=613
+query=mexicana viajes pages=3 candidates=40 unique_candidates=8321 accepted=613
+query=mexicana food vlog pages=3 candidates=40 unique_candidates=8349 accepted=613
+query=mexicana travel vlog pages=3 candidates=40 unique_candidates=8363 accepted=613
+validated batch accepted+4 rejected+118 total=617
+query=mexicana mama vlog pages=3 candidates=40 unique_candidates=8384 accepted=617
+query=mexicana moda pages=3 candidates=40 unique_candidates=8404 accepted=617
+query=mexicana beauty youtuber pages=3 candidates=40 unique_candidates=8426 accepted=617
+query=mexicana tecnologia pages=3 candidates=40 unique_candidates=8453 accepted=617
+query=mexicana fitness pages=3 candidates=40 unique_candidates=8490 accepted=617
+query=mexicana cocina pages=3 candidates=40 unique_candidates=8497 accepted=617
+query=mexicana tech youtuber pages=3 candidates=40 unique_candidates=8511 accepted=617
+query=mexicana real estate pages=3 candidates=40 unique_candidates=8530 accepted=617
+query=mexicana emprendedor pages=3 candidates=40 unique_candidates=8567 accepted=617
+query=mexicana bienes raices pages=3 candidates=40 unique_candidates=8584 accepted=617
+query=mexicana familia vlog pages=3 candidates=40 unique_candidates=8590 accepted=617
+query=mexicana gaming pages=3 candidates=40 unique_candidates=8614 accepted=617
+query=mexicana maquillaje pages=3 candidates=40 unique_candidates=8647 accepted=617
+query=mexicana relocation pages=3 candidates=40 unique_candidates=8674 accepted=617
+query=mexicana negocios pages=3 candidates=40 unique_candidates=8696 accepted=617
+query=mexicana recetas pages=3 candidates=40 unique_candidates=8703 accepted=617
+validated batch accepted+12 rejected+328 total=629
+query=mexicana banda pages=3 candidates=40 unique_candidates=8726 accepted=629
+query=mexicana finanzas pages=3 candidates=40 unique_candidates=8749 accepted=629
+query=mexicana musica pages=3 candidates=40 unique_candidates=8770 accepted=629
+query=mexicana noticias pages=3 candidates=60 unique_candidates=8782 accepted=629
+query=mexicana news pages=3 candidates=60 unique_candidates=8799 accepted=629
+query=mexicana corridos pages=3 candidates=40 unique_candidates=8813 accepted=629
+query=mexicana motos pages=3 candidates=40 unique_candidates=8845 accepted=629
+query=mexicana fotografia pages=3 candidates=40 unique_candidates=8863 accepted=629
+query=mexicana salud pages=3 candidates=40 unique_candidates=8891 accepted=629
+query=mexicana humor pages=3 candidates=40 unique_candidates=8918 accepted=629
+query=mexicana educacion pages=3 candidates=40 unique_candidates=8947 accepted=629
+query=mexicana podcast pages=3 candidates=40 unique_candidates=8968 accepted=629
+query=mexicana autos pages=3 candidates=40 unique_candidates=8978 accepted=629
+query=mexicana musica regional pages=3 candidates=40 unique_candidates=9002 accepted=629
+query=mexicana mariachi pages=3 candidates=39 unique_candidates=9028 accepted=629
+query=mexicana marketing pages=3 candidates=40 unique_candidates=9058 accepted=629
+validated batch accepted+34 rejected+321 total=663
+query=mexicana manualidades pages=3 candidates=40 unique_candidates=9077 accepted=663
+query=mexicano creador de contenido pages=3 candidates=40 unique_candidates=9102 accepted=663
+query=mexicana kpop pages=3 candidates=40 unique_candidates=9139 accepted=663
+query=mexicana review pages=3 candidates=40 unique_candidates=9172 accepted=663
+query=mexicana misterio pages=3 candidates=40 unique_candidates=9189 accepted=663
+query=mexicano youtuber pages=3 candidates=40 unique_candidates=9224 accepted=663
+query=mexicana baseball pages=3 candidates=40 unique_candidates=9250 accepted=663
+query=mexicana diseño pages=3 candidates=40 unique_candidates=9275 accepted=663
+query=mexicana anime pages=3 candidates=40 unique_candidates=9313 accepted=663
+query=mexicana medicina pages=3 candidates=40 unique_candidates=9339 accepted=663
+query=mexicana tutorial pages=3 candidates=40 unique_candidates=9369 accepted=663
+query=mexicana historia pages=3 candidates=40 unique_candidates=9394 accepted=663
+query=mexicana futbol pages=3 candidates=40 unique_candidates=9406 accepted=663
+query=mexicana arquitectura pages=3 candidates=40 unique_candidates=9432 accepted=663
+query=mexicana unboxing pages=3 candidates=40 unique_candidates=9450 accepted=663
+query=mexicano vlog pages=3 candidates=40 unique_candidates=9469 accepted=663
+validated batch accepted+32 rejected+379 total=695
+query=mexicano maquillaje pages=3 candidates=40 unique_candidates=9499 accepted=695
+query=mexicano fitness pages=3 candidates=40 unique_candidates=9531 accepted=695
+query=mexicano cocina pages=3 candidates=40 unique_candidates=9540 accepted=695
+query=mexicano influencer pages=3 candidates=40 unique_candidates=9549 accepted=695
+query=mexicano comida pages=3 candidates=40 unique_candidates=9557 accepted=695
+query=mexicano gaming pages=3 candidates=40 unique_candidates=9583 accepted=695
+query=mexicano canal pages=3 candidates=40 unique_candidates=9593 accepted=695
+query=mexicano tecnologia pages=3 candidates=40 unique_candidates=9615 accepted=695
+query=mexicano viajes pages=3 candidates=40 unique_candidates=9630 accepted=695
+query=mexicano lifestyle pages=3 candidates=40 unique_candidates=9636 accepted=695
+query=mexicano turismo pages=3 candidates=40 unique_candidates=9648 accepted=695
+query=mexicano tech youtuber pages=3 candidates=40 unique_candidates=9666 accepted=695
+query=mexicano travel vlog pages=3 candidates=40 unique_candidates=9682 accepted=695
+query=mexicano beauty youtuber pages=3 candidates=40 unique_candidates=9694 accepted=695
+query=mexicano food vlog pages=3 candidates=40 unique_candidates=9699 accepted=695
+query=mexicano recetas pages=3 candidates=40 unique_candidates=9712 accepted=695
+validated batch accepted+11 rejected+232 total=706
+query=mexicano mariachi pages=3 candidates=40 unique_candidates=9733 accepted=706
+query=mexicano bienes raices pages=3 candidates=40 unique_candidates=9757 accepted=706
+query=mexicano noticias pages=3 candidates=60 unique_candidates=9767 accepted=706
+query=mexicano real estate pages=3 candidates=40 unique_candidates=9777 accepted=706
+query=mexicano news pages=3 candidates=60 unique_candidates=9781 accepted=706
+query=mexicano musica regional pages=3 candidates=40 unique_candidates=9797 accepted=706
+query=mexicano educacion pages=3 candidates=40 unique_candidates=9826 accepted=706
+query=mexicano familia vlog pages=3 candidates=40 unique_candidates=9830 accepted=706
+query=mexicano musica pages=3 candidates=40 unique_candidates=9840 accepted=706
+query=mexicano negocios pages=3 candidates=40 unique_candidates=9863 accepted=706
+query=mexicano moda pages=3 candidates=40 unique_candidates=9872 accepted=706
+query=mexicano corridos pages=3 candidates=40 unique_candidates=9885 accepted=706
+query=mexicano mama vlog pages=3 candidates=40 unique_candidates=9891 accepted=706
+query=mexicano banda pages=3 candidates=40 unique_candidates=9904 accepted=706
+query=mexicano emprendedor pages=3 candidates=40 unique_candidates=9932 accepted=706
+query=mexicano relocation pages=3 candidates=40 unique_candidates=9940 accepted=706
+validated batch accepted+12 rejected+216 total=718
+query=mexicano anime pages=3 candidates=40 unique_candidates=9975 accepted=718
+query=mexicano motos pages=3 candidates=40 unique_candidates=9993 accepted=718
+query=mexicano manualidades pages=3 candidates=40 unique_candidates=10023 accepted=718
+query=mexicano futbol pages=3 candidates=40 unique_candidates=10034 accepted=718
+query=mexicano marketing pages=3 candidates=40 unique_candidates=10047 accepted=718
+query=mexicano baseball pages=3 candidates=40 unique_candidates=10068 accepted=718
+query=mexicano diseño pages=3 candidates=40 unique_candidates=10081 accepted=718
+query=mexicano medicina pages=3 candidates=40 unique_candidates=10090 accepted=718
+query=mexicano finanzas pages=3 candidates=40 unique_candidates=10100 accepted=718
+query=mexicano arquitectura pages=3 candidates=40 unique_candidates=10119 accepted=718
+query=mexicano fotografia pages=3 candidates=40 unique_candidates=10144 accepted=718
+query=mexicano podcast pages=3 candidates=40 unique_candidates=10160 accepted=718
+query=mexicano humor pages=3 candidates=40 unique_candidates=10175 accepted=718
+query=mexicano salud pages=3 candidates=40 unique_candidates=10193 accepted=718
+query=mexicano autos pages=3 candidates=40 unique_candidates=10215 accepted=718
+query=mexicano kpop pages=3 candidates=40 unique_candidates=10245 accepted=718
+validated batch accepted+30 rejected+275 total=748
+query=cdmx viajes pages=3 candidates=40 unique_candidates=10277 accepted=748
+query=cdmx vlog pages=3 candidates=40 unique_candidates=10307 accepted=748
+query=mexicano misterio pages=3 candidates=40 unique_candidates=10334 accepted=748
+query=cdmx creador de contenido pages=3 candidates=40 unique_candidates=10365 accepted=748
+query=cdmx canal pages=3 candidates=40 unique_candidates=10389 accepted=748
+query=cdmx influencer pages=3 candidates=40 unique_candidates=10418 accepted=748
+query=cdmx food vlog pages=3 candidates=40 unique_candidates=10444 accepted=748
+query=mexicano historia pages=3 candidates=40 unique_candidates=10462 accepted=748
+query=mexicano unboxing pages=3 candidates=40 unique_candidates=10494 accepted=748
+query=cdmx travel vlog pages=3 candidates=40 unique_candidates=10516 accepted=748
+query=cdmx youtuber pages=3 candidates=40 unique_candidates=10541 accepted=748
+query=cdmx turismo pages=3 candidates=40 unique_candidates=10564 accepted=748
+query=mexicano tutorial pages=3 candidates=40 unique_candidates=10583 accepted=748
+query=mexicano review pages=3 candidates=40 unique_candidates=10607 accepted=748
+query=cdmx lifestyle pages=3 candidates=40 unique_candidates=10626 accepted=748
+query=cdmx comida pages=3 candidates=40 unique_candidates=10651 accepted=748
+validated batch accepted+24 rejected+382 total=772
+query=cdmx gaming pages=3 candidates=40 unique_candidates=10689 accepted=772
+query=cdmx recetas pages=3 candidates=40 unique_candidates=10717 accepted=772
+query=cdmx emprendedor pages=3 candidates=40 unique_candidates=10754 accepted=772
+query=cdmx maquillaje pages=3 candidates=40 unique_candidates=10791 accepted=772
+query=cdmx bienes raices pages=3 candidates=40 unique_candidates=10822 accepted=772
+query=cdmx beauty youtuber pages=3 candidates=40 unique_candidates=10853 accepted=772
+query=cdmx real estate pages=3 candidates=120 unique_candidates=10965 accepted=772
+query=cdmx moda pages=3 candidates=40 unique_candidates=10998 accepted=772
+query=cdmx relocation pages=3 candidates=40 unique_candidates=11027 accepted=772
+query=cdmx cocina pages=3 candidates=40 unique_candidates=11051 accepted=772
+query=cdmx fitness pages=3 candidates=40 unique_candidates=11084 accepted=772
+query=cdmx tech youtuber pages=3 candidates=40 unique_candidates=11117 accepted=772
+query=cdmx mama vlog pages=3 candidates=40 unique_candidates=11143 accepted=772
+query=cdmx tecnologia pages=3 candidates=40 unique_candidates=11166 accepted=772
+query=cdmx negocios pages=3 candidates=40 unique_candidates=11193 accepted=772
+query=cdmx familia vlog pages=3 candidates=40 unique_candidates=11212 accepted=772
+validated batch accepted+29 rejected+471 total=801
+validated batch accepted+0 rejected+61 total=801
+query=cdmx mariachi pages=3 candidates=40 unique_candidates=11250 accepted=801
+query=cdmx noticias pages=3 candidates=60 unique_candidates=11286 accepted=801
+query=cdmx news pages=3 candidates=40 unique_candidates=11307 accepted=801
+query=cdmx corridos pages=3 candidates=40 unique_candidates=11343 accepted=801
+query=cdmx finanzas pages=3 candidates=40 unique_candidates=11369 accepted=801
+query=cdmx podcast pages=3 candidates=40 unique_candidates=11397 accepted=801
+query=cdmx humor pages=3 candidates=40 unique_candidates=11433 accepted=801
+query=cdmx musica pages=3 candidates=40 unique_candidates=11468 accepted=801
+query=cdmx salud pages=3 candidates=40 unique_candidates=11502 accepted=801
+query=cdmx banda pages=3 candidates=40 unique_candidates=11534 accepted=801
+query=cdmx motos pages=3 candidates=40 unique_candidates=11562 accepted=801
+query=cdmx marketing pages=3 candidates=40 unique_candidates=11594 accepted=801
+query=cdmx fotografia pages=3 candidates=40 unique_candidates=11627 accepted=801
+query=cdmx autos pages=3 candidates=40 unique_candidates=11655 accepted=801
+query=cdmx educacion pages=3 candidates=40 unique_candidates=11684 accepted=801
+query=cdmx musica regional pages=3 candidates=40 unique_candidates=11704 accepted=801
+validated batch accepted+30 rejected+462 total=831
+query=cdmx futbol pages=3 candidates=35 unique_candidates=11734 accepted=831
+query=cdmx arquitectura pages=3 candidates=32 unique_candidates=11758 accepted=831
+query=cdmx unboxing pages=3 candidates=34 unique_candidates=11789 accepted=831
+query=cdmx anime pages=3 candidates=40 unique_candidates=11825 accepted=831
+query=cdmx misterio pages=3 candidates=40 unique_candidates=11857 accepted=831
+query=cdmx review pages=3 candidates=40 unique_candidates=11888 accepted=831
+query=cdmx baseball pages=3 candidates=40 unique_candidates=11921 accepted=831
+query=cdmx historia pages=3 candidates=40 unique_candidates=11943 accepted=831
+query=cdmx diseño pages=3 candidates=40 unique_candidates=11971 accepted=831
+query=ciudad de mexico creador de contenido pages=3 candidates=40 unique_candidates=12001 accepted=831
+query=cdmx medicina pages=3 candidates=40 unique_candidates=12027 accepted=831
+query=cdmx tutorial pages=3 candidates=40 unique_candidates=12045 accepted=831
+query=cdmx manualidades pages=3 candidates=40 unique_candidates=12076 accepted=831
+query=cdmx kpop pages=3 candidates=40 unique_candidates=12106 accepted=831
+query=ciudad de mexico youtuber pages=3 candidates=40 unique_candidates=12122 accepted=831
+query=ciudad de mexico vlog pages=3 candidates=40 unique_candidates=12135 accepted=831
+validated batch accepted+30 rejected+401 total=861
+query=ciudad de mexico cocina pages=3 candidates=40 unique_candidates=12166 accepted=861
+query=ciudad de mexico comida pages=3 candidates=40 unique_candidates=12189 accepted=861
+query=ciudad de mexico influencer pages=3 candidates=40 unique_candidates=12209 accepted=861
+query=ciudad de mexico viajes pages=3 candidates=40 unique_candidates=12231 accepted=861
+query=ciudad de mexico gaming pages=3 candidates=31 unique_candidates=12251 accepted=861
+query=ciudad de mexico recetas pages=3 candidates=40 unique_candidates=12271 accepted=861
+query=ciudad de mexico fitness pages=3 candidates=40 unique_candidates=12305 accepted=861
+query=ciudad de mexico turismo pages=3 candidates=40 unique_candidates=12317 accepted=861
+query=ciudad de mexico lifestyle pages=3 candidates=40 unique_candidates=12330 accepted=861
+query=ciudad de mexico beauty youtuber pages=3 candidates=39 unique_candidates=12351 accepted=861
+query=ciudad de mexico canal pages=3 candidates=60 unique_candidates=12367 accepted=861
+query=ciudad de mexico travel vlog pages=3 candidates=40 unique_candidates=12387 accepted=861
+query=ciudad de mexico tech youtuber pages=3 candidates=40 unique_candidates=12415 accepted=861
+query=ciudad de mexico maquillaje pages=3 candidates=40 unique_candidates=12442 accepted=861
+query=ciudad de mexico tecnologia pages=3 candidates=40 unique_candidates=12464 accepted=861
+query=ciudad de mexico food vlog pages=3 candidates=40 unique_candidates=12485 accepted=861
+validated batch accepted+20 rejected+330 total=881
+query=ciudad de mexico news pages=3 candidates=60 unique_candidates=12513 accepted=881
+query=ciudad de mexico relocation pages=3 candidates=13 unique_candidates=12524 accepted=881
+query=ciudad de mexico emprendedor pages=3 candidates=40 unique_candidates=12550 accepted=881
+query=ciudad de mexico noticias pages=3 candidates=60 unique_candidates=12568 accepted=881
+query=ciudad de mexico mariachi pages=3 candidates=40 unique_candidates=12588 accepted=881
+query=ciudad de mexico corridos pages=3 candidates=40 unique_candidates=12620 accepted=881
+query=ciudad de mexico musica regional pages=3 candidates=40 unique_candidates=12632 accepted=881
+query=ciudad de mexico familia vlog pages=3 candidates=40 unique_candidates=12644 accepted=881
+query=ciudad de mexico musica pages=3 candidates=40 unique_candidates=12663 accepted=881
+query=ciudad de mexico real estate pages=3 candidates=40 unique_candidates=12684 accepted=881
+query=ciudad de mexico negocios pages=3 candidates=37 unique_candidates=12700 accepted=881
+query=ciudad de mexico moda pages=3 candidates=40 unique_candidates=12725 accepted=881
+query=ciudad de mexico banda pages=3 candidates=40 unique_candidates=12747 accepted=881
+query=ciudad de mexico educacion pages=3 candidates=40 unique_candidates=12772 accepted=881
+query=ciudad de mexico bienes raices pages=3 candidates=40 unique_candidates=12791 accepted=881
+query=ciudad de mexico mama vlog pages=3 candidates=40 unique_candidates=12813 accepted=881
+validated batch accepted+17 rejected+311 total=898
+query=ciudad de mexico manualidades pages=3 candidates=40 unique_candidates=12846 accepted=898
+query=ciudad de mexico diseño pages=3 candidates=40 unique_candidates=12864 accepted=898
+query=ciudad de mexico podcast pages=3 candidates=40 unique_candidates=12884 accepted=898
+query=ciudad de mexico baseball pages=3 candidates=40 unique_candidates=12902 accepted=898
+query=ciudad de mexico anime pages=3 candidates=40 unique_candidates=12935 accepted=898
+query=ciudad de mexico salud pages=3 candidates=40 unique_candidates=12961 accepted=898
+query=ciudad de mexico autos pages=3 candidates=40 unique_candidates=12990 accepted=898
+query=ciudad de mexico fotografia pages=3 candidates=40 unique_candidates=13021 accepted=898
+query=ciudad de mexico humor pages=3 candidates=40 unique_candidates=13056 accepted=898
+query=ciudad de mexico marketing pages=3 candidates=40 unique_candidates=13087 accepted=898
+query=ciudad de mexico medicina pages=3 candidates=40 unique_candidates=13112 accepted=898
+query=ciudad de mexico futbol pages=3 candidates=40 unique_candidates=13141 accepted=898
+query=ciudad de mexico arquitectura pages=3 candidates=40 unique_candidates=13155 accepted=898
+query=ciudad de mexico motos pages=3 candidates=40 unique_candidates=13177 accepted=898
+query=ciudad de mexico finanzas pages=3 candidates=40 unique_candidates=13208 accepted=898
+query=ciudad de mexico kpop pages=3 candidates=40 unique_candidates=13237 accepted=898
+validated batch accepted+26 rejected+398 total=924
+query=ciudad de méxico influencer pages=3 candidates=40 unique_candidates=13246 accepted=924
+query=ciudad de méxico canal pages=3 candidates=60 unique_candidates=13248 accepted=924
+query=ciudad de mexico review pages=3 candidates=40 unique_candidates=13276 accepted=924
+query=ciudad de mexico misterio pages=3 candidates=40 unique_candidates=13302 accepted=924
+query=ciudad de méxico travel vlog pages=3 candidates=30 unique_candidates=13312 accepted=924
+query=ciudad de méxico creador de contenido pages=3 candidates=40 unique_candidates=13325 accepted=924
+query=ciudad de méxico viajes pages=3 candidates=40 unique_candidates=13333 accepted=924
+query=ciudad de méxico youtuber pages=3 candidates=60 unique_candidates=13350 accepted=924
+query=ciudad de mexico tutorial pages=3 candidates=40 unique_candidates=13378 accepted=924
+query=ciudad de méxico food vlog pages=3 candidates=40 unique_candidates=13381 accepted=924
+query=ciudad de mexico historia pages=3 candidates=40 unique_candidates=13397 accepted=924
+query=ciudad de méxico vlog pages=3 candidates=40 unique_candidates=13400 accepted=924
+query=ciudad de méxico turismo pages=3 candidates=40 unique_candidates=13408 accepted=924
+query=ciudad de méxico lifestyle pages=3 candidates=40 unique_candidates=13418 accepted=924
+query=ciudad de mexico unboxing pages=3 candidates=40 unique_candidates=13447 accepted=924
+query=ciudad de méxico comida pages=3 candidates=40 unique_candidates=13452 accepted=924
+validated batch accepted+14 rejected+201 total=938
+query=ciudad de méxico maquillaje pages=3 candidates=40 unique_candidates=13455 accepted=938
+query=ciudad de méxico tech youtuber pages=3 candidates=39 unique_candidates=13476 accepted=938
+query=ciudad de méxico emprendedor pages=3 candidates=40 unique_candidates=13484 accepted=938
+query=ciudad de méxico tecnologia pages=3 candidates=40 unique_candidates=13491 accepted=938
+query=ciudad de méxico fitness pages=3 candidates=40 unique_candidates=13494 accepted=938
+query=ciudad de méxico mama vlog pages=3 candidates=40 unique_candidates=13498 accepted=938
+query=ciudad de méxico bienes raices pages=3 candidates=40 unique_candidates=13502 accepted=938
+query=ciudad de méxico beauty youtuber pages=3 candidates=39 unique_candidates=13511 accepted=938
+query=ciudad de méxico real estate pages=3 candidates=40 unique_candidates=13522 accepted=938
+query=ciudad de méxico gaming pages=3 candidates=40 unique_candidates=13537 accepted=938
+query=ciudad de méxico recetas pages=3 candidates=40 unique_candidates=13540 accepted=938
+query=ciudad de méxico negocios pages=3 candidates=37 unique_candidates=13545 accepted=938
+query=ciudad de méxico relocation pages=3 candidates=37 unique_candidates=13560 accepted=938
+query=ciudad de méxico moda pages=3 candidates=40 unique_candidates=13567 accepted=938
+query=ciudad de méxico familia vlog pages=3 candidates=40 unique_candidates=13576 accepted=938
+query=ciudad de méxico cocina pages=3 candidates=40 unique_candidates=13581 accepted=938
+validated batch accepted+12 rejected+117 total=950
+query=ciudad de méxico news pages=3 candidates=40 unique_candidates=13591 accepted=950
+query=ciudad de méxico corridos pages=3 candidates=40 unique_candidates=13597 accepted=950
+query=ciudad de méxico educacion pages=3 candidates=40 unique_candidates=13604 accepted=950
+query=ciudad de méxico mariachi pages=3 candidates=40 unique_candidates=13607 accepted=950
+query=ciudad de méxico marketing pages=3 candidates=40 unique_candidates=13613 accepted=950
+query=ciudad de méxico podcast pages=3 candidates=40 unique_candidates=13620 accepted=950
+query=ciudad de méxico noticias pages=3 candidates=60 unique_candidates=13633 accepted=950
+query=ciudad de méxico fotografia pages=3 candidates=40 unique_candidates=13637 accepted=950
+query=ciudad de méxico musica regional pages=3 candidates=40 unique_candidates=13643 accepted=950
+query=ciudad de méxico salud pages=3 candidates=40 unique_candidates=13645 accepted=950
+query=ciudad de méxico finanzas pages=3 candidates=40 unique_candidates=13648 accepted=950
+query=ciudad de méxico humor pages=3 candidates=40 unique_candidates=13654 accepted=950
+query=ciudad de méxico banda pages=3 candidates=40 unique_candidates=13660 accepted=950
+query=ciudad de méxico motos pages=3 candidates=40 unique_candidates=13666 accepted=950
+query=ciudad de méxico musica pages=3 candidates=40 unique_candidates=13670 accepted=950
+query=ciudad de méxico autos pages=3 candidates=40 unique_candidates=13674 accepted=950
+validated batch accepted+4 rejected+89 total=954
+query=ciudad de méxico manualidades pages=3 candidates=40 unique_candidates=13683 accepted=954
+query=guadalajara vlog pages=3 candidates=40 unique_candidates=13708 accepted=954
+query=ciudad de méxico misterio pages=3 candidates=40 unique_candidates=13719 accepted=954
+query=guadalajara youtuber pages=3 candidates=40 unique_candidates=13755 accepted=954
+query=guadalajara creador de contenido pages=3 candidates=40 unique_candidates=13789 accepted=954
+query=ciudad de méxico anime pages=3 candidates=40 unique_candidates=13797 accepted=954
+query=ciudad de méxico futbol pages=3 candidates=40 unique_candidates=13815 accepted=954
+query=ciudad de méxico baseball pages=3 candidates=40 unique_candidates=13819 accepted=954
+query=ciudad de méxico historia pages=3 candidates=40 unique_candidates=13824 accepted=954
+query=ciudad de méxico kpop pages=3 candidates=40 unique_candidates=13838 accepted=954
+query=ciudad de méxico diseño pages=3 candidates=40 unique_candidates=13842 accepted=954
+query=ciudad de méxico arquitectura pages=3 candidates=40 unique_candidates=13846 accepted=954
+query=ciudad de méxico unboxing pages=3 candidates=40 unique_candidates=13863 accepted=954
+query=ciudad de méxico medicina pages=3 candidates=40 unique_candidates=13869 accepted=954
+query=ciudad de méxico review pages=3 candidates=40 unique_candidates=13877 accepted=954
+query=ciudad de méxico tutorial pages=3 candidates=40 unique_candidates=13891 accepted=954
+validated batch accepted+11 rejected+206 total=965
+query=guadalajara canal pages=3 candidates=40 unique_candidates=13914 accepted=965
+query=guadalajara fitness pages=3 candidates=25 unique_candidates=13936 accepted=965
+query=guadalajara influencer pages=3 candidates=40 unique_candidates=13959 accepted=965
+query=guadalajara travel vlog pages=3 candidates=40 unique_candidates=13987 accepted=965
+query=guadalajara lifestyle pages=3 candidates=40 unique_candidates=14017 accepted=965
+query=guadalajara recetas pages=3 candidates=40 unique_candidates=14050 accepted=965
+query=guadalajara viajes pages=3 candidates=40 unique_candidates=14078 accepted=965
+query=guadalajara maquillaje pages=3 candidates=31 unique_candidates=14105 accepted=965
+query=guadalajara gaming pages=3 candidates=40 unique_candidates=14142 accepted=965
+query=guadalajara cocina pages=3 candidates=40 unique_candidates=14167 accepted=965
+query=guadalajara beauty youtuber pages=3 candidates=40 unique_candidates=14195 accepted=965
+query=guadalajara tech youtuber pages=3 candidates=40 unique_candidates=14227 accepted=965
+query=guadalajara turismo pages=3 candidates=40 unique_candidates=14254 accepted=965
+query=guadalajara tecnologia pages=3 candidates=40 unique_candidates=14286 accepted=965
+query=guadalajara comida pages=3 candidates=40 unique_candidates=14312 accepted=965
+query=guadalajara food vlog pages=3 candidates=40 unique_candidates=14332 accepted=965
+validated batch accepted+15 rejected+426 total=980
+query=guadalajara noticias pages=3 candidates=60 unique_candidates=14378 accepted=980
+query=guadalajara emprendedor pages=3 candidates=40 unique_candidates=14410 accepted=980
+query=guadalajara musica regional pages=3 candidates=40 unique_candidates=14445 accepted=980
+query=guadalajara news pages=3 candidates=40 unique_candidates=14461 accepted=980
+query=guadalajara relocation pages=3 candidates=40 unique_candidates=14488 accepted=980
+query=guadalajara bienes raices pages=3 candidates=40 unique_candidates=14527 accepted=980
+query=guadalajara musica pages=3 candidates=40 unique_candidates=14549 accepted=980
+query=guadalajara real estate pages=3 candidates=40 unique_candidates=14567 accepted=980
+query=guadalajara educacion pages=3 candidates=40 unique_candidates=14603 accepted=980
+query=guadalajara negocios pages=3 candidates=40 unique_candidates=14630 accepted=980
+query=guadalajara moda pages=3 candidates=40 unique_candidates=14656 accepted=980
+query=guadalajara mama vlog pages=3 candidates=40 unique_candidates=14679 accepted=980
+query=guadalajara familia vlog pages=3 candidates=40 unique_candidates=14702 accepted=980
+query=guadalajara mariachi pages=3 candidates=40 unique_candidates=14723 accepted=980
+query=guadalajara corridos pages=3 candidates=40 unique_candidates=14753 accepted=980
+query=guadalajara banda pages=3 candidates=40 unique_candidates=14778 accepted=980
+validated batch accepted+11 rejected+435 total=991
+query=guadalajara kpop pages=3 candidates=40 unique_candidates=14812 accepted=991
+query=guadalajara futbol pages=3 candidates=40 unique_candidates=14830 accepted=991
+query=guadalajara anime pages=3 candidates=40 unique_candidates=14866 accepted=991
+query=guadalajara manualidades pages=3 candidates=40 unique_candidates=14901 accepted=991
+query=guadalajara humor pages=3 candidates=40 unique_candidates=14935 accepted=991
+query=guadalajara diseño pages=3 candidates=40 unique_candidates=14966 accepted=991
+query=guadalajara podcast pages=3 candidates=40 unique_candidates=14993 accepted=991
+query=guadalajara marketing pages=3 candidates=40 unique_candidates=15025 accepted=991
+query=guadalajara baseball pages=3 candidates=40 unique_candidates=15056 accepted=991
+query=guadalajara motos pages=3 candidates=40 unique_candidates=15089 accepted=991
+query=guadalajara autos pages=3 candidates=40 unique_candidates=15118 accepted=991
+query=guadalajara finanzas pages=3 candidates=40 unique_candidates=15152 accepted=991
+query=guadalajara salud pages=3 candidates=40 unique_candidates=15186 accepted=991
+query=guadalajara medicina pages=3 candidates=40 unique_candidates=15203 accepted=991
+query=guadalajara arquitectura pages=3 candidates=40 unique_candidates=15233 accepted=991
+query=guadalajara fotografia pages=3 candidates=40 unique_candidates=15267 accepted=991
+validated batch accepted+17 rejected+472 total=1008
+query=monterrey vlog pages=3 candidates=40 unique_candidates=15300 accepted=1008
+query=monterrey lifestyle pages=3 candidates=40 unique_candidates=15337 accepted=1008
+query=guadalajara misterio pages=3 candidates=40 unique_candidates=15365 accepted=1008
+query=guadalajara review pages=3 candidates=40 unique_candidates=15393 accepted=1008
+query=monterrey influencer pages=3 candidates=40 unique_candidates=15414 accepted=1008
+query=guadalajara unboxing pages=3 candidates=40 unique_candidates=15449 accepted=1008
+query=monterrey canal pages=3 candidates=40 unique_candidates=15478 accepted=1008
+query=monterrey creador de contenido pages=3 candidates=40 unique_candidates=15512 accepted=1008
+query=monterrey travel vlog pages=3 candidates=40 unique_candidates=15541 accepted=1008
+query=monterrey viajes pages=3 candidates=40 unique_candidates=15575 accepted=1008
+query=monterrey turismo pages=3 candidates=40 unique_candidates=15601 accepted=1008
+query=monterrey food vlog pages=3 candidates=40 unique_candidates=15630 accepted=1008
+query=guadalajara historia pages=3 candidates=40 unique_candidates=15656 accepted=1008
+query=monterrey comida pages=3 candidates=40 unique_candidates=15683 accepted=1008
+query=guadalajara tutorial pages=3 candidates=40 unique_candidates=15712 accepted=1008
+query=monterrey youtuber pages=3 candidates=40 unique_candidates=15734 accepted=1008
+validated batch accepted+35 rejected+432 total=1043
+query=monterrey cocina pages=3 candidates=40 unique_candidates=15765 accepted=1043
+query=monterrey bienes raices pages=3 candidates=40 unique_candidates=15803 accepted=1043
+query=monterrey recetas pages=3 candidates=40 unique_candidates=15826 accepted=1043
+query=monterrey relocation pages=3 candidates=39 unique_candidates=15854 accepted=1043
+query=monterrey emprendedor pages=3 candidates=40 unique_candidates=15890 accepted=1043
+query=monterrey moda pages=3 candidates=40 unique_candidates=15926 accepted=1043
+query=monterrey fitness pages=3 candidates=40 unique_candidates=15955 accepted=1043
+query=monterrey tecnologia pages=3 candidates=40 unique_candidates=15993 accepted=1043
+query=monterrey gaming pages=3 candidates=40 unique_candidates=16027 accepted=1043
+query=monterrey beauty youtuber pages=3 candidates=40 unique_candidates=16060 accepted=1043
+query=monterrey maquillaje pages=3 candidates=40 unique_candidates=16090 accepted=1043
+query=monterrey negocios pages=3 candidates=40 unique_candidates=16116 accepted=1043
+query=monterrey familia vlog pages=3 candidates=40 unique_candidates=16146 accepted=1043
+query=monterrey tech youtuber pages=3 candidates=40 unique_candidates=16181 accepted=1043
+query=monterrey mama vlog pages=3 candidates=40 unique_candidates=16203 accepted=1043
+query=monterrey real estate pages=3 candidates=40 unique_candidates=16226 accepted=1043
+validated batch accepted+10 rejected+482 total=1053
+query=monterrey banda pages=3 candidates=40 unique_candidates=16261 accepted=1053
+query=monterrey mariachi pages=3 candidates=40 unique_candidates=16297 accepted=1053
+query=monterrey motos pages=3 candidates=40 unique_candidates=16327 accepted=1053
+query=monterrey musica pages=3 candidates=40 unique_candidates=16353 accepted=1053
+query=monterrey musica regional pages=3 candidates=40 unique_candidates=16374 accepted=1053
+query=monterrey fotografia pages=3 candidates=40 unique_candidates=16409 accepted=1053
+query=monterrey podcast pages=3 candidates=40 unique_candidates=16434 accepted=1053
+query=monterrey finanzas pages=3 candidates=40 unique_candidates=16467 accepted=1053
+query=monterrey humor pages=3 candidates=40 unique_candidates=16500 accepted=1053
+query=monterrey marketing pages=3 candidates=40 unique_candidates=16529 accepted=1053
+query=monterrey corridos pages=3 candidates=40 unique_candidates=16558 accepted=1053
+query=monterrey noticias pages=3 candidates=40 unique_candidates=16578 accepted=1053
+query=monterrey autos pages=3 candidates=40 unique_candidates=16613 accepted=1053
+query=monterrey educacion pages=3 candidates=40 unique_candidates=16648 accepted=1053
+query=monterrey salud pages=3 candidates=40 unique_candidates=16681 accepted=1053
+query=monterrey news pages=3 candidates=40 unique_candidates=16699 accepted=1053
+validated batch accepted+27 rejected+446 total=1080
+query=monterrey medicina pages=3 candidates=40 unique_candidates=16727 accepted=1080
+query=monterrey manualidades pages=3 candidates=40 unique_candidates=16760 accepted=1080
+query=monterrey anime pages=3 candidates=40 unique_candidates=16797 accepted=1080
+query=monterrey misterio pages=3 candidates=40 unique_candidates=16827 accepted=1080
+query=jalisco vlog pages=3 candidates=40 unique_candidates=16851 accepted=1080
+query=jalisco creador de contenido pages=3 candidates=40 unique_candidates=16881 accepted=1080
+query=monterrey unboxing pages=3 candidates=40 unique_candidates=16916 accepted=1080
+query=monterrey historia pages=3 candidates=40 unique_candidates=16934 accepted=1080
+query=jalisco youtuber pages=3 candidates=40 unique_candidates=16961 accepted=1080
+query=monterrey review pages=3 candidates=40 unique_candidates=16989 accepted=1080
+query=monterrey kpop pages=3 candidates=40 unique_candidates=17023 accepted=1080
+query=monterrey diseño pages=3 candidates=40 unique_candidates=17047 accepted=1080
+query=monterrey baseball pages=3 candidates=40 unique_candidates=17075 accepted=1080
+query=monterrey arquitectura pages=3 candidates=40 unique_candidates=17099 accepted=1080
+query=monterrey futbol pages=3 candidates=41 unique_candidates=17129 accepted=1080
+query=monterrey tutorial pages=3 candidates=40 unique_candidates=17156 accepted=1080
+validated batch accepted+21 rejected+436 total=1101
+query=jalisco gaming pages=3 candidates=40 unique_candidates=17191 accepted=1101
+query=jalisco maquillaje pages=3 candidates=40 unique_candidates=17223 accepted=1101
+query=jalisco cocina pages=3 candidates=40 unique_candidates=17251 accepted=1101
+query=jalisco tech youtuber pages=3 candidates=40 unique_candidates=17278 accepted=1101
+query=jalisco turismo pages=3 candidates=40 unique_candidates=17309 accepted=1101
+query=jalisco canal pages=3 candidates=40 unique_candidates=17325 accepted=1101
+query=jalisco travel vlog pages=3 candidates=40 unique_candidates=17347 accepted=1101
+query=jalisco influencer pages=3 candidates=40 unique_candidates=17364 accepted=1101
+query=jalisco lifestyle pages=3 candidates=39 unique_candidates=17382 accepted=1101
+query=jalisco food vlog pages=3 candidates=40 unique_candidates=17397 accepted=1101
+query=jalisco recetas pages=3 candidates=40 unique_candidates=17422 accepted=1101
+query=jalisco viajes pages=3 candidates=40 unique_candidates=17441 accepted=1101
+query=jalisco fitness pages=3 candidates=40 unique_candidates=17472 accepted=1101
+query=jalisco beauty youtuber pages=3 candidates=40 unique_candidates=17496 accepted=1101
+query=jalisco comida pages=3 candidates=40 unique_candidates=17517 accepted=1101
+query=jalisco tecnologia pages=3 candidates=40 unique_candidates=17540 accepted=1101
+validated batch accepted+8 rejected+376 total=1109
+query=jalisco news pages=3 candidates=60 unique_candidates=17570 accepted=1109
+query=jalisco noticias pages=3 candidates=60 unique_candidates=17593 accepted=1109
+query=jalisco relocation pages=3 candidates=40 unique_candidates=17610 accepted=1109
+query=jalisco educacion pages=3 candidates=40 unique_candidates=17644 accepted=1109
+query=jalisco moda pages=3 candidates=40 unique_candidates=17665 accepted=1109
+query=jalisco mama vlog pages=3 candidates=40 unique_candidates=17687 accepted=1109
+query=jalisco emprendedor pages=3 candidates=40 unique_candidates=17716 accepted=1109
+query=jalisco mariachi pages=3 candidates=40 unique_candidates=17754 accepted=1109
+query=jalisco negocios pages=3 candidates=40 unique_candidates=17780 accepted=1109
+query=jalisco corridos pages=3 candidates=120 unique_candidates=17887 accepted=1109
+query=jalisco bienes raices pages=3 candidates=40 unique_candidates=17905 accepted=1109
+query=jalisco banda pages=3 candidates=40 unique_candidates=17936 accepted=1109
+query=jalisco real estate pages=3 candidates=40 unique_candidates=17955 accepted=1109
+query=jalisco musica pages=3 candidates=40 unique_candidates=17973 accepted=1109
+query=jalisco familia vlog pages=3 candidates=40 unique_candidates=17990 accepted=1109
+query=jalisco musica regional pages=3 candidates=40 unique_candidates=18003 accepted=1109
+validated batch accepted+13 rejected+450 total=1122
+query=jalisco manualidades pages=3 candidates=40 unique_candidates=18031 accepted=1122
+query=jalisco podcast pages=3 candidates=40 unique_candidates=18052 accepted=1122
+query=jalisco medicina pages=3 candidates=40 unique_candidates=18085 accepted=1122
+query=jalisco marketing pages=3 candidates=40 unique_candidates=18109 accepted=1122
+query=jalisco baseball pages=3 candidates=40 unique_candidates=18132 accepted=1122
+query=jalisco finanzas pages=3 candidates=40 unique_candidates=18158 accepted=1122
+query=jalisco humor pages=3 candidates=40 unique_candidates=18190 accepted=1122
+query=jalisco kpop pages=3 candidates=40 unique_candidates=18216 accepted=1122
+query=jalisco anime pages=3 candidates=40 unique_candidates=18247 accepted=1122
+query=jalisco diseño pages=3 candidates=40 unique_candidates=18275 accepted=1122
+query=jalisco futbol pages=3 candidates=40 unique_candidates=18310 accepted=1122
+query=jalisco salud pages=3 candidates=40 unique_candidates=18325 accepted=1122
+query=jalisco fotografia pages=3 candidates=40 unique_candidates=18352 accepted=1122
+query=jalisco autos pages=3 candidates=40 unique_candidates=18375 accepted=1122
+query=jalisco motos pages=3 candidates=40 unique_candidates=18405 accepted=1122
+query=jalisco arquitectura pages=3 candidates=40 unique_candidates=18425 accepted=1122
+validated batch accepted+13 rejected+409 total=1135
+query=jalisco misterio pages=3 candidates=30 unique_candidates=18448 accepted=1135
+query=puebla turismo pages=3 candidates=30 unique_candidates=18476 accepted=1135
+query=puebla lifestyle pages=3 candidates=40 unique_candidates=18508 accepted=1135
+query=puebla food vlog pages=3 candidates=40 unique_candidates=18533 accepted=1135
+query=puebla youtuber pages=3 candidates=40 unique_candidates=18563 accepted=1135
+query=jalisco unboxing pages=3 candidates=40 unique_candidates=18594 accepted=1135
+query=puebla canal pages=3 candidates=40 unique_candidates=18617 accepted=1135
+query=puebla comida pages=3 candidates=40 unique_candidates=18646 accepted=1135
+query=puebla viajes pages=3 candidates=40 unique_candidates=18674 accepted=1135
+query=jalisco historia pages=3 candidates=40 unique_candidates=18695 accepted=1135
+query=puebla travel vlog pages=3 candidates=40 unique_candidates=18715 accepted=1135
+query=puebla creador de contenido pages=3 candidates=40 unique_candidates=18747 accepted=1135
+query=puebla influencer pages=3 candidates=40 unique_candidates=18768 accepted=1135
+query=jalisco review pages=3 candidates=40 unique_candidates=18797 accepted=1135
+query=puebla vlog pages=3 candidates=40 unique_candidates=18819 accepted=1135
+query=jalisco tutorial pages=3 candidates=40 unique_candidates=18844 accepted=1135
+validated batch accepted+22 rejected+397 total=1157
+query=puebla maquillaje pages=3 candidates=31 unique_candidates=18869 accepted=1157
+query=puebla recetas pages=3 candidates=40 unique_candidates=18892 accepted=1157
+query=puebla emprendedor pages=3 candidates=40 unique_candidates=18926 accepted=1157
+query=puebla moda pages=3 candidates=40 unique_candidates=18961 accepted=1157
+query=puebla relocation pages=3 candidates=39 unique_candidates=18989 accepted=1157
+query=puebla gaming pages=3 candidates=40 unique_candidates=19026 accepted=1157
+query=puebla negocios pages=3 candidates=40 unique_candidates=19060 accepted=1157
+query=puebla familia vlog pages=3 candidates=40 unique_candidates=19087 accepted=1157
+query=puebla real estate pages=3 candidates=40 unique_candidates=19121 accepted=1157
+query=puebla beauty youtuber pages=3 candidates=40 unique_candidates=19139 accepted=1157
+query=puebla tecnologia pages=3 candidates=40 unique_candidates=19170 accepted=1157
+query=puebla tech youtuber pages=3 candidates=40 unique_candidates=19200 accepted=1157
+query=puebla mama vlog pages=3 candidates=40 unique_candidates=19221 accepted=1157
+query=puebla fitness pages=3 candidates=40 unique_candidates=19257 accepted=1157
+query=puebla cocina pages=3 candidates=40 unique_candidates=19280 accepted=1157
+query=puebla bienes raices pages=3 candidates=40 unique_candidates=19312 accepted=1157
+validated batch accepted+10 rejected+458 total=1167
+query=puebla noticias pages=3 candidates=40 unique_candidates=19336 accepted=1167
+query=puebla marketing pages=3 candidates=40 unique_candidates=19366 accepted=1167
+query=puebla news pages=3 candidates=60 unique_candidates=19405 accepted=1167
+query=puebla corridos pages=3 candidates=40 unique_candidates=19437 accepted=1167
+query=puebla mariachi pages=3 candidates=40 unique_candidates=19472 accepted=1167
+query=puebla motos pages=3 candidates=40 unique_candidates=19507 accepted=1167
+query=puebla humor pages=3 candidates=40 unique_candidates=19537 accepted=1167
+query=puebla finanzas pages=3 candidates=40 unique_candidates=19570 accepted=1167
+query=puebla musica regional pages=3 candidates=40 unique_candidates=19602 accepted=1167
+query=puebla podcast pages=3 candidates=40 unique_candidates=19630 accepted=1167
+query=puebla musica pages=3 candidates=40 unique_candidates=19657 accepted=1167
+query=puebla banda pages=3 candidates=40 unique_candidates=19684 accepted=1167
+query=puebla autos pages=3 candidates=40 unique_candidates=19721 accepted=1167
+query=puebla salud pages=3 candidates=40 unique_candidates=19755 accepted=1167
+query=puebla fotografia pages=3 candidates=40 unique_candidates=19790 accepted=1167
+query=puebla educacion pages=3 candidates=40 unique_candidates=19824 accepted=1167
+validated batch accepted+15 rejected+485 total=1182
+validated batch accepted+0 rejected+12 total=1182
+query=puebla manualidades pages=3 candidates=40 unique_candidates=19858 accepted=1182
+query=tijuana creador de contenido pages=3 candidates=40 unique_candidates=19896 accepted=1182
+query=puebla review pages=3 candidates=40 unique_candidates=19923 accepted=1182
+query=tijuana vlog pages=3 candidates=40 unique_candidates=19960 accepted=1182
+query=puebla unboxing pages=3 candidates=40 unique_candidates=19994 accepted=1182
+query=puebla kpop pages=3 candidates=40 unique_candidates=20028 accepted=1182
+query=puebla arquitectura pages=3 candidates=40 unique_candidates=20059 accepted=1182
+query=puebla diseño pages=3 candidates=40 unique_candidates=20085 accepted=1182
+query=puebla historia pages=3 candidates=40 unique_candidates=20108 accepted=1182
+query=puebla misterio pages=3 candidates=40 unique_candidates=20141 accepted=1182
+query=puebla baseball pages=3 candidates=40 unique_candidates=20167 accepted=1182
+query=puebla anime pages=3 candidates=40 unique_candidates=20199 accepted=1182
+query=puebla medicina pages=3 candidates=40 unique_candidates=20226 accepted=1182
+query=tijuana youtuber pages=3 candidates=40 unique_candidates=20257 accepted=1182
+query=puebla futbol pages=3 candidates=36 unique_candidates=20283 accepted=1182
+query=puebla tutorial pages=3 candidates=40 unique_candidates=20305 accepted=1182
+validated batch accepted+12 rejected+469 total=1194
+query=tijuana influencer pages=3 candidates=40 unique_candidates=20327 accepted=1194
+query=tijuana beauty youtuber pages=3 candidates=40 unique_candidates=20361 accepted=1194
+query=tijuana canal pages=3 candidates=40 unique_candidates=20389 accepted=1194
+query=tijuana lifestyle pages=3 candidates=40 unique_candidates=20423 accepted=1194
+query=tijuana recetas pages=3 candidates=31 unique_candidates=20450 accepted=1194
+query=tijuana tecnologia pages=3 candidates=40 unique_candidates=20489 accepted=1194
+query=tijuana viajes pages=3 candidates=40 unique_candidates=20523 accepted=1194
+query=tijuana comida pages=3 candidates=40 unique_candidates=20558 accepted=1194
+query=tijuana turismo pages=3 candidates=40 unique_candidates=20590 accepted=1194
+query=tijuana fitness pages=3 candidates=40 unique_candidates=20627 accepted=1194
+query=tijuana cocina pages=3 candidates=40 unique_candidates=20654 accepted=1194
+query=tijuana travel vlog pages=3 candidates=40 unique_candidates=20673 accepted=1194
+query=tijuana maquillaje pages=3 candidates=40 unique_candidates=20702 accepted=1194
+query=tijuana food vlog pages=3 candidates=40 unique_candidates=20717 accepted=1194
+query=tijuana tech youtuber pages=3 candidates=40 unique_candidates=20748 accepted=1194
+query=tijuana gaming pages=3 candidates=40 unique_candidates=20784 accepted=1194
+validated batch accepted+9 rejected+470 total=1203
+query=tijuana real estate pages=3 candidates=40 unique_candidates=20815 accepted=1203
+query=tijuana negocios pages=3 candidates=40 unique_candidates=20845 accepted=1203
+query=tijuana mama vlog pages=3 candidates=40 unique_candidates=20865 accepted=1203
+query=tijuana emprendedor pages=3 candidates=40 unique_candidates=20891 accepted=1203
+query=tijuana corridos pages=3 candidates=40 unique_candidates=20922 accepted=1203
+query=tijuana relocation pages=3 candidates=40 unique_candidates=20951 accepted=1203
+query=tijuana musica regional pages=3 candidates=27 unique_candidates=20967 accepted=1203
+query=tijuana musica pages=3 candidates=40 unique_candidates=20986 accepted=1203
+query=tijuana mariachi pages=3 candidates=40 unique_candidates=21020 accepted=1203
+query=tijuana familia vlog pages=3 candidates=40 unique_candidates=21048 accepted=1203
+query=tijuana noticias pages=3 candidates=40 unique_candidates=21072 accepted=1203
+query=tijuana bienes raices pages=3 candidates=40 unique_candidates=21093 accepted=1203
+query=tijuana banda pages=3 candidates=40 unique_candidates=21119 accepted=1203
+query=tijuana moda pages=3 candidates=40 unique_candidates=21152 accepted=1203
+query=tijuana educacion pages=3 candidates=40 unique_candidates=21188 accepted=1203
+query=tijuana news pages=3 candidates=40 unique_candidates=21205 accepted=1203
+validated batch accepted+7 rejected+414 total=1210
+query=tijuana diseño pages=3 candidates=40 unique_candidates=21240 accepted=1210
+query=tijuana autos pages=3 candidates=40 unique_candidates=21273 accepted=1210
+query=tijuana manualidades pages=3 candidates=40 unique_candidates=21310 accepted=1210
+query=tijuana marketing pages=3 candidates=40 unique_candidates=21339 accepted=1210
+query=tijuana finanzas pages=3 candidates=40 unique_candidates=21371 accepted=1210
+query=tijuana baseball pages=3 candidates=40 unique_candidates=21404 accepted=1210
+query=tijuana anime pages=3 candidates=40 unique_candidates=21439 accepted=1210
+query=tijuana humor pages=3 candidates=40 unique_candidates=21473 accepted=1210
+query=tijuana fotografia pages=3 candidates=40 unique_candidates=21508 accepted=1210
+query=tijuana motos pages=3 candidates=40 unique_candidates=21542 accepted=1210
+query=tijuana kpop pages=3 candidates=40 unique_candidates=21576 accepted=1210
+query=tijuana salud pages=3 candidates=40 unique_candidates=21611 accepted=1210
+query=tijuana podcast pages=3 candidates=40 unique_candidates=21637 accepted=1210
+query=tijuana arquitectura pages=3 candidates=40 unique_candidates=21663 accepted=1210
+query=tijuana medicina pages=3 candidates=40 unique_candidates=21678 accepted=1210
+query=tijuana futbol pages=3 candidates=40 unique_candidates=21715 accepted=1210
+validated batch accepted+9 rejected+491 total=1219
+validated batch accepted+0 rejected+10 total=1219
+query=tijuana misterio pages=3 candidates=40 unique_candidates=21748 accepted=1219
+query=tijuana unboxing pages=3 candidates=40 unique_candidates=21781 accepted=1219
+query=queretaro influencer pages=3 candidates=40 unique_candidates=21796 accepted=1219
+query=queretaro youtuber pages=3 candidates=40 unique_candidates=21834 accepted=1219
+query=tijuana tutorial pages=3 candidates=40 unique_candidates=21867 accepted=1219
+query=queretaro creador de contenido pages=3 candidates=40 unique_candidates=21902 accepted=1219
+query=tijuana review pages=3 candidates=40 unique_candidates=21929 accepted=1219
+query=queretaro vlog pages=3 candidates=40 unique_candidates=21962 accepted=1219
+query=queretaro canal pages=3 candidates=40 unique_candidates=21990 accepted=1219
+query=queretaro lifestyle pages=3 candidates=40 unique_candidates=22017 accepted=1219
+query=queretaro travel vlog pages=3 candidates=40 unique_candidates=22036 accepted=1219
+query=queretaro food vlog pages=3 candidates=40 unique_candidates=22053 accepted=1219
+query=queretaro viajes pages=3 candidates=40 unique_candidates=22080 accepted=1219
+query=tijuana historia pages=3 candidates=40 unique_candidates=22104 accepted=1219
+query=queretaro turismo pages=3 candidates=40 unique_candidates=22125 accepted=1219
+query=queretaro comida pages=3 candidates=40 unique_candidates=22152 accepted=1219
+validated batch accepted+15 rejected+422 total=1234
+query=queretaro recetas pages=3 candidates=40 unique_candidates=22181 accepted=1234
+query=queretaro emprendedor pages=3 candidates=40 unique_candidates=22213 accepted=1234
+query=queretaro familia vlog pages=3 candidates=40 unique_candidates=22234 accepted=1234
+query=queretaro maquillaje pages=3 candidates=40 unique_candidates=22269 accepted=1234
+query=queretaro negocios pages=3 candidates=40 unique_candidates=22299 accepted=1234
+query=queretaro gaming pages=3 candidates=40 unique_candidates=22338 accepted=1234
+query=queretaro relocation pages=3 candidates=39 unique_candidates=22358 accepted=1234
+query=queretaro cocina pages=3 candidates=40 unique_candidates=22380 accepted=1234
+query=queretaro bienes raices pages=3 candidates=40 unique_candidates=22409 accepted=1234
+query=queretaro mama vlog pages=3 candidates=40 unique_candidates=22422 accepted=1234
+query=queretaro tecnologia pages=3 candidates=40 unique_candidates=22458 accepted=1234
+query=queretaro beauty youtuber pages=3 candidates=40 unique_candidates=22480 accepted=1234
+query=queretaro moda pages=3 candidates=40 unique_candidates=22513 accepted=1234
+query=queretaro tech youtuber pages=3 candidates=40 unique_candidates=22535 accepted=1234
+query=queretaro fitness pages=3 candidates=40 unique_candidates=22569 accepted=1234
+query=queretaro real estate pages=3 candidates=40 unique_candidates=22594 accepted=1234
+validated batch accepted+8 rejected+434 total=1242
+query=queretaro news pages=3 candidates=60 unique_candidates=22639 accepted=1242
+query=queretaro corridos pages=3 candidates=40 unique_candidates=22678 accepted=1242
+query=queretaro salud pages=3 candidates=40 unique_candidates=22711 accepted=1242
+query=queretaro finanzas pages=3 candidates=40 unique_candidates=22738 accepted=1242
+query=queretaro mariachi pages=3 candidates=40 unique_candidates=22777 accepted=1242
+query=queretaro podcast pages=3 candidates=40 unique_candidates=22802 accepted=1242
+query=queretaro autos pages=3 candidates=40 unique_candidates=22838 accepted=1242
+query=queretaro fotografia pages=3 candidates=40 unique_candidates=22874 accepted=1242
+query=queretaro motos pages=3 candidates=40 unique_candidates=22910 accepted=1242
+query=queretaro banda pages=3 candidates=40 unique_candidates=22943 accepted=1242
+query=queretaro marketing pages=3 candidates=40 unique_candidates=22975 accepted=1242
+query=queretaro educacion pages=3 candidates=40 unique_candidates=23009 accepted=1242
+query=queretaro humor pages=3 candidates=33 unique_candidates=23037 accepted=1242
+query=queretaro musica pages=3 candidates=40 unique_candidates=23053 accepted=1242
+query=queretaro musica regional pages=3 candidates=40 unique_candidates=23066 accepted=1242
+query=queretaro noticias pages=3 candidates=40 unique_candidates=23082 accepted=1242
+validated batch accepted+12 rejected+476 total=1254
+query=queretaro misterio pages=3 candidates=40 unique_candidates=23112 accepted=1254
+query=queretaro manualidades pages=3 candidates=40 unique_candidates=23145 accepted=1254
+query=queretaro unboxing pages=3 candidates=39 unique_candidates=23179 accepted=1254
+query=querétaro youtuber pages=3 candidates=40 unique_candidates=23189 accepted=1254
+query=queretaro kpop pages=3 candidates=40 unique_candidates=23221 accepted=1254
+query=queretaro review pages=3 candidates=40 unique_candidates=23241 accepted=1254
+query=queretaro medicina pages=3 candidates=25 unique_candidates=23250 accepted=1254
+query=querétaro vlog pages=3 candidates=40 unique_candidates=23255 accepted=1254
+query=queretaro baseball pages=3 candidates=40 unique_candidates=23276 accepted=1254
+query=queretaro diseño pages=3 candidates=40 unique_candidates=23304 accepted=1254
+query=queretaro futbol pages=3 candidates=40 unique_candidates=23332 accepted=1254
+query=queretaro historia pages=3 candidates=40 unique_candidates=23345 accepted=1254
+query=queretaro anime pages=3 candidates=40 unique_candidates=23379 accepted=1254
+query=queretaro arquitectura pages=3 candidates=40 unique_candidates=23401 accepted=1254
+query=querétaro creador de contenido pages=3 candidates=40 unique_candidates=23407 accepted=1254
+query=queretaro tutorial pages=3 candidates=120 unique_candidates=23477 accepted=1254
+validated batch accepted+9 rejected+386 total=1263
+query=querétaro recetas pages=3 candidates=40 unique_candidates=23483 accepted=1263
+query=querétaro lifestyle pages=3 candidates=40 unique_candidates=23488 accepted=1263
+query=querétaro comida pages=3 candidates=40 unique_candidates=23494 accepted=1263
+query=querétaro canal pages=3 candidates=40 unique_candidates=23498 accepted=1263
+query=querétaro cocina pages=3 candidates=40 unique_candidates=23500 accepted=1263
+query=querétaro tecnologia pages=3 candidates=40 unique_candidates=23505 accepted=1263
+query=querétaro gaming pages=3 candidates=40 unique_candidates=23524 accepted=1263
+query=querétaro viajes pages=3 candidates=40 unique_candidates=23527 accepted=1263
+query=querétaro influencer pages=3 candidates=40 unique_candidates=23530 accepted=1263
+query=querétaro maquillaje pages=3 candidates=40 unique_candidates=23534 accepted=1263
+query=querétaro beauty youtuber pages=3 candidates=40 unique_candidates=23536 accepted=1263
+query=querétaro food vlog pages=3 candidates=40 unique_candidates=23540 accepted=1263
+query=querétaro turismo pages=3 candidates=40 unique_candidates=23542 accepted=1263
+query=querétaro travel vlog pages=3 candidates=40 unique_candidates=23544 accepted=1263
+query=querétaro fitness pages=3 candidates=40 unique_candidates=23553 accepted=1263
+query=querétaro tech youtuber pages=3 candidates=40 unique_candidates=23561 accepted=1263
+validated batch accepted+2 rejected+82 total=1265
+query=querétaro mama vlog pages=3 candidates=40 unique_candidates=23563 accepted=1265
+query=querétaro news pages=3 candidates=60 unique_candidates=23585 accepted=1265
+query=querétaro mariachi pages=3 candidates=40 unique_candidates=23588 accepted=1265
+query=querétaro relocation pages=3 candidates=40 unique_candidates=23596 accepted=1265
+query=querétaro banda pages=3 candidates=40 unique_candidates=23610 accepted=1265
+query=querétaro negocios pages=3 candidates=40 unique_candidates=23620 accepted=1265
+query=querétaro moda pages=3 candidates=40 unique_candidates=23625 accepted=1265
+query=querétaro bienes raices pages=3 candidates=40 unique_candidates=23639 accepted=1265
+query=querétaro corridos pages=3 candidates=40 unique_candidates=23642 accepted=1265
+query=querétaro musica pages=3 candidates=40 unique_candidates=23654 accepted=1265
+query=querétaro educacion pages=3 candidates=40 unique_candidates=23665 accepted=1265
+query=querétaro noticias pages=3 candidates=40 unique_candidates=23675 accepted=1265
+query=querétaro real estate pages=3 candidates=40 unique_candidates=23678 accepted=1265
+query=querétaro familia vlog pages=3 candidates=40 unique_candidates=23681 accepted=1265
+query=querétaro musica regional pages=3 candidates=40 unique_candidates=23685 accepted=1265
+query=querétaro emprendedor pages=3 candidates=40 unique_candidates=23692 accepted=1265
+validated batch accepted+3 rejected+128 total=1268
+query=querétaro salud pages=3 candidates=40 unique_candidates=23698 accepted=1268
+query=querétaro marketing pages=3 candidates=40 unique_candidates=23703 accepted=1268
+query=querétaro baseball pages=3 candidates=40 unique_candidates=23708 accepted=1268
+query=querétaro arquitectura pages=3 candidates=39 unique_candidates=23717 accepted=1268
+query=querétaro kpop pages=3 candidates=40 unique_candidates=23720 accepted=1268
+query=querétaro finanzas pages=3 candidates=40 unique_candidates=23723 accepted=1268
+query=querétaro humor pages=3 candidates=40 unique_candidates=23737 accepted=1268
+query=querétaro podcast pages=3 candidates=40 unique_candidates=23740 accepted=1268
+query=querétaro fotografia pages=3 candidates=40 unique_candidates=23744 accepted=1268
+query=querétaro futbol pages=3 candidates=40 unique_candidates=23756 accepted=1268
+query=querétaro diseño pages=3 candidates=40 unique_candidates=23758 accepted=1268
+query=querétaro medicina pages=3 candidates=40 unique_candidates=23768 accepted=1268
+query=querétaro autos pages=3 candidates=40 unique_candidates=23771 accepted=1268
+query=querétaro anime pages=3 candidates=40 unique_candidates=23778 accepted=1268
+query=querétaro motos pages=3 candidates=40 unique_candidates=23780 accepted=1268
+query=querétaro manualidades pages=3 candidates=40 unique_candidates=23784 accepted=1268
+validated batch accepted+3 rejected+89 total=1271
+query=yucatan creador de contenido pages=3 candidates=40 unique_candidates=23819 accepted=1271
+query=yucatan influencer pages=3 candidates=40 unique_candidates=23841 accepted=1271
+query=querétaro unboxing pages=3 candidates=39 unique_candidates=23845 accepted=1271
+query=yucatan comida pages=3 candidates=40 unique_candidates=23881 accepted=1271
+query=querétaro misterio pages=3 candidates=40 unique_candidates=23887 accepted=1271
+query=yucatan vlog pages=3 candidates=40 unique_candidates=23921 accepted=1271
+query=yucatan viajes pages=3 candidates=40 unique_candidates=23952 accepted=1271
+query=yucatan canal pages=3 candidates=40 unique_candidates=23984 accepted=1271
+query=yucatan turismo pages=3 candidates=40 unique_candidates=24007 accepted=1271
+query=yucatan youtuber pages=3 candidates=40 unique_candidates=24032 accepted=1271
+query=querétaro review pages=3 candidates=40 unique_candidates=24037 accepted=1271
+query=yucatan food vlog pages=3 candidates=40 unique_candidates=24055 accepted=1271
+query=yucatan travel vlog pages=3 candidates=40 unique_candidates=24071 accepted=1271
+query=yucatan lifestyle pages=3 candidates=40 unique_candidates=24085 accepted=1271
+query=querétaro historia pages=3 candidates=40 unique_candidates=24097 accepted=1271
+query=querétaro tutorial pages=3 candidates=40 unique_candidates=24098 accepted=1271
+validated batch accepted+14 rejected+300 total=1285
+query=yucatan bienes raices pages=3 candidates=41 unique_candidates=24124 accepted=1285
+query=yucatan gaming pages=3 candidates=40 unique_candidates=24160 accepted=1285
+query=yucatan mama vlog pages=3 candidates=40 unique_candidates=24180 accepted=1285
+query=yucatan cocina pages=3 candidates=40 unique_candidates=24204 accepted=1285
+query=yucatan negocios pages=3 candidates=40 unique_candidates=24235 accepted=1285
+query=yucatan recetas pages=3 candidates=40 unique_candidates=24258 accepted=1285
+query=yucatan maquillaje pages=3 candidates=40 unique_candidates=24293 accepted=1285
+query=yucatan tech youtuber pages=3 candidates=40 unique_candidates=24327 accepted=1285
+query=yucatan familia vlog pages=3 candidates=40 unique_candidates=24349 accepted=1285
+query=yucatan tecnologia pages=3 candidates=40 unique_candidates=24381 accepted=1285
+query=yucatan emprendedor pages=3 candidates=40 unique_candidates=24416 accepted=1285
+query=yucatan relocation pages=3 candidates=40 unique_candidates=24440 accepted=1285
+query=yucatan fitness pages=3 candidates=39 unique_candidates=24471 accepted=1285
+query=yucatan real estate pages=3 candidates=40 unique_candidates=24490 accepted=1285
+query=yucatan beauty youtuber pages=3 candidates=40 unique_candidates=24504 accepted=1285
+query=yucatan moda pages=3 candidates=40 unique_candidates=24538 accepted=1285
+validated batch accepted+11 rejected+429 total=1296
+query=yucatan noticias pages=3 candidates=46 unique_candidates=24569 accepted=1296
+query=yucatan musica regional pages=3 candidates=40 unique_candidates=24609 accepted=1296
+query=yucatan finanzas pages=3 candidates=40 unique_candidates=24641 accepted=1296
+query=yucatan corridos pages=3 candidates=38 unique_candidates=24670 accepted=1296
+query=yucatan fotografia pages=3 candidates=40 unique_candidates=24703 accepted=1296
+query=yucatan banda pages=3 candidates=40 unique_candidates=24739 accepted=1296
+query=yucatan marketing pages=3 candidates=40 unique_candidates=24771 accepted=1296
+query=yucatan salud pages=3 candidates=40 unique_candidates=24800 accepted=1296
+query=yucatan musica pages=3 candidates=40 unique_candidates=24829 accepted=1296
+query=yucatan podcast pages=3 candidates=40 unique_candidates=24855 accepted=1296
+query=yucatan educacion pages=3 candidates=40 unique_candidates=24888 accepted=1296
+query=yucatan mariachi pages=3 candidates=39 unique_candidates=24920 accepted=1296
+query=yucatan motos pages=3 candidates=40 unique_candidates=24954 accepted=1296
+query=yucatan news pages=3 candidates=40 unique_candidates=24977 accepted=1296
+query=yucatan humor pages=3 candidates=40 unique_candidates=25010 accepted=1296
+query=yucatan autos pages=3 candidates=40 unique_candidates=25046 accepted=1296
+validated batch accepted+10 rejected+490 total=1306
+validated batch accepted+0 rejected+8 total=1306
+query=yucatan kpop pages=3 candidates=40 unique_candidates=25085 accepted=1306
+query=yucatan baseball pages=3 candidates=40 unique_candidates=25104 accepted=1306
+query=yucatán creador de contenido pages=3 candidates=40 unique_candidates=25109 accepted=1306
+query=yucatan misterio pages=3 candidates=40 unique_candidates=25142 accepted=1306
+query=yucatan diseño pages=3 candidates=40 unique_candidates=25173 accepted=1306
+query=yucatan anime pages=3 candidates=40 unique_candidates=25208 accepted=1306
+query=yucatán youtuber pages=3 candidates=40 unique_candidates=25214 accepted=1306
+query=yucatan unboxing pages=3 candidates=31 unique_candidates=25238 accepted=1306
+query=yucatan medicina pages=3 candidates=40 unique_candidates=25264 accepted=1306
+query=yucatan manualidades pages=3 candidates=40 unique_candidates=25302 accepted=1306
+query=yucatan historia pages=3 candidates=40 unique_candidates=25323 accepted=1306
+query=yucatan futbol pages=3 candidates=40 unique_candidates=25358 accepted=1306
+query=yucatan tutorial pages=3 candidates=40 unique_candidates=25378 accepted=1306
+query=yucatan review pages=3 candidates=40 unique_candidates=25401 accepted=1306
+query=yucatan arquitectura pages=3 candidates=40 unique_candidates=25415 accepted=1306
+query=yucatán vlog pages=3 candidates=40 unique_candidates=25421 accepted=1306
+validated batch accepted+11 rejected+364 total=1317
+query=yucatán influencer pages=3 candidates=40 unique_candidates=25428 accepted=1317
+query=yucatán fitness pages=3 candidates=40 unique_candidates=25435 accepted=1317
+query=yucatán turismo pages=3 candidates=40 unique_candidates=25442 accepted=1317
+query=yucatán cocina pages=3 candidates=40 unique_candidates=25453 accepted=1317
+query=yucatán viajes pages=3 candidates=40 unique_candidates=25456 accepted=1317
+query=yucatán tech youtuber pages=3 candidates=40 unique_candidates=25463 accepted=1317
+query=yucatán gaming pages=3 candidates=40 unique_candidates=25475 accepted=1317
+query=yucatán food vlog pages=3 candidates=40 unique_candidates=25488 accepted=1317
+query=yucatán maquillaje pages=3 candidates=40 unique_candidates=25496 accepted=1317
+query=yucatán beauty youtuber pages=3 candidates=40 unique_candidates=25503 accepted=1317
+query=yucatán comida pages=3 candidates=40 unique_candidates=25508 accepted=1317
+query=yucatán canal pages=3 candidates=40 unique_candidates=25515 accepted=1317
+query=yucatán recetas pages=3 candidates=40 unique_candidates=25525 accepted=1317
+query=yucatán travel vlog pages=3 candidates=40 unique_candidates=25535 accepted=1317
+query=yucatán tecnologia pages=3 candidates=40 unique_candidates=25539 accepted=1317
+query=yucatán lifestyle pages=3 candidates=40 unique_candidates=25552 accepted=1317
+validated batch accepted+6 rejected+125 total=1323
+query=yucatán banda pages=3 candidates=40 unique_candidates=25555 accepted=1323
+query=yucatán educacion pages=3 candidates=40 unique_candidates=25562 accepted=1323
+query=yucatán moda pages=3 candidates=40 unique_candidates=25565 accepted=1323
+query=yucatán emprendedor pages=3 candidates=40 unique_candidates=25569 accepted=1323
+query=yucatán corridos pages=3 candidates=40 unique_candidates=25577 accepted=1323
+query=yucatán relocation pages=3 candidates=40 unique_candidates=25582 accepted=1323
+query=yucatán mama vlog pages=3 candidates=40 unique_candidates=25598 accepted=1323
+query=yucatán negocios pages=3 candidates=40 unique_candidates=25613 accepted=1323
+query=yucatán musica regional pages=3 candidates=40 unique_candidates=25620 accepted=1323
+query=yucatán news pages=3 candidates=40 unique_candidates=25621 accepted=1323
+query=yucatán mariachi pages=3 candidates=39 unique_candidates=25623 accepted=1323
+query=yucatán real estate pages=3 candidates=40 unique_candidates=25630 accepted=1323
+query=yucatán musica pages=3 candidates=40 unique_candidates=25639 accepted=1323
+query=yucatán familia vlog pages=3 candidates=40 unique_candidates=25641 accepted=1323
+query=yucatán bienes raices pages=3 candidates=41 unique_candidates=25654 accepted=1323
+query=yucatán noticias pages=3 candidates=40 unique_candidates=25665 accepted=1323
+validated batch accepted+1 rejected+112 total=1324
+query=yucatán anime pages=3 candidates=40 unique_candidates=25678 accepted=1324
+query=yucatán salud pages=3 candidates=40 unique_candidates=25682 accepted=1324
+query=yucatán marketing pages=3 candidates=40 unique_candidates=25688 accepted=1324
+query=yucatán finanzas pages=3 candidates=40 unique_candidates=25701 accepted=1324
+query=yucatán autos pages=3 candidates=40 unique_candidates=25707 accepted=1324
+query=yucatán diseño pages=3 candidates=40 unique_candidates=25711 accepted=1324
+query=yucatán kpop pages=3 candidates=40 unique_candidates=25717 accepted=1324
+query=yucatán manualidades pages=3 candidates=40 unique_candidates=25718 accepted=1324
+query=yucatán baseball pages=3 candidates=40 unique_candidates=25722 accepted=1324
+query=yucatán arquitectura pages=3 candidates=40 unique_candidates=25735 accepted=1324
+query=yucatán motos pages=3 candidates=40 unique_candidates=25747 accepted=1324
+query=yucatán fotografia pages=3 candidates=40 unique_candidates=25758 accepted=1324
+query=yucatán podcast pages=3 candidates=40 unique_candidates=25765 accepted=1324
+query=yucatán humor pages=3 candidates=40 unique_candidates=25770 accepted=1324
+query=yucatán medicina pages=3 candidates=40 unique_candidates=25775 accepted=1324
+query=yucatán futbol pages=3 candidates=40 unique_candidates=25796 accepted=1324
+validated batch accepted+3 rejected+128 total=1327
+query=cancun creador de contenido pages=3 candidates=40 unique_candidates=25830 accepted=1327
+query=yucatán misterio pages=3 candidates=24 unique_candidates=25830 accepted=1327
+query=yucatán unboxing pages=3 candidates=40 unique_candidates=25843 accepted=1327
+query=cancun comida pages=3 candidates=40 unique_candidates=25874 accepted=1327
+query=cancun canal pages=3 candidates=40 unique_candidates=25909 accepted=1327
+query=yucatán historia pages=3 candidates=40 unique_candidates=25912 accepted=1327
+query=cancun influencer pages=3 candidates=40 unique_candidates=25938 accepted=1327
+query=cancun lifestyle pages=3 candidates=40 unique_candidates=25975 accepted=1327
+query=yucatán review pages=3 candidates=40 unique_candidates=25984 accepted=1327
+query=cancun vlog pages=3 candidates=40 unique_candidates=26016 accepted=1327
+query=cancun youtuber pages=3 candidates=40 unique_candidates=26039 accepted=1327
+query=cancun viajes pages=3 candidates=40 unique_candidates=26062 accepted=1327
+query=cancun food vlog pages=3 candidates=40 unique_candidates=26093 accepted=1327
+query=cancun turismo pages=3 candidates=40 unique_candidates=26108 accepted=1327
+query=yucatán tutorial pages=3 candidates=40 unique_candidates=26117 accepted=1327
+query=cancun travel vlog pages=3 candidates=40 unique_candidates=26140 accepted=1327
+validated batch accepted+8 rejected+336 total=1335
+query=cancun emprendedor pages=3 candidates=40 unique_candidates=26177 accepted=1335
+query=cancun tecnologia pages=3 candidates=40 unique_candidates=26216 accepted=1335
+query=cancun negocios pages=3 candidates=40 unique_candidates=26249 accepted=1335
+query=cancun fitness pages=3 candidates=40 unique_candidates=26286 accepted=1335
+query=cancun tech youtuber pages=3 candidates=40 unique_candidates=26310 accepted=1335
+query=cancun maquillaje pages=3 candidates=40 unique_candidates=26342 accepted=1335
+query=cancun recetas pages=3 candidates=40 unique_candidates=26370 accepted=1335
+query=cancun moda pages=3 candidates=40 unique_candidates=26400 accepted=1335
+query=cancun cocina pages=3 candidates=40 unique_candidates=26423 accepted=1335
+query=cancun relocation pages=3 candidates=40 unique_candidates=26444 accepted=1335
+query=cancun gaming pages=3 candidates=40 unique_candidates=26481 accepted=1335
+query=cancun real estate pages=3 candidates=40 unique_candidates=26516 accepted=1335
+query=cancun mama vlog pages=3 candidates=40 unique_candidates=26540 accepted=1335
+query=cancun beauty youtuber pages=3 candidates=40 unique_candidates=26562 accepted=1335
+query=cancun familia vlog pages=3 candidates=40 unique_candidates=26582 accepted=1335
+query=cancun bienes raices pages=3 candidates=40 unique_candidates=26612 accepted=1335
+validated batch accepted+4 rejected+468 total=1339
+query=cancun news pages=3 candidates=40 unique_candidates=26631 accepted=1339
+query=cancun salud pages=3 candidates=40 unique_candidates=26661 accepted=1339
+query=cancun motos pages=3 candidates=40 unique_candidates=26693 accepted=1339
+query=cancun autos pages=3 candidates=39 unique_candidates=26723 accepted=1339
+query=cancun marketing pages=3 candidates=40 unique_candidates=26754 accepted=1339
+query=cancun finanzas pages=3 candidates=40 unique_candidates=26788 accepted=1339
+query=cancun banda pages=3 candidates=40 unique_candidates=26824 accepted=1339
+query=cancun corridos pages=3 candidates=40 unique_candidates=26854 accepted=1339
+query=cancun noticias pages=3 candidates=40 unique_candidates=26881 accepted=1339
+query=cancun educacion pages=3 candidates=40 unique_candidates=26914 accepted=1339
+query=cancun musica pages=3 candidates=40 unique_candidates=26943 accepted=1339
+query=cancun mariachi pages=3 candidates=40 unique_candidates=26979 accepted=1339
+query=cancun podcast pages=3 candidates=40 unique_candidates=27007 accepted=1339
+query=cancun fotografia pages=3 candidates=40 unique_candidates=27041 accepted=1339
+query=cancun musica regional pages=3 candidates=40 unique_candidates=27063 accepted=1339
+query=cancun humor pages=3 candidates=40 unique_candidates=27097 accepted=1339
+validated batch accepted+8 rejected+477 total=1347
+query=cancun kpop pages=3 candidates=40 unique_candidates=27134 accepted=1347
+query=cancún creador de contenido pages=3 candidates=40 unique_candidates=27137 accepted=1347
+query=cancun manualidades pages=3 candidates=40 unique_candidates=27167 accepted=1347
+query=cancun misterio pages=3 candidates=40 unique_candidates=27200 accepted=1347
+query=cancun baseball pages=3 candidates=40 unique_candidates=27236 accepted=1347
+query=cancun review pages=3 candidates=40 unique_candidates=27263 accepted=1347
+query=cancun medicina pages=3 candidates=40 unique_candidates=27285 accepted=1347
+query=cancun historia pages=3 candidates=40 unique_candidates=27308 accepted=1347
+query=cancun anime pages=3 candidates=40 unique_candidates=27346 accepted=1347
+query=cancun unboxing pages=3 candidates=40 unique_candidates=27378 accepted=1347
+query=cancun futbol pages=3 candidates=41 unique_candidates=27411 accepted=1347
+query=cancún youtuber pages=3 candidates=40 unique_candidates=27418 accepted=1347
+query=cancún vlog pages=3 candidates=40 unique_candidates=27427 accepted=1347
+query=cancun diseño pages=3 candidates=40 unique_candidates=27457 accepted=1347
+query=cancun arquitectura pages=3 candidates=40 unique_candidates=27483 accepted=1347
+query=cancun tutorial pages=3 candidates=40 unique_candidates=27504 accepted=1347
+validated batch accepted+10 rejected+397 total=1357
+query=cancún beauty youtuber pages=3 candidates=40 unique_candidates=27508 accepted=1357
+query=cancún lifestyle pages=3 candidates=40 unique_candidates=27511 accepted=1357
+query=cancún canal pages=3 candidates=40 unique_candidates=27520 accepted=1357
+query=cancún fitness pages=3 candidates=40 unique_candidates=27531 accepted=1357
+query=cancún gaming pages=3 candidates=40 unique_candidates=27549 accepted=1357
+query=cancún influencer pages=3 candidates=27 unique_candidates=27553 accepted=1357
+query=cancún maquillaje pages=3 candidates=40 unique_candidates=27560 accepted=1357
+query=cancún recetas pages=3 candidates=40 unique_candidates=27562 accepted=1357
+query=cancún tecnologia pages=3 candidates=40 unique_candidates=27576 accepted=1357
+query=cancún cocina pages=3 candidates=40 unique_candidates=27579 accepted=1357
+query=cancún comida pages=3 candidates=40 unique_candidates=27585 accepted=1357
+query=cancún turismo pages=3 candidates=36 unique_candidates=27597 accepted=1357
+query=cancún viajes pages=3 candidates=40 unique_candidates=27602 accepted=1357
+query=cancún travel vlog pages=3 candidates=40 unique_candidates=27610 accepted=1357
+query=cancún tech youtuber pages=3 candidates=40 unique_candidates=27623 accepted=1357
+query=cancún food vlog pages=3 candidates=40 unique_candidates=27630 accepted=1357
+validated batch accepted+3 rejected+123 total=1360
+query=cancún moda pages=3 candidates=40 unique_candidates=27643 accepted=1360
+query=cancún emprendedor pages=3 candidates=40 unique_candidates=27655 accepted=1360
+query=cancún educacion pages=3 candidates=40 unique_candidates=27657 accepted=1360
+query=cancún mariachi pages=3 candidates=40 unique_candidates=27661 accepted=1360
+query=cancún noticias pages=3 candidates=40 unique_candidates=27664 accepted=1360
+query=cancún musica regional pages=3 candidates=40 unique_candidates=27670 accepted=1360
+query=cancún real estate pages=3 candidates=40 unique_candidates=27680 accepted=1360
+query=cancún familia vlog pages=3 candidates=40 unique_candidates=27691 accepted=1360
+query=cancún bienes raices pages=3 candidates=40 unique_candidates=27697 accepted=1360
+query=cancún banda pages=3 candidates=40 unique_candidates=27698 accepted=1360
+query=cancún negocios pages=3 candidates=40 unique_candidates=27716 accepted=1360
+query=cancún corridos pages=3 candidates=40 unique_candidates=27726 accepted=1360
+query=cancún relocation pages=3 candidates=40 unique_candidates=27739 accepted=1360
+query=cancún news pages=3 candidates=40 unique_candidates=27752 accepted=1360
+query=cancún musica pages=3 candidates=40 unique_candidates=27756 accepted=1360
+query=cancún mama vlog pages=3 candidates=40 unique_candidates=27759 accepted=1360
+validated batch accepted+2 rejected+127 total=1362
+query=cancún finanzas pages=3 candidates=40 unique_candidates=27766 accepted=1362
+query=cancún medicina pages=3 candidates=40 unique_candidates=27774 accepted=1362
+query=cancún kpop pages=3 candidates=40 unique_candidates=27785 accepted=1362
+query=cancún motos pages=3 candidates=40 unique_candidates=27802 accepted=1362
+query=cancún arquitectura pages=3 candidates=40 unique_candidates=27805 accepted=1362
+query=cancún diseño pages=3 candidates=40 unique_candidates=27811 accepted=1362
+query=cancún baseball pages=3 candidates=40 unique_candidates=27820 accepted=1362
+query=cancún futbol pages=3 candidates=41 unique_candidates=27833 accepted=1362
+query=cancún anime pages=3 candidates=40 unique_candidates=27850 accepted=1362
+query=cancún manualidades pages=3 candidates=40 unique_candidates=27858 accepted=1362
+query=cancún fotografia pages=3 candidates=40 unique_candidates=27864 accepted=1362
+query=cancún marketing pages=3 candidates=40 unique_candidates=27872 accepted=1362
+query=cancún humor pages=3 candidates=40 unique_candidates=27882 accepted=1362
+query=cancún podcast pages=3 candidates=40 unique_candidates=27894 accepted=1362
+query=cancún salud pages=3 candidates=40 unique_candidates=27901 accepted=1362
+query=cancún autos pages=3 candidates=40 unique_candidates=27921 accepted=1362
+validated batch accepted+3 rejected+159 total=1365
+query=cancún unboxing pages=3 candidates=40 unique_candidates=27929 accepted=1365
+query=guanajuato canal pages=3 candidates=40 unique_candidates=27967 accepted=1365
+query=guanajuato turismo pages=3 candidates=40 unique_candidates=28005 accepted=1365
+query=cancún misterio pages=3 candidates=40 unique_candidates=28011 accepted=1365
+query=guanajuato influencer pages=3 candidates=40 unique_candidates=28038 accepted=1365
+query=guanajuato vlog pages=3 candidates=40 unique_candidates=28066 accepted=1365
+query=cancún review pages=3 candidates=40 unique_candidates=28073 accepted=1365
+query=guanajuato creador de contenido pages=3 candidates=40 unique_candidates=28108 accepted=1365
+query=guanajuato youtuber pages=3 candidates=40 unique_candidates=28129 accepted=1365
+query=guanajuato travel vlog pages=3 candidates=40 unique_candidates=28151 accepted=1365
+query=guanajuato food vlog pages=3 candidates=40 unique_candidates=28168 accepted=1365
+query=guanajuato lifestyle pages=3 candidates=40 unique_candidates=28182 accepted=1365
+query=guanajuato comida pages=3 candidates=40 unique_candidates=28208 accepted=1365
+query=cancún historia pages=3 candidates=40 unique_candidates=28219 accepted=1365
+query=cancún tutorial pages=3 candidates=40 unique_candidates=28226 accepted=1365
+query=guanajuato viajes pages=3 candidates=40 unique_candidates=28251 accepted=1365
+validated batch accepted+25 rejected+305 total=1390
+query=guanajuato emprendedor pages=3 candidates=40 unique_candidates=28291 accepted=1390
+query=guanajuato tecnologia pages=3 candidates=25 unique_candidates=28315 accepted=1390
+query=guanajuato recetas pages=3 candidates=40 unique_candidates=28339 accepted=1390
+query=guanajuato familia vlog pages=3 candidates=40 unique_candidates=28360 accepted=1390
+query=guanajuato beauty youtuber pages=3 candidates=29 unique_candidates=28384 accepted=1390
+query=guanajuato relocation pages=3 candidates=40 unique_candidates=28410 accepted=1390
+query=guanajuato maquillaje pages=3 candidates=40 unique_candidates=28440 accepted=1390
+query=guanajuato cocina pages=3 candidates=40 unique_candidates=28457 accepted=1390
+query=guanajuato gaming pages=3 candidates=40 unique_candidates=28494 accepted=1390
+query=guanajuato bienes raices pages=3 candidates=40 unique_candidates=28529 accepted=1390
+query=guanajuato moda pages=3 candidates=40 unique_candidates=28564 accepted=1390
+query=guanajuato mama vlog pages=3 candidates=40 unique_candidates=28583 accepted=1390
+query=guanajuato real estate pages=3 candidates=41 unique_candidates=28608 accepted=1390
+query=guanajuato tech youtuber pages=3 candidates=40 unique_candidates=28634 accepted=1390
+query=guanajuato fitness pages=3 candidates=40 unique_candidates=28665 accepted=1390
+query=guanajuato negocios pages=3 candidates=40 unique_candidates=28692 accepted=1390
+validated batch accepted+8 rejected+433 total=1398
+query=guanajuato marketing pages=3 candidates=40 unique_candidates=28725 accepted=1398
+query=guanajuato podcast pages=3 candidates=40 unique_candidates=28753 accepted=1398
+query=guanajuato humor pages=3 candidates=40 unique_candidates=28784 accepted=1398
+query=guanajuato finanzas pages=3 candidates=40 unique_candidates=28814 accepted=1398

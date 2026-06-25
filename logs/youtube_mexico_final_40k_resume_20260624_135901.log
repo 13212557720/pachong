@@ -1,0 +1,1072 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+query=nayarit manualidades pages=3 candidates=28 unique_candidates=52211 accepted=1906
+query=nayarit marketing pages=3 candidates=40 unique_candidates=52238 accepted=1906
+query=nayarit baseball pages=3 candidates=40 unique_candidates=52257 accepted=1906
+query=nayarit podcast pages=3 candidates=40 unique_candidates=52278 accepted=1906
+query=nayarit salud pages=3 candidates=40 unique_candidates=52310 accepted=1906
+query=nayarit fotografia pages=3 candidates=40 unique_candidates=52345 accepted=1906
+query=nayarit finanzas pages=3 candidates=24 unique_candidates=52363 accepted=1906
+query=nayarit anime pages=3 candidates=40 unique_candidates=52395 accepted=1906
+query=nayarit kpop pages=3 candidates=40 unique_candidates=52426 accepted=1906
+query=nayarit medicina pages=3 candidates=40 unique_candidates=52455 accepted=1906
+query=nayarit humor pages=3 candidates=40 unique_candidates=52487 accepted=1906
+query=nayarit arquitectura pages=3 candidates=40 unique_candidates=52518 accepted=1906
+query=nayarit futbol pages=3 candidates=40 unique_candidates=52553 accepted=1906
+query=nayarit autos pages=3 candidates=39 unique_candidates=52586 accepted=1906
+query=nayarit diseño pages=3 candidates=40 unique_candidates=52609 accepted=1906
+query=nayarit motos pages=3 candidates=40 unique_candidates=52635 accepted=1906
+validated batch accepted+12 rejected+488 total=1918
+validated batch accepted+0 rejected+323 total=1918
+query=nayarit misterio pages=3 candidates=40 unique_candidates=52667 accepted=1918
+query=nayarit unboxing pages=3 candidates=40 unique_candidates=52695 accepted=1918
+query=san luis potosi canal pages=3 candidates=60 unique_candidates=52750 accepted=1918
+query=san luis potosi creador de contenido pages=3 candidates=40 unique_candidates=52782 accepted=1918
+query=san luis potosi influencer pages=3 candidates=40 unique_candidates=52796 accepted=1918
+query=nayarit historia pages=3 candidates=120 unique_candidates=52881 accepted=1918
+query=nayarit review pages=3 candidates=40 unique_candidates=52901 accepted=1918
+query=san luis potosi lifestyle pages=3 candidates=40 unique_candidates=52935 accepted=1918
+query=san luis potosi comida pages=3 candidates=25 unique_candidates=52954 accepted=1918
+query=san luis potosi food vlog pages=3 candidates=28 unique_candidates=52964 accepted=1918
+query=san luis potosi turismo pages=3 candidates=40 unique_candidates=52994 accepted=1918
+query=san luis potosi vlog pages=3 candidates=40 unique_candidates=53021 accepted=1918
+query=san luis potosi travel vlog pages=3 candidates=40 unique_candidates=53044 accepted=1918
+query=nayarit tutorial pages=3 candidates=40 unique_candidates=53067 accepted=1918
+query=san luis potosi youtuber pages=3 candidates=40 unique_candidates=53092 accepted=1918
+query=san luis potosi viajes pages=3 candidates=40 unique_candidates=53106 accepted=1918
+validated batch accepted+21 rejected+450 total=1939
+query=san luis potosi emprendedor pages=3 candidates=40 unique_candidates=53142 accepted=1939
+query=san luis potosi gaming pages=3 candidates=39 unique_candidates=53176 accepted=1939
+query=san luis potosi familia vlog pages=3 candidates=40 unique_candidates=53198 accepted=1939
+query=san luis potosi maquillaje pages=3 candidates=40 unique_candidates=53236 accepted=1939
+query=san luis potosi mama vlog pages=3 candidates=40 unique_candidates=53247 accepted=1939
+query=san luis potosi tecnologia pages=3 candidates=40 unique_candidates=53279 accepted=1939
+query=san luis potosi tech youtuber pages=3 candidates=40 unique_candidates=53306 accepted=1939
+query=san luis potosi fitness pages=3 candidates=40 unique_candidates=53339 accepted=1939
+query=san luis potosi negocios pages=3 candidates=39 unique_candidates=53372 accepted=1939
+query=san luis potosi real estate pages=3 candidates=40 unique_candidates=53404 accepted=1939
+query=san luis potosi beauty youtuber pages=3 candidates=40 unique_candidates=53428 accepted=1939
+query=san luis potosi cocina pages=3 candidates=40 unique_candidates=53459 accepted=1939
+query=san luis potosi recetas pages=3 candidates=40 unique_candidates=53481 accepted=1939
+query=san luis potosi bienes raices pages=3 candidates=40 unique_candidates=53498 accepted=1939
+query=san luis potosi relocation pages=3 candidates=40 unique_candidates=53518 accepted=1939
+query=san luis potosi moda pages=3 candidates=40 unique_candidates=53548 accepted=1939
+validated batch accepted+3 rejected+439 total=1942
+query=san luis potosi finanzas pages=3 candidates=37 unique_candidates=53575 accepted=1942
+query=san luis potosi news pages=3 candidates=60 unique_candidates=53606 accepted=1942
+query=san luis potosi noticias pages=3 candidates=60 unique_candidates=53635 accepted=1942
+query=san luis potosi musica regional pages=3 candidates=40 unique_candidates=53668 accepted=1942
+query=san luis potosi mariachi pages=3 candidates=40 unique_candidates=53699 accepted=1942
+query=san luis potosi corridos pages=3 candidates=34 unique_candidates=53723 accepted=1942
+query=san luis potosi podcast pages=3 candidates=40 unique_candidates=53751 accepted=1942
+query=san luis potosi motos pages=3 candidates=40 unique_candidates=53784 accepted=1942
+query=san luis potosi humor pages=3 candidates=40 unique_candidates=53816 accepted=1942
+query=san luis potosi musica pages=3 candidates=40 unique_candidates=53831 accepted=1942
+query=san luis potosi autos pages=3 candidates=40 unique_candidates=53862 accepted=1942
+query=san luis potosi educacion pages=3 candidates=40 unique_candidates=53894 accepted=1942
+query=san luis potosi marketing pages=3 candidates=40 unique_candidates=53925 accepted=1942
+query=san luis potosi salud pages=3 candidates=40 unique_candidates=53957 accepted=1942
+query=san luis potosi banda pages=3 candidates=40 unique_candidates=53981 accepted=1942
+query=san luis potosi fotografia pages=3 candidates=40 unique_candidates=54016 accepted=1942
+validated batch accepted+11 rejected+457 total=1953
+query=san luis potosi anime pages=3 candidates=40 unique_candidates=54048 accepted=1953
+query=san luis potosi arquitectura pages=3 candidates=40 unique_candidates=54079 accepted=1953
+query=tabasco youtuber pages=3 candidates=40 unique_candidates=54116 accepted=1953
+query=tabasco vlog pages=3 candidates=40 unique_candidates=54150 accepted=1953
+query=san luis potosi manualidades pages=3 candidates=35 unique_candidates=54174 accepted=1953
+query=san luis potosi baseball pages=3 candidates=36 unique_candidates=54182 accepted=1953
+query=san luis potosi kpop pages=3 candidates=40 unique_candidates=54209 accepted=1953
+query=tabasco creador de contenido pages=3 candidates=40 unique_candidates=54235 accepted=1953
+query=san luis potosi futbol pages=3 candidates=40 unique_candidates=54259 accepted=1953
+query=san luis potosi unboxing pages=3 candidates=33 unique_candidates=54280 accepted=1953
+query=san luis potosi misterio pages=3 candidates=40 unique_candidates=54311 accepted=1953
+query=san luis potosi diseño pages=3 candidates=40 unique_candidates=54335 accepted=1953
+query=san luis potosi historia pages=3 candidates=40 unique_candidates=54360 accepted=1953
+query=san luis potosi review pages=3 candidates=39 unique_candidates=54376 accepted=1953
+query=san luis potosi tutorial pages=3 candidates=40 unique_candidates=54398 accepted=1953
+query=san luis potosi medicina pages=3 candidates=40 unique_candidates=54422 accepted=1953
+validated batch accepted+4 rejected+402 total=1957
+query=tabasco maquillaje pages=3 candidates=40 unique_candidates=54459 accepted=1957
+query=tabasco lifestyle pages=3 candidates=40 unique_candidates=54497 accepted=1957
+query=tabasco influencer pages=3 candidates=30 unique_candidates=54511 accepted=1957
+query=tabasco tecnologia pages=3 candidates=40 unique_candidates=54549 accepted=1957
+query=tabasco tech youtuber pages=3 candidates=40 unique_candidates=54577 accepted=1957
+query=tabasco turismo pages=3 candidates=40 unique_candidates=54608 accepted=1957
+query=tabasco travel vlog pages=3 candidates=40 unique_candidates=54635 accepted=1957
+query=tabasco cocina pages=3 candidates=40 unique_candidates=54670 accepted=1957
+query=tabasco beauty youtuber pages=3 candidates=40 unique_candidates=54696 accepted=1957
+query=tabasco recetas pages=3 candidates=40 unique_candidates=54713 accepted=1957
+query=tabasco comida pages=3 candidates=40 unique_candidates=54736 accepted=1957
+query=tabasco fitness pages=3 candidates=40 unique_candidates=54765 accepted=1957
+query=tabasco viajes pages=3 candidates=40 unique_candidates=54789 accepted=1957
+query=tabasco gaming pages=3 candidates=40 unique_candidates=54825 accepted=1957
+query=tabasco canal pages=3 candidates=40 unique_candidates=54852 accepted=1957
+query=tabasco food vlog pages=3 candidates=39 unique_candidates=54877 accepted=1957
+validated batch accepted+7 rejected+448 total=1964
+query=tabasco relocation pages=3 candidates=40 unique_candidates=54901 accepted=1964
+query=tabasco noticias pages=3 candidates=60 unique_candidates=54945 accepted=1964
+query=tabasco corridos pages=3 candidates=40 unique_candidates=54978 accepted=1964
+query=tabasco moda pages=3 candidates=40 unique_candidates=55011 accepted=1964
+query=tabasco bienes raices pages=3 candidates=40 unique_candidates=55050 accepted=1964
+query=tabasco emprendedor pages=3 candidates=40 unique_candidates=55085 accepted=1964
+query=tabasco negocios pages=3 candidates=40 unique_candidates=55112 accepted=1964
+query=tabasco mariachi pages=3 candidates=40 unique_candidates=55146 accepted=1964
+query=tabasco news pages=3 candidates=40 unique_candidates=55167 accepted=1964
+query=tabasco musica pages=3 candidates=40 unique_candidates=55195 accepted=1964
+query=tabasco musica regional pages=3 candidates=40 unique_candidates=55223 accepted=1964
+query=tabasco real estate pages=3 candidates=40 unique_candidates=55230 accepted=1964
+query=tabasco banda pages=3 candidates=40 unique_candidates=55255 accepted=1964
+query=tabasco mama vlog pages=3 candidates=40 unique_candidates=55270 accepted=1964
+query=tabasco educacion pages=3 candidates=40 unique_candidates=55298 accepted=1964
+query=tabasco familia vlog pages=3 candidates=40 unique_candidates=55310 accepted=1964
+validated batch accepted+5 rejected+428 total=1969
+query=tabasco fotografia pages=3 candidates=40 unique_candidates=55340 accepted=1969
+query=tabasco manualidades pages=3 candidates=40 unique_candidates=55368 accepted=1969
+query=tabasco kpop pages=3 candidates=40 unique_candidates=55400 accepted=1969
+query=tabasco finanzas pages=3 candidates=40 unique_candidates=55426 accepted=1969
+query=tabasco podcast pages=3 candidates=40 unique_candidates=55463 accepted=1969
+query=tabasco diseño pages=3 candidates=40 unique_candidates=55492 accepted=1969
+query=tabasco salud pages=3 candidates=40 unique_candidates=55524 accepted=1969
+query=tabasco futbol pages=3 candidates=40 unique_candidates=55559 accepted=1969
+query=tabasco medicina pages=3 candidates=40 unique_candidates=55584 accepted=1969
+query=tabasco arquitectura pages=3 candidates=40 unique_candidates=55616 accepted=1969
+query=tabasco motos pages=3 candidates=40 unique_candidates=55649 accepted=1969
+query=tabasco baseball pages=3 candidates=40 unique_candidates=55660 accepted=1969
+query=tabasco marketing pages=3 candidates=40 unique_candidates=55691 accepted=1969
+query=tabasco autos pages=3 candidates=40 unique_candidates=55725 accepted=1969
+query=tabasco anime pages=3 candidates=40 unique_candidates=55757 accepted=1969
+query=tabasco humor pages=3 candidates=30 unique_candidates=55779 accepted=1969
+validated batch accepted+3 rejected+466 total=1972
+query=tamaulipas vlog pages=3 candidates=31 unique_candidates=55807 accepted=1972
+query=tamaulipas influencer pages=3 candidates=40 unique_candidates=55829 accepted=1972
+query=tamaulipas turismo pages=3 candidates=40 unique_candidates=55866 accepted=1972
+query=tamaulipas viajes pages=3 candidates=40 unique_candidates=55895 accepted=1972
+query=tamaulipas creador de contenido pages=3 candidates=40 unique_candidates=55931 accepted=1972
+query=tabasco review pages=3 candidates=39 unique_candidates=55966 accepted=1972
+query=tabasco misterio pages=3 candidates=40 unique_candidates=55992 accepted=1972
+query=tamaulipas lifestyle pages=3 candidates=40 unique_candidates=56031 accepted=1972
+query=tabasco historia pages=3 candidates=40 unique_candidates=56051 accepted=1972
+query=tamaulipas travel vlog pages=3 candidates=40 unique_candidates=56074 accepted=1972
+query=tamaulipas comida pages=3 candidates=40 unique_candidates=56102 accepted=1972
+query=tamaulipas canal pages=3 candidates=40 unique_candidates=56134 accepted=1972
+query=tabasco unboxing pages=3 candidates=40 unique_candidates=56165 accepted=1972
+query=tamaulipas food vlog pages=3 candidates=27 unique_candidates=56174 accepted=1972
+query=tabasco tutorial pages=3 candidates=40 unique_candidates=56201 accepted=1972
+query=tamaulipas youtuber pages=3 candidates=40 unique_candidates=56225 accepted=1972
+validated batch accepted+8 rejected+438 total=1980
+query=tamaulipas relocation pages=3 candidates=39 unique_candidates=56239 accepted=1980
+query=tamaulipas bienes raices pages=3 candidates=40 unique_candidates=56275 accepted=1980
+query=tamaulipas real estate pages=3 candidates=40 unique_candidates=56283 accepted=1980
+query=tamaulipas cocina pages=3 candidates=40 unique_candidates=56305 accepted=1980
+query=tamaulipas emprendedor pages=3 candidates=39 unique_candidates=56333 accepted=1980
+query=tamaulipas gaming pages=3 candidates=40 unique_candidates=56370 accepted=1980
+query=tamaulipas tech youtuber pages=3 candidates=40 unique_candidates=56398 accepted=1980
+query=tamaulipas recetas pages=3 candidates=40 unique_candidates=56410 accepted=1980
+query=tamaulipas maquillaje pages=3 candidates=40 unique_candidates=56444 accepted=1980
+query=tamaulipas negocios pages=3 candidates=40 unique_candidates=56469 accepted=1980
+query=tamaulipas mama vlog pages=3 candidates=40 unique_candidates=56484 accepted=1980
+query=tamaulipas tecnologia pages=3 candidates=40 unique_candidates=56503 accepted=1980
+query=tamaulipas moda pages=3 candidates=40 unique_candidates=56529 accepted=1980
+query=tamaulipas familia vlog pages=3 candidates=40 unique_candidates=56549 accepted=1980
+query=tamaulipas beauty youtuber pages=3 candidates=40 unique_candidates=56563 accepted=1980
+query=tamaulipas fitness pages=3 candidates=40 unique_candidates=56592 accepted=1980
+validated batch accepted+6 rejected+361 total=1986
+query=tamaulipas news pages=3 candidates=60 unique_candidates=56624 accepted=1986
+query=tamaulipas marketing pages=3 candidates=39 unique_candidates=56646 accepted=1986
+query=tamaulipas corridos pages=3 candidates=40 unique_candidates=56679 accepted=1986
+query=tamaulipas finanzas pages=3 candidates=40 unique_candidates=56702 accepted=1986
+query=tamaulipas podcast pages=3 candidates=40 unique_candidates=56724 accepted=1986
+query=tamaulipas noticias pages=3 candidates=40 unique_candidates=56745 accepted=1986
+query=tamaulipas musica regional pages=3 candidates=40 unique_candidates=56769 accepted=1986
+query=tamaulipas salud pages=3 candidates=40 unique_candidates=56799 accepted=1986
+query=tamaulipas humor pages=3 candidates=40 unique_candidates=56826 accepted=1986
+query=tamaulipas motos pages=3 candidates=40 unique_candidates=56854 accepted=1986
+query=tamaulipas autos pages=3 candidates=40 unique_candidates=56882 accepted=1986
+query=tamaulipas fotografia pages=3 candidates=40 unique_candidates=56913 accepted=1986
+query=tamaulipas educacion pages=3 candidates=40 unique_candidates=56943 accepted=1986
+query=tamaulipas mariachi pages=3 candidates=40 unique_candidates=56980 accepted=1986
+query=tamaulipas banda pages=3 candidates=40 unique_candidates=57009 accepted=1986
+query=tamaulipas musica pages=3 candidates=40 unique_candidates=57025 accepted=1986
+validated batch accepted+8 rejected+425 total=1994
+query=tamaulipas manualidades pages=3 candidates=38 unique_candidates=57058 accepted=1994
+query=tamaulipas kpop pages=3 candidates=40 unique_candidates=57091 accepted=1994
+query=tamaulipas medicina pages=3 candidates=40 unique_candidates=57114 accepted=1994
+query=tamaulipas diseño pages=3 candidates=40 unique_candidates=57143 accepted=1994
+query=tlaxcala vlog pages=3 candidates=40 unique_candidates=57180 accepted=1994
+query=tamaulipas futbol pages=3 candidates=40 unique_candidates=57219 accepted=1994
+query=tamaulipas tutorial pages=3 candidates=40 unique_candidates=57244 accepted=1994
+query=tlaxcala creador de contenido pages=3 candidates=39 unique_candidates=57273 accepted=1994
+query=tlaxcala youtuber pages=3 candidates=40 unique_candidates=57311 accepted=1994
+query=tamaulipas anime pages=3 candidates=40 unique_candidates=57341 accepted=1994
+query=tamaulipas historia pages=3 candidates=40 unique_candidates=57369 accepted=1994
+query=tamaulipas arquitectura pages=3 candidates=40 unique_candidates=57395 accepted=1994
+query=tamaulipas misterio pages=3 candidates=40 unique_candidates=57418 accepted=1994
+query=tamaulipas review pages=3 candidates=40 unique_candidates=57437 accepted=1994
+query=tamaulipas unboxing pages=3 candidates=40 unique_candidates=57466 accepted=1994
+query=tamaulipas baseball pages=3 candidates=40 unique_candidates=57487 accepted=1994
+validated batch accepted+16 rejected+446 total=2010
+query=tlaxcala recetas pages=3 candidates=40 unique_candidates=57517 accepted=2010
+query=tlaxcala cocina pages=3 candidates=40 unique_candidates=57539 accepted=2010
+query=tlaxcala viajes pages=3 candidates=40 unique_candidates=57570 accepted=2010
+query=tlaxcala food vlog pages=3 candidates=14 unique_candidates=57576 accepted=2010
+query=tlaxcala canal pages=3 candidates=40 unique_candidates=57609 accepted=2010
+query=tlaxcala influencer pages=3 candidates=40 unique_candidates=57628 accepted=2010
+query=tlaxcala tech youtuber pages=3 candidates=40 unique_candidates=57663 accepted=2010
+query=tlaxcala lifestyle pages=3 candidates=40 unique_candidates=57690 accepted=2010
+query=tlaxcala comida pages=3 candidates=40 unique_candidates=57709 accepted=2010
+query=tlaxcala travel vlog pages=3 candidates=40 unique_candidates=57724 accepted=2010
+query=tlaxcala fitness pages=3 candidates=30 unique_candidates=57747 accepted=2010
+query=tlaxcala gaming pages=3 candidates=40 unique_candidates=57778 accepted=2010
+query=tlaxcala maquillaje pages=3 candidates=40 unique_candidates=57807 accepted=2010
+query=tlaxcala tecnologia pages=3 candidates=40 unique_candidates=57839 accepted=2010
+query=tlaxcala beauty youtuber pages=3 candidates=40 unique_candidates=57855 accepted=2010
+query=tlaxcala turismo pages=3 candidates=40 unique_candidates=57878 accepted=2010
+validated batch accepted+8 rejected+383 total=2018
+query=tlaxcala corridos pages=3 candidates=40 unique_candidates=57918 accepted=2018
+query=tlaxcala relocation pages=3 candidates=39 unique_candidates=57930 accepted=2018
+query=tlaxcala familia vlog pages=3 candidates=32 unique_candidates=57941 accepted=2018
+query=tlaxcala emprendedor pages=3 candidates=40 unique_candidates=57974 accepted=2018
+query=tlaxcala noticias pages=3 candidates=40 unique_candidates=58007 accepted=2018
+query=tlaxcala bienes raices pages=3 candidates=40 unique_candidates=58040 accepted=2018
+query=tlaxcala educacion pages=3 candidates=40 unique_candidates=58070 accepted=2018
+query=tlaxcala musica pages=3 candidates=40 unique_candidates=58108 accepted=2018
+query=tlaxcala moda pages=3 candidates=40 unique_candidates=58138 accepted=2018
+query=tlaxcala musica regional pages=3 candidates=40 unique_candidates=58162 accepted=2018
+query=tlaxcala mariachi pages=3 candidates=40 unique_candidates=58192 accepted=2018
+query=tlaxcala real estate pages=3 candidates=40 unique_candidates=58204 accepted=2018
+query=tlaxcala mama vlog pages=3 candidates=40 unique_candidates=58217 accepted=2018
+query=tlaxcala banda pages=3 candidates=40 unique_candidates=58239 accepted=2018
+query=tlaxcala news pages=3 candidates=40 unique_candidates=58251 accepted=2018
+query=tlaxcala negocios pages=3 candidates=40 unique_candidates=58271 accepted=2018
+validated batch accepted+8 rejected+385 total=2026
+query=tlaxcala anime pages=3 candidates=40 unique_candidates=58301 accepted=2026
+query=tlaxcala autos pages=3 candidates=40 unique_candidates=58328 accepted=2026
+query=tlaxcala finanzas pages=3 candidates=34 unique_candidates=58349 accepted=2026
+query=tlaxcala manualidades pages=3 candidates=25 unique_candidates=58370 accepted=2026
+query=tlaxcala baseball pages=3 candidates=25 unique_candidates=58372 accepted=2026
+query=tlaxcala salud pages=3 candidates=40 unique_candidates=58402 accepted=2026
+query=tlaxcala diseño pages=3 candidates=40 unique_candidates=58423 accepted=2026
+query=tlaxcala marketing pages=3 candidates=40 unique_candidates=58443 accepted=2026
+query=tlaxcala kpop pages=3 candidates=40 unique_candidates=58471 accepted=2026
+query=tlaxcala humor pages=3 candidates=40 unique_candidates=58499 accepted=2026
+query=tlaxcala futbol pages=3 candidates=40 unique_candidates=58526 accepted=2026
+query=tlaxcala podcast pages=3 candidates=40 unique_candidates=58548 accepted=2026
+query=tlaxcala arquitectura pages=3 candidates=40 unique_candidates=58570 accepted=2026
+query=tlaxcala fotografia pages=3 candidates=40 unique_candidates=58600 accepted=2026
+query=tlaxcala medicina pages=3 candidates=40 unique_candidates=58624 accepted=2026
+query=tlaxcala motos pages=3 candidates=40 unique_candidates=58653 accepted=2026
+validated batch accepted+6 rejected+376 total=2032
+query=aguascalientes turismo pages=3 candidates=40 unique_candidates=58687 accepted=2032
+query=aguascalientes travel vlog pages=3 candidates=40 unique_candidates=58714 accepted=2032
+query=aguascalientes influencer pages=3 candidates=32 unique_candidates=58721 accepted=2032
+query=aguascalientes canal pages=3 candidates=40 unique_candidates=58757 accepted=2032
+query=tlaxcala unboxing pages=3 candidates=40 unique_candidates=58787 accepted=2032
+query=aguascalientes comida pages=3 candidates=40 unique_candidates=58813 accepted=2032
+query=aguascalientes creador de contenido pages=3 candidates=40 unique_candidates=58840 accepted=2032
+query=aguascalientes viajes pages=3 candidates=40 unique_candidates=58863 accepted=2032
+query=aguascalientes food vlog pages=3 candidates=27 unique_candidates=58875 accepted=2032
+query=aguascalientes vlog pages=3 candidates=40 unique_candidates=58899 accepted=2032
+query=tlaxcala misterio pages=3 candidates=40 unique_candidates=58926 accepted=2032
+query=tlaxcala review pages=3 candidates=39 unique_candidates=58936 accepted=2032
+query=tlaxcala historia pages=3 candidates=40 unique_candidates=58949 accepted=2032
+query=aguascalientes lifestyle pages=3 candidates=40 unique_candidates=58979 accepted=2032
+query=tlaxcala tutorial pages=3 candidates=40 unique_candidates=59004 accepted=2032
+query=aguascalientes youtuber pages=3 candidates=40 unique_candidates=59030 accepted=2032
+validated batch accepted+9 rejected+368 total=2041
+query=aguascalientes negocios pages=3 candidates=38 unique_candidates=59065 accepted=2041
+query=aguascalientes moda pages=3 candidates=39 unique_candidates=59099 accepted=2041
+query=aguascalientes tech youtuber pages=3 candidates=40 unique_candidates=59130 accepted=2041
+query=aguascalientes tecnologia pages=3 candidates=40 unique_candidates=59159 accepted=2041
+query=aguascalientes real estate pages=3 candidates=40 unique_candidates=59186 accepted=2041
+query=aguascalientes recetas pages=3 candidates=40 unique_candidates=59209 accepted=2041
+query=aguascalientes emprendedor pages=3 candidates=40 unique_candidates=59238 accepted=2041
+query=aguascalientes gaming pages=3 candidates=40 unique_candidates=59267 accepted=2041
+query=aguascalientes relocation pages=3 candidates=39 unique_candidates=59275 accepted=2041
+query=aguascalientes cocina pages=3 candidates=40 unique_candidates=59288 accepted=2041
+query=aguascalientes familia vlog pages=3 candidates=40 unique_candidates=59305 accepted=2041
+query=aguascalientes bienes raices pages=3 candidates=40 unique_candidates=59322 accepted=2041
+query=aguascalientes maquillaje pages=3 candidates=40 unique_candidates=59354 accepted=2041
+query=aguascalientes fitness pages=3 candidates=40 unique_candidates=59387 accepted=2041
+query=aguascalientes beauty youtuber pages=3 candidates=120 unique_candidates=59450 accepted=2041
+query=aguascalientes mama vlog pages=3 candidates=40 unique_candidates=59464 accepted=2041
+validated batch accepted+4 rejected+430 total=2045
+query=aguascalientes marketing pages=3 candidates=40 unique_candidates=59494 accepted=2045
+query=aguascalientes finanzas pages=3 candidates=40 unique_candidates=59517 accepted=2045
+query=aguascalientes news pages=3 candidates=40 unique_candidates=59534 accepted=2045
+query=aguascalientes corridos pages=3 candidates=40 unique_candidates=59571 accepted=2045
+query=aguascalientes banda pages=3 candidates=40 unique_candidates=59601 accepted=2045
+query=aguascalientes salud pages=3 candidates=40 unique_candidates=59628 accepted=2045
+query=aguascalientes musica pages=3 candidates=40 unique_candidates=59644 accepted=2045
+query=aguascalientes autos pages=3 candidates=40 unique_candidates=59675 accepted=2045
+query=aguascalientes fotografia pages=3 candidates=120 unique_candidates=59754 accepted=2045
+query=aguascalientes podcast pages=3 candidates=40 unique_candidates=59785 accepted=2045
+query=aguascalientes noticias pages=3 candidates=40 unique_candidates=59808 accepted=2045
+query=aguascalientes educacion pages=3 candidates=39 unique_candidates=59841 accepted=2045
+query=aguascalientes humor pages=3 candidates=40 unique_candidates=59869 accepted=2045
+query=aguascalientes mariachi pages=3 candidates=40 unique_candidates=59901 accepted=2045
+query=aguascalientes motos pages=3 candidates=40 unique_candidates=59931 accepted=2045
+query=aguascalientes musica regional pages=3 candidates=40 unique_candidates=59942 accepted=2045
+validated batch accepted+9 rejected+469 total=2054
+query=aguascalientes kpop pages=3 candidates=40 unique_candidates=59975 accepted=2054
+query=colima vlog pages=3 candidates=40 unique_candidates=60011 accepted=2054
+query=aguascalientes diseño pages=3 candidates=39 unique_candidates=60038 accepted=2054
+query=colima creador de contenido pages=3 candidates=35 unique_candidates=60064 accepted=2054
+query=aguascalientes review pages=3 candidates=40 unique_candidates=60076 accepted=2054
+query=aguascalientes misterio pages=3 candidates=40 unique_candidates=60103 accepted=2054
+query=aguascalientes anime pages=3 candidates=40 unique_candidates=60131 accepted=2054
+query=aguascalientes medicina pages=3 candidates=40 unique_candidates=60154 accepted=2054
+query=aguascalientes futbol pages=3 candidates=40 unique_candidates=60181 accepted=2054
+query=colima youtuber pages=3 candidates=40 unique_candidates=60218 accepted=2054
+query=aguascalientes baseball pages=3 candidates=40 unique_candidates=60228 accepted=2054
+query=aguascalientes manualidades pages=3 candidates=37 unique_candidates=60255 accepted=2054
+query=aguascalientes tutorial pages=3 candidates=40 unique_candidates=60279 accepted=2054
+query=aguascalientes arquitectura pages=3 candidates=40 unique_candidates=60303 accepted=2054
+query=aguascalientes historia pages=3 candidates=40 unique_candidates=60321 accepted=2054
+query=aguascalientes unboxing pages=3 candidates=39 unique_candidates=60339 accepted=2054
+validated batch accepted+6 rejected+391 total=2060
+query=colima influencer pages=3 candidates=40 unique_candidates=60362 accepted=2060
+query=colima cocina pages=3 candidates=40 unique_candidates=60396 accepted=2060
+query=colima gaming pages=3 candidates=30 unique_candidates=60421 accepted=2060
+query=colima maquillaje pages=3 candidates=40 unique_candidates=60453 accepted=2060
+query=colima tecnologia pages=3 candidates=40 unique_candidates=60489 accepted=2060
+query=colima lifestyle pages=3 candidates=40 unique_candidates=60517 accepted=2060
+query=colima canal pages=3 candidates=40 unique_candidates=60547 accepted=2060
+query=colima turismo pages=3 candidates=40 unique_candidates=60578 accepted=2060
+query=colima recetas pages=3 candidates=40 unique_candidates=60601 accepted=2060
+query=colima tech youtuber pages=3 candidates=40 unique_candidates=60619 accepted=2060
+query=colima comida pages=3 candidates=40 unique_candidates=60640 accepted=2060
+query=colima beauty youtuber pages=3 candidates=40 unique_candidates=60659 accepted=2060
+query=colima viajes pages=3 candidates=40 unique_candidates=60684 accepted=2060
+query=colima travel vlog pages=3 candidates=40 unique_candidates=60702 accepted=2060
+query=colima food vlog pages=3 candidates=35 unique_candidates=60717 accepted=2060
+query=colima fitness pages=3 candidates=40 unique_candidates=60750 accepted=2060
+validated batch accepted+9 rejected+402 total=2069
+query=colima banda pages=3 candidates=31 unique_candidates=60778 accepted=2069
+query=colima familia vlog pages=3 candidates=40 unique_candidates=60795 accepted=2069
+query=colima corridos pages=3 candidates=40 unique_candidates=60831 accepted=2069
+query=colima emprendedor pages=3 candidates=40 unique_candidates=60868 accepted=2069
+query=colima news pages=3 candidates=40 unique_candidates=60887 accepted=2069
+query=colima bienes raices pages=3 candidates=40 unique_candidates=60923 accepted=2069
+query=colima musica pages=3 candidates=40 unique_candidates=60944 accepted=2069
+query=colima noticias pages=3 candidates=40 unique_candidates=60974 accepted=2069
+query=colima negocios pages=3 candidates=40 unique_candidates=60998 accepted=2069
+query=colima relocation pages=3 candidates=39 unique_candidates=61009 accepted=2069
+query=colima mariachi pages=3 candidates=40 unique_candidates=61031 accepted=2069
+query=colima educacion pages=3 candidates=40 unique_candidates=61062 accepted=2069
+query=colima mama vlog pages=3 candidates=40 unique_candidates=61073 accepted=2069
+query=colima real estate pages=3 candidates=40 unique_candidates=61091 accepted=2069
+query=colima musica regional pages=3 candidates=40 unique_candidates=61106 accepted=2069
+query=colima moda pages=3 candidates=40 unique_candidates=61136 accepted=2069
+validated batch accepted+2 rejected+384 total=2071
+query=colima baseball pages=3 candidates=25 unique_candidates=61140 accepted=2071
+query=colima anime pages=3 candidates=40 unique_candidates=61167 accepted=2071
+query=colima finanzas pages=3 candidates=34 unique_candidates=61189 accepted=2071
+query=colima marketing pages=3 candidates=40 unique_candidates=61211 accepted=2071
+query=colima humor pages=3 candidates=40 unique_candidates=61239 accepted=2071
+query=colima podcast pages=3 candidates=40 unique_candidates=61260 accepted=2071
+query=colima autos pages=3 candidates=39 unique_candidates=61295 accepted=2071
+query=colima kpop pages=3 candidates=40 unique_candidates=61324 accepted=2071
+query=colima fotografia pages=3 candidates=40 unique_candidates=61354 accepted=2071
+query=colima manualidades pages=3 candidates=31 unique_candidates=61379 accepted=2071
+query=colima diseño pages=3 candidates=40 unique_candidates=61402 accepted=2071
+query=colima arquitectura pages=3 candidates=40 unique_candidates=61420 accepted=2071
+query=colima medicina pages=3 candidates=40 unique_candidates=61445 accepted=2071
+query=colima futbol pages=3 candidates=40 unique_candidates=61473 accepted=2071
+query=colima motos pages=3 candidates=40 unique_candidates=61503 accepted=2071
+query=colima salud pages=3 candidates=40 unique_candidates=61531 accepted=2071
+validated batch accepted+5 rejected+390 total=2076
+query=colima review pages=3 candidates=39 unique_candidates=61548 accepted=2076
+query=colima unboxing pages=3 candidates=40 unique_candidates=61571 accepted=2076
+query=campeche food vlog pages=3 candidates=19 unique_candidates=61576 accepted=2076
+query=campeche creador de contenido pages=3 candidates=35 unique_candidates=61606 accepted=2076
+query=campeche influencer pages=3 candidates=38 unique_candidates=61630 accepted=2076
+query=campeche lifestyle pages=3 candidates=40 unique_candidates=61669 accepted=2076
+query=campeche canal pages=3 candidates=40 unique_candidates=61702 accepted=2076
+query=colima tutorial pages=3 candidates=40 unique_candidates=61727 accepted=2076
+query=campeche vlog pages=3 candidates=40 unique_candidates=61758 accepted=2076
+query=campeche youtuber pages=3 candidates=40 unique_candidates=61782 accepted=2076
+query=colima misterio pages=3 candidates=40 unique_candidates=61810 accepted=2076
+query=campeche travel vlog pages=3 candidates=40 unique_candidates=61827 accepted=2076
+query=campeche viajes pages=3 candidates=40 unique_candidates=61855 accepted=2076
+query=colima historia pages=3 candidates=40 unique_candidates=61874 accepted=2076
+query=campeche comida pages=3 candidates=40 unique_candidates=61900 accepted=2076
+query=campeche turismo pages=3 candidates=40 unique_candidates=61930 accepted=2076
+validated batch accepted+7 rejected+392 total=2083
+query=campeche relocation pages=3 candidates=39 unique_candidates=61938 accepted=2083
+query=campeche maquillaje pages=3 candidates=40 unique_candidates=61967 accepted=2083
+query=campeche cocina pages=3 candidates=30 unique_candidates=61987 accepted=2083
+query=campeche moda pages=3 candidates=40 unique_candidates=62018 accepted=2083
+query=campeche emprendedor pages=3 candidates=40 unique_candidates=62050 accepted=2083
+query=campeche recetas pages=3 candidates=40 unique_candidates=62071 accepted=2083
+query=campeche bienes raices pages=3 candidates=40 unique_candidates=62106 accepted=2083
+query=campeche negocios pages=3 candidates=40 unique_candidates=62130 accepted=2083
+query=campeche tech youtuber pages=3 candidates=40 unique_candidates=62154 accepted=2083
+query=campeche fitness pages=3 candidates=40 unique_candidates=62177 accepted=2083
+query=campeche tecnologia pages=3 candidates=40 unique_candidates=62203 accepted=2083
+query=campeche mama vlog pages=3 candidates=40 unique_candidates=62215 accepted=2083
+query=campeche familia vlog pages=3 candidates=40 unique_candidates=62228 accepted=2083
+query=campeche gaming pages=3 candidates=40 unique_candidates=62253 accepted=2083
+query=campeche beauty youtuber pages=3 candidates=40 unique_candidates=62266 accepted=2083
+query=campeche real estate pages=3 candidates=40 unique_candidates=62282 accepted=2083
+validated batch accepted+5 rejected+347 total=2088
+query=campeche salud pages=3 candidates=40 unique_candidates=62315 accepted=2088
+query=campeche corridos pages=3 candidates=40 unique_candidates=62350 accepted=2088
+query=campeche humor pages=3 candidates=40 unique_candidates=62380 accepted=2088
+query=campeche motos pages=3 candidates=30 unique_candidates=62401 accepted=2088
+query=campeche mariachi pages=3 candidates=40 unique_candidates=62433 accepted=2088
+query=campeche podcast pages=3 candidates=40 unique_candidates=62454 accepted=2088
+query=campeche noticias pages=3 candidates=40 unique_candidates=62478 accepted=2088
+query=campeche banda pages=3 candidates=40 unique_candidates=62511 accepted=2088
+query=campeche finanzas pages=3 candidates=32 unique_candidates=62527 accepted=2088
+query=campeche educacion pages=3 candidates=40 unique_candidates=62555 accepted=2088
+query=campeche news pages=3 candidates=40 unique_candidates=62562 accepted=2088
+query=campeche musica pages=3 candidates=40 unique_candidates=62585 accepted=2088
+query=campeche marketing pages=3 candidates=40 unique_candidates=62600 accepted=2088
+query=campeche musica regional pages=3 candidates=40 unique_candidates=62627 accepted=2088
+query=campeche fotografia pages=3 candidates=40 unique_candidates=62650 accepted=2088
+query=campeche autos pages=3 candidates=40 unique_candidates=62669 accepted=2088
+validated batch accepted+4 rejected+383 total=2092
+query=campeche medicina pages=3 candidates=40 unique_candidates=62691 accepted=2092
+query=campeche manualidades pages=3 candidates=37 unique_candidates=62718 accepted=2092
+query=zacatecas creador de contenido pages=3 candidates=40 unique_candidates=62746 accepted=2092
+query=campeche unboxing pages=3 candidates=40 unique_candidates=62778 accepted=2092
+query=campeche arquitectura pages=3 candidates=40 unique_candidates=62805 accepted=2092
+query=campeche futbol pages=3 candidates=40 unique_candidates=62835 accepted=2092
+query=campeche diseño pages=3 candidates=40 unique_candidates=62860 accepted=2092
+query=zacatecas vlog pages=3 candidates=40 unique_candidates=62892 accepted=2092
+query=campeche misterio pages=3 candidates=40 unique_candidates=62920 accepted=2092
+query=campeche anime pages=3 candidates=40 unique_candidates=62943 accepted=2092
+query=campeche review pages=3 candidates=39 unique_candidates=62951 accepted=2092
+query=campeche kpop pages=3 candidates=40 unique_candidates=62980 accepted=2092
+query=campeche baseball pages=3 candidates=40 unique_candidates=62987 accepted=2092
+query=zacatecas youtuber pages=3 candidates=40 unique_candidates=63021 accepted=2092
+query=campeche historia pages=3 candidates=40 unique_candidates=63038 accepted=2092
+query=campeche tutorial pages=3 candidates=40 unique_candidates=63061 accepted=2092
+validated batch accepted+12 rejected+380 total=2104
+query=zacatecas influencer pages=3 candidates=40 unique_candidates=63080 accepted=2104
+query=zacatecas food vlog pages=3 candidates=35 unique_candidates=63101 accepted=2104
+query=zacatecas beauty youtuber pages=3 candidates=40 unique_candidates=63126 accepted=2104
+query=zacatecas tecnologia pages=3 candidates=40 unique_candidates=63162 accepted=2104
+query=zacatecas recetas pages=3 candidates=40 unique_candidates=63196 accepted=2104
+query=zacatecas maquillaje pages=3 candidates=40 unique_candidates=63223 accepted=2104
+query=zacatecas turismo pages=3 candidates=40 unique_candidates=63255 accepted=2104
+query=zacatecas fitness pages=3 candidates=40 unique_candidates=63280 accepted=2104
+query=zacatecas canal pages=3 candidates=40 unique_candidates=63300 accepted=2104
+query=zacatecas tech youtuber pages=3 candidates=40 unique_candidates=63316 accepted=2104
+query=zacatecas lifestyle pages=3 candidates=40 unique_candidates=63328 accepted=2104
+query=zacatecas comida pages=3 candidates=40 unique_candidates=63347 accepted=2104
+query=zacatecas viajes pages=3 candidates=40 unique_candidates=63369 accepted=2104
+query=zacatecas travel vlog pages=3 candidates=40 unique_candidates=63389 accepted=2104
+query=zacatecas gaming pages=3 candidates=40 unique_candidates=63423 accepted=2104
+query=zacatecas cocina pages=3 candidates=40 unique_candidates=63441 accepted=2104
+validated batch accepted+13 rejected+367 total=2117
+query=zacatecas relocation pages=3 candidates=39 unique_candidates=63451 accepted=2117
+query=zacatecas emprendedor pages=3 candidates=40 unique_candidates=63485 accepted=2117
+query=zacatecas musica regional pages=3 candidates=40 unique_candidates=63518 accepted=2117
+query=zacatecas mama vlog pages=3 candidates=40 unique_candidates=63530 accepted=2117
+query=zacatecas banda pages=3 candidates=40 unique_candidates=63554 accepted=2117
+query=zacatecas educacion pages=3 candidates=40 unique_candidates=63586 accepted=2117
+query=zacatecas bienes raices pages=3 candidates=40 unique_candidates=63613 accepted=2117
+query=zacatecas real estate pages=3 candidates=40 unique_candidates=63623 accepted=2117
+query=zacatecas noticias pages=3 candidates=40 unique_candidates=63642 accepted=2117
+query=zacatecas moda pages=3 candidates=40 unique_candidates=63669 accepted=2117
+query=zacatecas musica pages=3 candidates=40 unique_candidates=63682 accepted=2117
+query=zacatecas news pages=3 candidates=40 unique_candidates=63694 accepted=2117
+query=zacatecas corridos pages=3 candidates=40 unique_candidates=63720 accepted=2117
+query=zacatecas mariachi pages=3 candidates=40 unique_candidates=63756 accepted=2117
+query=zacatecas familia vlog pages=3 candidates=40 unique_candidates=63776 accepted=2117
+query=zacatecas negocios pages=3 candidates=40 unique_candidates=63802 accepted=2117
+validated batch accepted+9 rejected+352 total=2126
+query=zacatecas finanzas pages=3 candidates=30 unique_candidates=63823 accepted=2126
+query=zacatecas manualidades pages=3 candidates=31 unique_candidates=63850 accepted=2126
+query=zacatecas medicina pages=3 candidates=40 unique_candidates=63880 accepted=2126
+query=zacatecas marketing pages=3 candidates=39 unique_candidates=63903 accepted=2126
+query=zacatecas motos pages=3 candidates=40 unique_candidates=63935 accepted=2126
+query=zacatecas anime pages=3 candidates=40 unique_candidates=63964 accepted=2126
+query=zacatecas kpop pages=3 candidates=40 unique_candidates=63993 accepted=2126
+query=zacatecas futbol pages=3 candidates=40 unique_candidates=64020 accepted=2126
+query=zacatecas arquitectura pages=3 candidates=40 unique_candidates=64046 accepted=2126
+query=zacatecas humor pages=3 candidates=40 unique_candidates=64071 accepted=2126
+query=zacatecas fotografia pages=3 candidates=40 unique_candidates=64099 accepted=2126
+query=zacatecas baseball pages=3 candidates=40 unique_candidates=64121 accepted=2126
+query=zacatecas diseño pages=3 candidates=40 unique_candidates=64147 accepted=2126
+query=zacatecas podcast pages=3 candidates=40 unique_candidates=64159 accepted=2126
+query=zacatecas salud pages=3 candidates=40 unique_candidates=64190 accepted=2126
+query=zacatecas autos pages=3 candidates=40 unique_candidates=64226 accepted=2126
+validated batch accepted+8 rejected+416 total=2134
+query=zacatecas review pages=3 candidates=38 unique_candidates=64241 accepted=2134
+query=zacatecas historia pages=3 candidates=40 unique_candidates=64258 accepted=2134
+query=zacatecas unboxing pages=3 candidates=40 unique_candidates=64283 accepted=2134
+query=zacatecas tutorial pages=3 candidates=40 unique_candidates=64308 accepted=2134
+query=zacatecas misterio pages=3 candidates=40 unique_candidates=64329 accepted=2134
+validated batch accepted+3 rejected+100 total=2137
+query=mexican vlog 10 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican vlog 50 mil suscriptores pages=3 candidates=2 unique_candidates=64329 accepted=2137
+query=mexican vlog 500 mil suscriptores pages=3 candidates=3 unique_candidates=64329 accepted=2137
+query=mexican vlog 200k subscribers pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican vlog 100k subscribers pages=3 candidates=3 unique_candidates=64329 accepted=2137
+query=mexican vlog 20k subscribers pages=3 candidates=2 unique_candidates=64329 accepted=2137
+query=mexican vlog 200 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican vlog 50k subscribers pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican vlog 100 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican vlog 20 mil suscriptores pages=3 candidates=2 unique_candidates=64329 accepted=2137
+query=mexican vlog 10k subscribers pages=3 candidates=4 unique_candidates=64329 accepted=2137
+query=mexican creador de contenido 20 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican creador de contenido 50 mil suscriptores pages=3 candidates=0 unique_candidates=64329 accepted=2137
+query=mexican creador de contenido 10 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican youtuber 50 mil suscriptores pages=3 candidates=1 unique_candidates=64329 accepted=2137
+query=mexican youtuber 20 mil suscriptores pages=3 candidates=4 unique_candidates=64329 accepted=2137
+query=mexican youtuber 500 mil suscriptores pages=3 candidates=7 unique_candidates=64330 accepted=2137
+query=mexican youtuber 20k subscribers pages=3 candidates=2 unique_candidates=64330 accepted=2137
+query=mexican vlog 500k subscribers pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican youtuber 200k subscribers pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican youtuber 200 mil suscriptores pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican youtuber 50k subscribers pages=3 candidates=2 unique_candidates=64330 accepted=2137
+query=mexican youtuber 100 mil suscriptores pages=3 candidates=3 unique_candidates=64330 accepted=2137
+query=mexican youtuber 10 mil suscriptores pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican youtuber 500k subscribers pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican youtuber 10k subscribers pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican youtuber 100k subscribers pages=3 candidates=3 unique_candidates=64330 accepted=2137
+validated batch accepted+0 rejected+1 total=2137
+query=mexican creador de contenido 200 mil suscriptores pages=1 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 200k subscribers pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 500 mil suscriptores pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican influencer 50 mil suscriptores pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 50k subscribers pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican influencer 100 mil suscriptores pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican influencer 20 mil suscriptores pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican influencer 200 mil suscriptores pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 100 mil suscriptores pages=3 candidates=0 unique_candidates=64330 accepted=2137
+query=mexican influencer 500 mil suscriptores pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 20k subscribers pages=3 candidates=1 unique_candidates=64330 accepted=2137
+query=mexican creador de contenido 100k subscribers pages=3 candidates=3 unique_candidates=64331 accepted=2137
+query=mexican influencer 10 mil suscriptores pages=3 candidates=0 unique_candidates=64331 accepted=2137
+query=mexican creador de contenido 500k subscribers pages=3 candidates=1 unique_candidates=64332 accepted=2137
+query=mexican creador de contenido 10k subscribers pages=3 candidates=2 unique_candidates=64332 accepted=2137
+query=mexican influencer 10k subscribers pages=3 candidates=1 unique_candidates=64332 accepted=2137
+validated batch accepted+0 rejected+2 total=2137
+query=mexican influencer 500k subscribers pages=3 candidates=0 unique_candidates=64332 accepted=2137
+query=mexican influencer 20k subscribers pages=3 candidates=0 unique_candidates=64332 accepted=2137
+query=mexican influencer 200k subscribers pages=3 candidates=0 unique_candidates=64332 accepted=2137
+query=mexican influencer 50k subscribers pages=3 candidates=0 unique_candidates=64332 accepted=2137
+query=mexican canal 500 mil suscriptores pages=3 candidates=4 unique_candidates=64332 accepted=2137
+query=mexican canal 20 mil suscriptores pages=3 candidates=5 unique_candidates=64332 accepted=2137
+query=mexican influencer 100k subscribers pages=3 candidates=1 unique_candidates=64332 accepted=2137
+query=mexican canal 200 mil suscriptores pages=3 candidates=0 unique_candidates=64332 accepted=2137
+query=mexican canal 50 mil suscriptores pages=3 candidates=1 unique_candidates=64332 accepted=2137
+query=mexican canal 200k subscribers pages=3 candidates=2 unique_candidates=64332 accepted=2137
+query=mexican canal 10 mil suscriptores pages=3 candidates=2 unique_candidates=64332 accepted=2137
+query=mexican canal 50k subscribers pages=3 candidates=3 unique_candidates=64332 accepted=2137
+query=mexican canal 100 mil suscriptores pages=3 candidates=4 unique_candidates=64333 accepted=2137
+query=mexican canal 100k subscribers pages=3 candidates=16 unique_candidates=64337 accepted=2137
+query=mexican canal 20k subscribers pages=3 candidates=6 unique_candidates=64338 accepted=2137
+query=mexican canal 10k subscribers pages=3 candidates=5 unique_candidates=64338 accepted=2137
+validated batch accepted+2 rejected+4 total=2139
+query=mexican lifestyle 10 mil suscriptores pages=3 candidates=0 unique_candidates=64338 accepted=2139
+query=mexican travel vlog 10 mil suscriptores pages=3 candidates=0 unique_candidates=64338 accepted=2139
+query=mexican lifestyle 100k subscribers pages=3 candidates=5 unique_candidates=64339 accepted=2139
+query=mexican lifestyle 100 mil suscriptores pages=3 candidates=4 unique_candidates=64341 accepted=2139
+query=mexican lifestyle 200k subscribers pages=3 candidates=1 unique_candidates=64341 accepted=2139
+query=mexican lifestyle 50 mil suscriptores pages=3 candidates=2 unique_candidates=64342 accepted=2139
+query=mexican lifestyle 10k subscribers pages=3 candidates=0 unique_candidates=64342 accepted=2139
+query=mexican lifestyle 50k subscribers pages=3 candidates=0 unique_candidates=64342 accepted=2139
+query=mexican lifestyle 20 mil suscriptores pages=3 candidates=2 unique_candidates=64342 accepted=2139
+query=mexican travel vlog 50 mil suscriptores pages=3 candidates=0 unique_candidates=64342 accepted=2139
+query=mexican lifestyle 500k subscribers pages=3 candidates=1 unique_candidates=64342 accepted=2139
+query=mexican lifestyle 20k subscribers pages=3 candidates=0 unique_candidates=64342 accepted=2139
+query=mexican travel vlog 20 mil suscriptores pages=3 candidates=3 unique_candidates=64342 accepted=2139
+query=mexican canal 500k subscribers pages=3 candidates=5 unique_candidates=64344 accepted=2139
+query=mexican lifestyle 500 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2139
+query=mexican lifestyle 200 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2139
+validated batch accepted+2 rejected+4 total=2141
+query=mexican viajes 200 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican viajes 10 mil suscriptores pages=3 candidates=6 unique_candidates=64344 accepted=2141
+query=mexican viajes 20 mil suscriptores pages=3 candidates=5 unique_candidates=64344 accepted=2141
+query=mexican viajes 500 mil suscriptores pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican viajes 100 mil suscriptores pages=3 candidates=6 unique_candidates=64344 accepted=2141
+query=mexican viajes 50 mil suscriptores pages=3 candidates=3 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 500 mil suscriptores pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 50k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 200k subscribers pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican viajes 10k subscribers pages=3 candidates=4 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 20k subscribers pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 100k subscribers pages=3 candidates=3 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 500k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 10k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 100 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican travel vlog 200 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 200 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 50k subscribers pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 200k subscribers pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 500 mil suscriptores pages=2 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 20k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican turismo 20 mil suscriptores pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican viajes 500k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 50 mil suscriptores pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican turismo 100 mil suscriptores pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican viajes 20k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 10 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican viajes 200k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican viajes 50k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican turismo 10k subscribers pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican viajes 100k subscribers pages=3 candidates=6 unique_candidates=64344 accepted=2141
+query=mexican turismo 100k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican food vlog 500 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican food vlog 200 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican turismo 500k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 20 mil suscriptores pages=3 candidates=3 unique_candidates=64344 accepted=2141
+query=mexican food vlog 200k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 50 mil suscriptores pages=3 candidates=2 unique_candidates=64344 accepted=2141
+query=mexican food vlog 20k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican food vlog 100 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican food vlog 50 mil suscriptores pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican food vlog 50k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican food vlog 10 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican food vlog 500k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 10 mil suscriptores pages=3 candidates=3 unique_candidates=64344 accepted=2141
+query=mexican food vlog 100k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican food vlog 10k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican food vlog 20 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican cocina 200 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 200 mil suscriptores pages=1 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican cocina 500 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 500k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican cocina 100 mil suscriptores pages=3 candidates=4 unique_candidates=64344 accepted=2141
+query=mexican cocina 20 mil suscriptores pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican cocina 10 mil suscriptores pages=3 candidates=4 unique_candidates=64344 accepted=2141
+query=mexican comida 100 mil suscriptores pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican comida 500 mil suscriptores pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican cocina 50 mil suscriptores pages=3 candidates=3 unique_candidates=64344 accepted=2141
+query=mexican comida 20k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican comida 200k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican comida 10k subscribers pages=3 candidates=1 unique_candidates=64344 accepted=2141
+query=mexican cocina 10k subscribers pages=3 candidates=0 unique_candidates=64344 accepted=2141
+query=mexican comida 50k subscribers pages=3 candidates=4 unique_candidates=64346 accepted=2141
+query=mexican comida 100k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+validated batch accepted+0 rejected+2 total=2141
+query=mexican recetas 500 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 50 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 200 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 100 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 20 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 50k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 10 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican cocina 50k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 100k subscribers pages=3 candidates=4 unique_candidates=64346 accepted=2141
+query=mexican cocina 500k subscribers pages=3 candidates=3 unique_candidates=64346 accepted=2141
+query=mexican cocina 200k subscribers pages=3 candidates=4 unique_candidates=64346 accepted=2141
+query=mexican recetas 200k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 10k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican cocina 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican cocina 100k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 500 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 20 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 50 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 200 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 50 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 100 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 10 mil suscriptores pages=3 candidates=3 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 200k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican recetas 500k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 100k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 20 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 500k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 10 mil suscriptores pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 50k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican beauty youtuber 10k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 500 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 200 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 100 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 50k subscribers pages=3 candidates=3 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 500k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 200k subscribers pages=3 candidates=2 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican fitness 200 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 10k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican fitness 100 mil suscriptores pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican maquillaje 100k subscribers pages=3 candidates=4 unique_candidates=64346 accepted=2141
+query=mexican fitness 500 mil suscriptores pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican fitness 20 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican fitness 10 mil suscriptores pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican fitness 10k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican fitness 50 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 500 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 200 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 20 mil suscriptores pages=2 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 100 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 10 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 200k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 50 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican fitness 200k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican fitness 500k subscribers pages=3 candidates=3 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 100k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 50k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican fitness 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 20k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tech youtuber 10k subscribers pages=3 candidates=2 unique_candidates=64346 accepted=2141
+query=mexican fitness 50k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican fitness 100k subscribers pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 200k subscribers pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 200 mil suscriptores pages=1 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 100 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 50k subscribers pages=3 candidates=3 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 50 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 10 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 500k subscribers pages=3 candidates=1 unique_candidates=64346 accepted=2141
+query=mexican tecnologia 500 mil suscriptores pages=3 candidates=0 unique_candidates=64346 accepted=2141
+query=mexican gaming 20 mil suscriptores pages=3 candidates=3 unique_candidates=64347 accepted=2141
+query=mexican gaming 50 mil suscriptores pages=3 candidates=2 unique_candidates=64347 accepted=2141
+query=mexican tecnologia 10k subscribers pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican tech youtuber 500k subscribers pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican tecnologia 20k subscribers pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican tecnologia 100k subscribers pages=3 candidates=2 unique_candidates=64347 accepted=2141
+query=mexican tecnologia 20 mil suscriptores pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican gaming 10 mil suscriptores pages=3 candidates=1 unique_candidates=64347 accepted=2141
+validated batch accepted+0 rejected+1 total=2141
+query=mexican moda 50 mil suscriptores pages=3 candidates=3 unique_candidates=64347 accepted=2141
+query=mexican moda 500 mil suscriptores pages=3 candidates=2 unique_candidates=64347 accepted=2141
+query=mexican moda 100 mil suscriptores pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican moda 10 mil suscriptores pages=3 candidates=0 unique_candidates=64347 accepted=2141
+query=mexican gaming 100 mil suscriptores pages=3 candidates=1 unique_candidates=64347 accepted=2141
+query=mexican moda 20 mil suscriptores pages=3 candidates=3 unique_candidates=64347 accepted=2141
+query=mexican moda 200 mil suscriptores pages=3 candidates=2 unique_candidates=64347 accepted=2141
+query=mexican moda 10k subscribers pages=3 candidates=3 unique_candidates=64348 accepted=2141
+query=mexican gaming 500 mil suscriptores pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican gaming 200 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican gaming 100k subscribers pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican gaming 50k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican gaming 200k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican gaming 10k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican gaming 20k subscribers pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican gaming 500k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+validated batch accepted+0 rejected+1 total=2141
+query=mexican moda 200k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican moda 20k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican moda 500k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican moda 50k subscribers pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 10 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 500 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 50k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 200 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 200k subscribers pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican moda 100k subscribers pages=3 candidates=6 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 50 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 100k subscribers pages=3 candidates=3 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 100 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 20 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 20k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 10k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 10 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 20 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 50 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 200 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 100 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 500k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 10 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 20 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 500 mil suscriptores pages=3 candidates=2 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 50 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 200k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 20k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 50k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican familia vlog 500k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 10k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican mama vlog 100k subscribers pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 50k subscribers pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 200k subscribers pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 200 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 500 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 100 mil suscriptores pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 500k subscribers pages=1 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 20k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican negocios 500 mil suscriptores pages=3 candidates=1 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 100k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican emprendedor 10k subscribers pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican negocios 100 mil suscriptores pages=3 candidates=4 unique_candidates=64348 accepted=2141
+query=mexican negocios 200 mil suscriptores pages=3 candidates=0 unique_candidates=64348 accepted=2141
+query=mexican negocios 50 mil suscriptores pages=3 candidates=3 unique_candidates=64349 accepted=2141
+query=mexican negocios 20 mil suscriptores pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican negocios 10 mil suscriptores pages=3 candidates=1 unique_candidates=64349 accepted=2141
+query=mexican negocios 10k subscribers pages=3 candidates=3 unique_candidates=64349 accepted=2141
+validated batch accepted+0 rejected+1 total=2141
+query=mexican real estate 50 mil suscriptores pages=3 candidates=0 unique_candidates=64349 accepted=2141
+query=mexican real estate 20 mil suscriptores pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican negocios 500k subscribers pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican real estate 100 mil suscriptores pages=3 candidates=0 unique_candidates=64349 accepted=2141
+query=mexican negocios 20k subscribers pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican real estate 200k subscribers pages=3 candidates=6 unique_candidates=64349 accepted=2141
+query=mexican real estate 10k subscribers pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican negocios 200k subscribers pages=3 candidates=1 unique_candidates=64349 accepted=2141
+query=mexican real estate 10 mil suscriptores pages=3 candidates=0 unique_candidates=64349 accepted=2141
+query=mexican real estate 500 mil suscriptores pages=3 candidates=0 unique_candidates=64349 accepted=2141
+query=mexican real estate 200 mil suscriptores pages=3 candidates=0 unique_candidates=64349 accepted=2141
+query=mexican real estate 20k subscribers pages=3 candidates=3 unique_candidates=64349 accepted=2141
+query=mexican negocios 50k subscribers pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican negocios 100k subscribers pages=3 candidates=2 unique_candidates=64349 accepted=2141
+query=mexican real estate 100k subscribers pages=3 candidates=8 unique_candidates=64350 accepted=2141
+query=mexican real estate 50k subscribers pages=3 candidates=2 unique_candidates=64350 accepted=2141
+validated batch accepted+1 rejected+0 total=2142
+query=mexican bienes raices 200k subscribers pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 50k subscribers pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 50 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 500 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 200 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 20 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 10 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 100 mil suscriptores pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 10k subscribers pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 500k subscribers pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 20k subscribers pages=1 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican relocation 10 mil suscriptores pages=2 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican relocation 50 mil suscriptores pages=3 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican bienes raices 100k subscribers pages=3 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican real estate 500k subscribers pages=3 candidates=2 unique_candidates=64350 accepted=2142
+query=mexican relocation 20 mil suscriptores pages=3 candidates=0 unique_candidates=64350 accepted=2142
+query=mexican news 50 mil suscriptores pages=2 candidates=1 unique_candidates=64350 accepted=2142
+query=mexican news 20 mil suscriptores pages=2 candidates=2 unique_candidates=64350 accepted=2142
+query=mexican news 100 mil suscriptores pages=2 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican news 200 mil suscriptores pages=2 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican relocation 200 mil suscriptores pages=3 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican relocation 500 mil suscriptores pages=3 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican news 500 mil suscriptores pages=3 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican relocation 500k subscribers pages=3 candidates=2 unique_candidates=64351 accepted=2142
+query=mexican relocation 50k subscribers pages=3 candidates=2 unique_candidates=64351 accepted=2142
+query=mexican relocation 100k subscribers pages=3 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican relocation 100 mil suscriptores pages=3 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican news 10k subscribers pages=3 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican relocation 200k subscribers pages=3 candidates=1 unique_candidates=64351 accepted=2142
+query=mexican relocation 20k subscribers pages=3 candidates=4 unique_candidates=64351 accepted=2142
+query=mexican news 10 mil suscriptores pages=3 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican relocation 10k subscribers pages=3 candidates=1 unique_candidates=64351 accepted=2142
+validated batch accepted+0 rejected+1 total=2142
+query=mexican noticias 50 mil suscriptores pages=1 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican noticias 500 mil suscriptores pages=1 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican noticias 200 mil suscriptores pages=1 candidates=0 unique_candidates=64351 accepted=2142
+query=mexican noticias 200k subscribers pages=2 candidates=3 unique_candidates=64351 accepted=2142
+query=mexican noticias 100 mil suscriptores pages=2 candidates=2 unique_candidates=64352 accepted=2142
+query=mexican noticias 20k subscribers pages=3 candidates=5 unique_candidates=64352 accepted=2142
+query=mexican news 20k subscribers pages=3 candidates=1 unique_candidates=64352 accepted=2142
+query=mexican news 200k subscribers pages=3 candidates=1 unique_candidates=64352 accepted=2142
+query=mexican noticias 10k subscribers pages=3 candidates=7 unique_candidates=64352 accepted=2142
+query=mexican news 50k subscribers pages=3 candidates=2 unique_candidates=64353 accepted=2142
+query=mexican noticias 20 mil suscriptores pages=3 candidates=0 unique_candidates=64353 accepted=2142
+query=mexican noticias 100k subscribers pages=3 candidates=6 unique_candidates=64353 accepted=2142
+query=mexican noticias 10 mil suscriptores pages=2 candidates=4 unique_candidates=64353 accepted=2142
+query=mexican noticias 50k subscribers pages=2 candidates=2 unique_candidates=64353 accepted=2142
+query=mexican news 500k subscribers pages=3 candidates=0 unique_candidates=64353 accepted=2142
+query=mexican news 100k subscribers pages=3 candidates=0 unique_candidates=64353 accepted=2142
+validated batch accepted+0 rejected+2 total=2142
+query=mexican noticias 500k subscribers pages=2 candidates=2 unique_candidates=64353 accepted=2142
+query=mexican musica 100 mil suscriptores pages=3 candidates=1 unique_candidates=64353 accepted=2142
+query=mexican musica regional 50 mil suscriptores pages=3 candidates=5 unique_candidates=64353 accepted=2142
+query=mexican musica 10 mil suscriptores pages=3 candidates=3 unique_candidates=64353 accepted=2142
+query=mexican musica regional 20 mil suscriptores pages=3 candidates=3 unique_candidates=64353 accepted=2142
+query=mexican musica 500k subscribers pages=3 candidates=0 unique_candidates=64353 accepted=2142
+query=mexican musica regional 10 mil suscriptores pages=3 candidates=3 unique_candidates=64353 accepted=2142
+query=mexican musica 100k subscribers pages=3 candidates=1 unique_candidates=64353 accepted=2142
+query=mexican musica 50k subscribers pages=3 candidates=1 unique_candidates=64353 accepted=2142
+query=mexican musica 50 mil suscriptores pages=3 candidates=2 unique_candidates=64353 accepted=2142
+query=mexican musica 20k subscribers pages=3 candidates=1 unique_candidates=64353 accepted=2142
+query=mexican musica 200 mil suscriptores pages=3 candidates=1 unique_candidates=64353 accepted=2142
+query=mexican musica 500 mil suscriptores pages=3 candidates=3 unique_candidates=64354 accepted=2142
+query=mexican musica 10k subscribers pages=3 candidates=2 unique_candidates=64355 accepted=2142
+query=mexican musica 200k subscribers pages=3 candidates=3 unique_candidates=64356 accepted=2142
+query=mexican musica 20 mil suscriptores pages=3 candidates=6 unique_candidates=64358 accepted=2142
+validated batch accepted+1 rejected+4 total=2143
+query=mexican musica regional 200 mil suscriptores pages=1 candidates=0 unique_candidates=64358 accepted=2143
+query=mexican corridos 200 mil suscriptores pages=1 candidates=0 unique_candidates=64358 accepted=2143
+query=mexican musica regional 500k subscribers pages=3 candidates=5 unique_candidates=64358 accepted=2143
+query=mexican musica regional 100 mil suscriptores pages=3 candidates=5 unique_candidates=64358 accepted=2143
+query=mexican corridos 100 mil suscriptores pages=3 candidates=2 unique_candidates=64359 accepted=2143
+query=mexican corridos 500 mil suscriptores pages=3 candidates=1 unique_candidates=64359 accepted=2143
+query=mexican musica regional 500 mil suscriptores pages=3 candidates=2 unique_candidates=64359 accepted=2143
+query=mexican musica regional 50k subscribers pages=3 candidates=7 unique_candidates=64360 accepted=2143
+query=mexican corridos 20 mil suscriptores pages=3 candidates=1 unique_candidates=64360 accepted=2143
+query=mexican musica regional 20k subscribers pages=3 candidates=4 unique_candidates=64360 accepted=2143
+query=mexican corridos 10 mil suscriptores pages=3 candidates=2 unique_candidates=64361 accepted=2143
+query=mexican musica regional 10k subscribers pages=3 candidates=5 unique_candidates=64361 accepted=2143
+query=mexican musica regional 100k subscribers pages=3 candidates=6 unique_candidates=64361 accepted=2143
+query=mexican corridos 50 mil suscriptores pages=3 candidates=3 unique_candidates=64361 accepted=2143
+query=mexican corridos 10k subscribers pages=3 candidates=2 unique_candidates=64361 accepted=2143
+query=mexican musica regional 200k subscribers pages=3 candidates=3 unique_candidates=64361 accepted=2143
+validated batch accepted+0 rejected+3 total=2143
+query=mexican corridos 50k subscribers pages=3 candidates=6 unique_candidates=64362 accepted=2143
+query=mexican banda 20 mil suscriptores pages=3 candidates=4 unique_candidates=64362 accepted=2143
+query=mexican banda 10k subscribers pages=3 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican banda 100k subscribers pages=3 candidates=6 unique_candidates=64362 accepted=2143
+query=mexican banda 200 mil suscriptores pages=1 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican banda 50 mil suscriptores pages=3 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican banda 100 mil suscriptores pages=3 candidates=1 unique_candidates=64362 accepted=2143
+query=mexican banda 500 mil suscriptores pages=3 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican banda 20k subscribers pages=3 candidates=1 unique_candidates=64362 accepted=2143
+query=mexican corridos 100k subscribers pages=3 candidates=1 unique_candidates=64362 accepted=2143
+query=mexican banda 10 mil suscriptores pages=3 candidates=1 unique_candidates=64362 accepted=2143
+query=mexican banda 200k subscribers pages=3 candidates=1 unique_candidates=64362 accepted=2143
+query=mexican banda 50k subscribers pages=3 candidates=8 unique_candidates=64362 accepted=2143
+query=mexican corridos 500k subscribers pages=3 candidates=2 unique_candidates=64362 accepted=2143
+query=mexican corridos 200k subscribers pages=3 candidates=3 unique_candidates=64362 accepted=2143
+query=mexican corridos 20k subscribers pages=3 candidates=2 unique_candidates=64362 accepted=2143
+validated batch accepted+0 rejected+1 total=2143
+query=mexican educacion 20 mil suscriptores pages=1 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican educacion 10 mil suscriptores pages=1 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican educacion 50 mil suscriptores pages=1 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican mariachi 200k subscribers pages=3 candidates=7 unique_candidates=64362 accepted=2143
+query=mexican mariachi 200 mil suscriptores pages=3 candidates=0 unique_candidates=64362 accepted=2143
+query=mexican mariachi 20 mil suscriptores pages=3 candidates=1 unique_candidates=64363 accepted=2143
+query=mexican mariachi 100k subscribers pages=3 candidates=8 unique_candidates=64363 accepted=2143
+query=mexican mariachi 20k subscribers pages=3 candidates=4 unique_candidates=64363 accepted=2143
+query=mexican mariachi 500 mil suscriptores pages=3 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican mariachi 50 mil suscriptores pages=3 candidates=1 unique_candidates=64363 accepted=2143
+query=mexican mariachi 500k subscribers pages=3 candidates=5 unique_candidates=64363 accepted=2143
+query=mexican mariachi 10 mil suscriptores pages=3 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican mariachi 10k subscribers pages=3 candidates=8 unique_candidates=64363 accepted=2143
+query=mexican banda 500k subscribers pages=3 candidates=9 unique_candidates=64363 accepted=2143
+query=mexican mariachi 100 mil suscriptores pages=3 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican mariachi 50k subscribers pages=3 candidates=7 unique_candidates=64363 accepted=2143
+validated batch accepted+0 rejected+1 total=2143
+query=mexican educacion 50k subscribers pages=1 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 200 mil suscriptores pages=1 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 500 mil suscriptores pages=1 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 100 mil suscriptores pages=1 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 500k subscribers pages=3 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 200k subscribers pages=3 candidates=0 unique_candidates=64363 accepted=2143
+query=mexican educacion 10k subscribers pages=3 candidates=1 unique_candidates=64363 accepted=2143
+query=mexican educacion 20k subscribers pages=3 candidates=2 unique_candidates=64363 accepted=2143
+query=mexican educacion 100k subscribers pages=3 candidates=4 unique_candidates=64363 accepted=2143
+query=mexican autos 500 mil suscriptores pages=3 candidates=1 unique_candidates=64363 accepted=2143
+query=mexican autos 100 mil suscriptores pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican autos 20 mil suscriptores pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican autos 10 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican autos 50 mil suscriptores pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican autos 200 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican autos 10k subscribers pages=3 candidates=0 unique_candidates=64364 accepted=2143
+validated batch accepted+0 rejected+1 total=2143
+query=mexican motos 200 mil suscriptores pages=1 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican motos 10 mil suscriptores pages=3 candidates=3 unique_candidates=64364 accepted=2143
+query=mexican motos 200k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican motos 20k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican motos 20 mil suscriptores pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican motos 500 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican motos 100 mil suscriptores pages=3 candidates=4 unique_candidates=64364 accepted=2143
+query=mexican autos 20k subscribers pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican autos 500k subscribers pages=3 candidates=7 unique_candidates=64364 accepted=2143
+query=mexican motos 50k subscribers pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican motos 50 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican autos 200k subscribers pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican motos 10k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican autos 100k subscribers pages=3 candidates=3 unique_candidates=64364 accepted=2143
+query=mexican motos 100k subscribers pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican autos 50k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican motos 500k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican podcast 200 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican podcast 50k subscribers pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican podcast 100 mil suscriptores pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican podcast 500 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican podcast 500k subscribers pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican humor 50 mil suscriptores pages=3 candidates=0 unique_candidates=64364 accepted=2143
+query=mexican podcast 100k subscribers pages=3 candidates=1 unique_candidates=64364 accepted=2143
+query=mexican podcast 50 mil suscriptores pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican podcast 20 mil suscriptores pages=3 candidates=2 unique_candidates=64364 accepted=2143
+query=mexican humor 10 mil suscriptores pages=3 candidates=4 unique_candidates=64365 accepted=2143
+query=mexican podcast 200k subscribers pages=3 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican podcast 10 mil suscriptores pages=3 candidates=1 unique_candidates=64365 accepted=2143
+query=mexican humor 20 mil suscriptores pages=3 candidates=1 unique_candidates=64365 accepted=2143
+query=mexican podcast 20k subscribers pages=3 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican podcast 10k subscribers pages=3 candidates=0 unique_candidates=64365 accepted=2143
+validated batch accepted+0 rejected+1 total=2143
+query=mexican finanzas 50 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican finanzas 20 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican finanzas 10 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican finanzas 500 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican finanzas 100 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican finanzas 200 mil suscriptores pages=1 candidates=0 unique_candidates=64365 accepted=2143
+query=mexican humor 200 mil suscriptores pages=3 candidates=2 unique_candidates=64365 accepted=2143
+query=mexican humor 100 mil suscriptores pages=3 candidates=5 unique_candidates=64366 accepted=2143
+query=mexican finanzas 10k subscribers pages=3 candidates=0 unique_candidates=64366 accepted=2143
+query=mexican humor 500k subscribers pages=3 candidates=0 unique_candidates=64366 accepted=2143
+query=mexican humor 100k subscribers pages=3 candidates=4 unique_candidates=64366 accepted=2143
+query=mexican humor 500 mil suscriptores pages=3 candidates=5 unique_candidates=64367 accepted=2143
+query=mexican humor 50k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican humor 200k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican humor 10k subscribers pages=3 candidates=1 unique_candidates=64367 accepted=2143
+query=mexican humor 20k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+validated batch accepted+0 rejected+2 total=2143
+query=mexican finanzas 500k subscribers pages=1 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican finanzas 200k subscribers pages=1 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 200 mil suscriptores pages=1 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 100 mil suscriptores pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 500 mil suscriptores pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 20 mil suscriptores pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 50 mil suscriptores pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 10 mil suscriptores pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican finanzas 50k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican finanzas 20k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 200k subscribers pages=3 candidates=0 unique_candidates=64367 accepted=2143
+query=mexican marketing 50k subscribers pages=3 candidates=1 unique_candidates=64367 accepted=2143
+query=mexican marketing 20k subscribers pages=3 candidates=5 unique_candidates=64368 accepted=2143
+query=mexican finanzas 100k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican marketing 10k subscribers pages=3 candidates=1 unique_candidates=64368 accepted=2143
+query=mexican marketing 100k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+validated batch accepted+0 rejected+1 total=2143
+query=mexican salud 50 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 10 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 200 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 20 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 500 mil suscriptores pages=3 candidates=1 unique_candidates=64368 accepted=2143
+query=mexican fotografia 10 mil suscriptores pages=3 candidates=4 unique_candidates=64368 accepted=2143
+query=mexican fotografia 100 mil suscriptores pages=3 candidates=3 unique_candidates=64368 accepted=2143
+query=mexican fotografia 20 mil suscriptores pages=3 candidates=5 unique_candidates=64368 accepted=2143
+query=mexican fotografia 50 mil suscriptores pages=3 candidates=3 unique_candidates=64368 accepted=2143
+query=mexican fotografia 50k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 20k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 500k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 200k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican marketing 500k subscribers pages=3 candidates=3 unique_candidates=64368 accepted=2143
+query=mexican fotografia 10k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican fotografia 100k subscribers pages=3 candidates=1 unique_candidates=64368 accepted=2143
+query=mexican medicina 10 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 200 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 20 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 500 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 200 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 50 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 500 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 100 mil suscriptores pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 50k subscribers pages=3 candidates=1 unique_candidates=64368 accepted=2143
+query=mexican salud 100 mil suscriptores pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 10k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 10k subscribers pages=3 candidates=1 unique_candidates=64368 accepted=2143
+query=mexican salud 500k subscribers pages=3 candidates=3 unique_candidates=64368 accepted=2143
+query=mexican salud 20k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 200k subscribers pages=3 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican salud 100k subscribers pages=3 candidates=7 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 200 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 100 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 20k subscribers pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican medicina 200k subscribers pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 50 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 10 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 20 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 500 mil suscriptores pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 200k subscribers pages=1 candidates=0 unique_candidates=64368 accepted=2143
+query=mexican arquitectura 50k subscribers pages=1 candidates=0 unique_candidates=64368 accepted=2143
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1852, in <module>
+    raise SystemExit(main())
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1827, in main
+    summary = run_crawl(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1658, in run_crawl
+    for future in as_completed(futures):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt

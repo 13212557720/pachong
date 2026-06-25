@@ -59,6 +59,61 @@ python -m src.main --platform youtube --country mexico --youtube-min-subscribers
 
 `--api-enrich` is optional and only applies to YouTube rows when an official channel id is available. It is not required for the default public-page export.
 
+## Fast Mexico YouTube 10k-1000k Crawl
+
+For larger strict Mexico exports, use the dedicated YouTube crawler. It uses YouTube
+internal search only to discover candidate channels, then validates subscriber counts
+and Mexico country fields with the official YouTube Data API `channels.list`.
+
+Set `YOUTUBE_API_KEY` first:
+
+```bash
+export YOUTUBE_API_KEY="your_api_key"
+```
+
+Run the 40k target crawl:
+
+```bash
+python -m src.youtube_mexico_crawler \
+  --min-subscribers 10000 \
+  --max-subscribers 1000000 \
+  --target-rows 40000 \
+  --strict-country \
+  --out-dir output_youtube_mexico_10k_1000k \
+  --resume
+```
+
+Useful smoke test:
+
+```bash
+python -m src.youtube_mexico_crawler \
+  --target-rows 20 \
+  --query-limit 3 \
+  --out-dir output_youtube_mexico_smoke
+```
+
+To quickly collect candidate channel IDs first, without validating About details:
+
+```bash
+python -m src.youtube_mexico_crawler \
+  --discovery-only \
+  --candidate-target 5000 \
+  --query-limit 200 \
+  --max-pages-per-query 3 \
+  --search-workers 8 \
+  --out-dir output_youtube_mexico_candidates \
+  --resume
+```
+
+This writes `youtube_mexico_candidate_ids.csv` and `.xlsx`. Reuse the same
+`--out-dir --resume` later without `--discovery-only` to validate country,
+subscriber range, views, video counts, and contact links.
+
+Outputs include `crawl_state.sqlite`, `youtube_mexico_10k_1000k_channels.csv`,
+`youtube_mexico_10k_1000k_channels.xlsx`, `rejected_channels.csv`, and
+`crawl_summary.json`. Add `--collect-contact` only when email/social links are
+needed, because it fetches About pages after strict validation.
+
 Mexico Instagram public mode combines HypeAuditor category ranking pages with Scrumball rows to reach up to 1000 unique records.
 Facebook Mexico uses logged-in browser search mode for large exports. Browser mode now searches
 people first with Mexico flag/country keywords, then fills the remaining rows from page search.

@@ -29,6 +29,15 @@ def parse_compact_number(text: str) -> int:
     chinese_match = re.search(r"(\d+(?:\.\d+)?)\s*万", value)
     if chinese_match:
         return int(float(chinese_match.group(1)) * 10_000)
+    thai_ten_thousand_match = re.search(r"(\d+(?:\.\d+)?)\s*หมื่น", value)
+    if thai_ten_thousand_match:
+        return int(float(thai_ten_thousand_match.group(1)) * 10_000)
+    thai_hundred_thousand_match = re.search(r"(\d+(?:\.\d+)?)\s*แสน", value)
+    if thai_hundred_thousand_match:
+        return int(float(thai_hundred_thousand_match.group(1)) * 100_000)
+    thai_million_match = re.search(r"(\d+(?:\.\d+)?)\s*ล้าน", value)
+    if thai_million_match:
+        return int(float(thai_million_match.group(1)) * 1_000_000)
     match = re.search(r"(\d+(?:\.\d+)?)\s*([KMB])?", value, flags=re.IGNORECASE)
     if not match:
         return parse_int(value)
@@ -673,6 +682,8 @@ def _card_description(card, name: str) -> str:
     text = re.sub(re.escape(name), "", text, count=1).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*[KMB]?\s+followers", "", text, flags=re.IGNORECASE).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*万?位粉丝", "", text).strip()
+    text = re.sub(r"\d+(?:\.\d+)?\s*(?:หมื่น|แสน|ล้าน)?\s*ผู้ติดตาม", "", text).strip()
+    text = re.sub(r"\d+(?:\.\d+)?\s*(?:หมื่น|แสน|ล้าน)?\s*คนถูกใจ", "", text).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*[KMB]?\s+friends", "", text, flags=re.IGNORECASE).strip()
     text = re.sub(r"\d+(?:\.\d+)?\s*万?位好友", "", text).strip()
     return re.sub(r"\s+", " ", text)
@@ -683,6 +694,8 @@ def _parse_facebook_followers(text: str) -> int:
         r"(\d+(?:\.\d+)?\s*[KMB]?)\s+followers",
         r"(\d+(?:\.\d+)?\s*万?)位粉丝",
         r"(\d+(?:\.\d+)?\s*万?)\s*位粉丝",
+        r"(\d+(?:\.\d+)?\s*(?:หมื่น|แสน|ล้าน)?)\s*ผู้ติดตาม",
+        r"(\d+(?:\.\d+)?\s*(?:หมื่น|แสน|ล้าน)?)\s*คนถูกใจ",
     ]
     for pattern in patterns:
         match = re.search(pattern, text, flags=re.IGNORECASE)
@@ -714,6 +727,9 @@ def _parse_facebook_location(text: str) -> str:
         r"所在地[:：]\s*([^·|,，]+)",
         r"住在\s*([^·|,，]+)",
         r"来自\s*([^·|,，]+)",
+        r"ที่อยู่[:：]?\s*([^·|,，]+)",
+        r"อาศัยอยู่(?:ใน|ที่)?\s*([^·|,，]+)",
+        r"จาก\s*([^·|,，]+)",
         r"currently lives in\s+([^·|,，]+)",
         r"lives in\s+([^·|,，]+)",
         r"from\s+([^·|,，]+)",

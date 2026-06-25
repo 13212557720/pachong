@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>外星盐星球｜自定义图片生成器</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg:#0d1014;
+    --panel:#151a20;
+    --panel-2:#10151b;
+    --line:#2b333d;
+    --line-strong:#52606c;
+    --text:#edf1f4;
+    --muted:#aab4bd;
+    --soft:#84909a;
+    --accent:#dfe6ec;
+    --accent-text:#111820;
+    --danger:#ff8b8b;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0;
+    padding:28px;
+    background:var(--bg);
+    color:var(--text);
+    font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header, main, footer { max-width:1500px; margin-inline:auto; }
+  header {
+    margin-bottom:22px;
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:18px;
+  }
+  h1 { margin:0; font-size:clamp(25px,3vw,42px); letter-spacing:0; }
+  .sub { margin-top:8px; color:var(--muted); line-height:1.5; }
+  .workspace {
+    display:grid;
+    grid-template-columns:minmax(320px, 0.9fr) minmax(360px, 1.1fr);
+    gap:22px;
+    align-items:start;
+  }
+  .panel, .preset-card {
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:0 12px 40px #0007;
+    overflow:hidden;
+  }
+  .form-panel { padding:18px; }
+  label { display:block; margin-bottom:9px; color:#dce4ea; font-weight:650; }
+  textarea {
+    width:100%;
+    min-height:260px;
+    resize:vertical;
+    border:1px solid #3a444f;
+    border-radius:12px;
+    padding:14px;
+    background:#0f141a;
+    color:var(--text);
+    line-height:1.55;
+    font:15px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    outline:none;
+  }
+  textarea:focus, select:focus { border-color:#7e8c99; box-shadow:0 0 0 3px #dfe6ec16; }
+  .controls {
+    display:grid;
+    grid-template-columns:150px minmax(160px,1fr);
+    gap:12px;
+    margin-top:14px;
+  }
+  select {
+    width:100%;
+    height:43px;
+    border:1px solid #3a444f;
+    border-radius:10px;
+    padding:0 12px;
+    background:#0f141a;
+    color:var(--text);
+    font-size:15px;
+    outline:none;
+  }
+  button, a.btn {
+    min-height:40px;
+    border:1px solid #3c4752;
+    color:#eaf0f4;
+    background:#222a33;
+    border-radius:10px;
+    padding:9px 13px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:650;
+  }
+  button.primary {
+    background:var(--accent);
+    border-color:var(--accent);
+    color:var(--accent-text);
+  }
+  button:disabled, a.btn.disabled { opacity:.45; pointer-events:none; cursor:not-allowed; }
+  .hint {
+    min-height:22px;
+    margin-top:10px;
+    color:var(--danger);
+    font-size:13px;
+  }
+  .result-panel { padding:0; }
+  .visual {
+    position:relative;
+    aspect-ratio:16/9;
+    background:linear-gradient(180deg,#677482,#d8dadd 55%,#babfc2);
+    overflow:hidden;
+  }
+  .visual::after {
+    content:attr(data-state);
+    position:absolute;
+    inset:0;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    background:linear-gradient(120deg,#ffffff08,#ffffff22,#ffffff08);
+    font-weight:650;
+    letter-spacing:.08em;
+  }
+  .visual.loading::after { animation:pulse 1.5s infinite; }
+  .visual.loaded::after { display:none; }
+  @keyframes pulse { 50% { opacity:.45; } }
+  img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    opacity:0;
+    transition:opacity .35s ease;
+  }
+  .loaded img { opacity:1; }
+  .meta { padding:15px 17px 17px; }
+  .row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  h2 { margin:0; font-size:19px; letter-spacing:0; }
+  .status { color:#93a0ab; font-size:13px; white-space:nowrap; }
+  .actions { display:flex; gap:9px; margin-top:13px; flex-wrap:wrap; }
+  .preset-section { margin-top:24px; }
+  .section-head {
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:18px;
+    margin-bottom:14px;
+  }
+  .section-head h2 { font-size:22px; }
+  .preset-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+  }
+  .preset-card { padding:16px; }
+  .preset-title { display:flex; align-items:center; gap:10px; }
+  .badge {
+    display:inline-grid;
+    place-items:center;
+    width:29px;
+    height:29px;
+    border-radius:50%;
+    background:#e4e9ed;
+    color:#111820;
+    font-weight:800;
+    flex:0 0 auto;
+  }
+  details { margin-top:12px; color:#aeb8c1; font-size:12px; }
+  summary { cursor:pointer; }
+  pre { white-space:pre-wrap; word-break:break-word; line-height:1.45; margin-bottom:0; }
+  footer { margin-top:22px; color:var(--soft); font-size:12px; line-height:1.6; }
+  @media(max-width:980px) {
+    body { padding:16px; }
+    header, .section-head { align-items:start; flex-direction:column; }
+    .workspace, .preset-grid { grid-template-columns:1fr; }
+    .controls { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>外星盐星球｜自定义图片生成器</h1>
+    <div class="sub">输入提示词，选择画面比例，生成单张图片。A-H 风格可作为预设使用。</div>
+  </div>
+</header>
+
+<main>
+  <section class="workspace" id="generator">
+    <div class="panel form-panel">
+      <label for="promptInput">提示词</label>
+      <textarea id="promptInput" spellcheck="false" placeholder="描述你想生成的画面..."></textarea>
+      <div class="controls">
+        <div>
+          <label for="ratioSelect">比例</label>
+          <select id="ratioSelect">
+            <option value="16:9" selected>16:9</option>
+            <option value="9:16">9:16</option>
+            <option value="1:1">1:1</option>
+            <option value="4:3">4:3</option>
+            <option value="3:4">3:4</option>
+          </select>
+        </div>
+        <div>
+          <label>&nbsp;</label>
+          <button class="primary" id="generateButton" onclick="generateCustomImage()">提交生成</button>
+        </div>
+      </div>
+      <div class="hint" id="hint"></div>
+    </div>
+
+    <div class="panel result-panel">
+      <div class="visual" id="resultVisual" data-state="等待生成">
+        <img id="resultImage" alt="生成图片">
+      </div>
+      <div class="meta">
+        <div class="row">
+          <h2>生成结果</h2>
+          <span class="status" id="resultStatus">等待生成</span>
+        </div>
+        <div class="actions">
+          <button onclick="generateCustomImage(true)" id="rerollButton" disabled>重新生成</button>
+          <a class="btn disabled" id="openOriginal" target="_blank" rel="noopener">打开原图</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="preset-section">
+    <div class="section-head">
+      <h2>八种预设风格</h2>
+      <span class="status">点击使用提示词，或直接按当前比例生成</span>
+    </div>
+    <div class="preset-grid" id="presetGrid"></div>
+  </section>
+</main>
+
+<footer>
+  临时生成通道：imfinit / Gemini。提示词会发送给该第三方服务。生成失败时可重新生成；完成后点“打开原图”，再保存图片。
+</footer>
+
+<script>
+const presets = [
+  {
+    letter: "A",
+    name: "Natural Documentary",
+    prompt: "live-action natural history documentary still on a superflat alien salt planet, one surface surveyor standing quietly in ankle-deep tidal water on a vast white salt flat, a single distant sail-backed creature gliding low across the horizon, grey-blue overcast sky, strong steady wind, salt mist near the ground, cracked salt crust, realistic wet mud and mineral texture, neutral natural daylight, observational camera, long lens wildlife documentary feeling, no dramatic posing, no heroic composition, photorealistic, grounded hard sci-fi ecology, real actor on location, subtle CGI creature integrated into real landscape, quiet believable atmosphere. Strict exclusions: do not show cartoon, anime, illustration, concept art, fantasy monster, heroic poster, dramatic action pose, colorful alien sky, cyberpunk neon, purple glow, magic, giant kaiju, spaceship, city skyline, clean futuristic suit, glossy armor, overdesigned creature, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "B",
+    name: "Cinematic Epic",
+    prompt: "large-format live-action hard sci-fi film still on a superflat alien salt planet, one lone surface surveyor in weathered salt-resistant clothing standing on a reflective salt mirror flat, a single sail-backed alien creature gliding far behind them near the flat horizon, immense grey-blue sky, low sun breaking through clouds, wind dragging salt mist across the ground, vast scale, restrained epic composition, realistic shallow tidal water, cracked salt crust, cinematic natural light, 65mm film look, photorealistic, grounded alien ecology, real actor on location, subtle believable CGI creature, serious and majestic atmosphere. Strict exclusions: do not show cartoon, anime, illustration, fantasy poster, superhero pose, glowing weapon, neon science fiction, purple light, saturated colors, giant monster attack, spaceship battle, floating city, magical aura, clean armor, overdesigned alien creature, painterly concept art, game cinematic, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "C",
+    name: "Gritty Survival",
+    prompt: "gritty live-action survival sci-fi film still on a superflat alien salt flat, handheld camera close to one exhausted surface surveyor in salt-stained layered clothing and scratched goggles, wind whipping a torn grey-white cloak sideways, ankle-deep muddy salt water, cracked salt crust underfoot, a single sail-backed creature barely visible through salt mist in the distance, harsh overcast daylight, wet boots, corroded tools, practical costume, documentary realism, realistic location shooting, photorealistic textures, grounded hard sci-fi ecology, subtle CGI creature, tense survival atmosphere, no clean futuristic design. Strict exclusions: do not show cartoon, anime, illustration, clean sci-fi suit, glossy armor, cyberpunk neon, fantasy monster, heroic pose, fashion editorial, colorful sky, magic, glowing eyes, giant kaiju, spaceship, city, multiple creatures, perfect makeup, polished costume, painterly game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "D",
+    name: "Scientific Expedition",
+    prompt: "photorealistic live-action scientific expedition still on a superflat alien salt planet, one field surveyor in practical expedition gear standing beside compact measuring instruments on a white salt mirror flat, shallow tidal water around their boots, wind-resistant fabric layers, scratched goggles, data tags, sample containers, a single distant sail-backed alien creature gliding low across the horizon as if observed during field research, grey-blue overcast sky, natural light, documentary expedition photography, realistic equipment, grounded hard sci-fi worldbuilding, subtle CGI creature, calm observational mood, no action pose. Strict exclusions: do not show cartoon, anime, illustration, fantasy explorer, clean astronaut suit, glossy space armor, neon holograms, spaceship, laboratory interior, monsters attacking, heroic poster, magical aura, glowing crystals, colorful alien plants, cyberpunk, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "E",
+    name: "Cold Eco Horror",
+    prompt: "cold live-action ecological horror sci-fi film still on a superflat alien salt planet, one surface surveyor standing still in shallow water on a pale salt flat, black salt patches and narrow cracks in the foreground, a single distant sail-backed creature gliding silently through low fog near the horizon, grey-blue sky, weak natural light, wind almost invisible, eerie stillness, wet mineral textures, realistic salt crust, restrained horror atmosphere, documentary camera realism, photorealistic, grounded alien ecology, real actor on location, subtle CGI creature, no gore, no monster attack, quiet unease. Strict exclusions: do not show cartoon, anime, illustration, gore, blood, zombie, demon, fantasy horror, jump scare, roaring monster, giant kaiju, glowing red eyes, magic symbols, haunted house, neon light, colorful sky, spaceship, city, action poster, overdesigned creature, painterly game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "F",
+    name: "Ethnographic Frontier",
+    prompt: "live-action ethnographic hard sci-fi frontier still on a superflat alien salt planet, one local surface surveyor wearing practical handmade salt-resistant clothing, patched fabric layers, shell plates, leather straps, weathered goggles, standing in shallow tidal water on a white salt flat, small wind charms and measuring tools attached to the belt, a single distant sail-backed creature gliding low along the horizon, grey-blue overcast sky, strong wind, salt stains, lived-in costume details, natural documentary photography, photorealistic, grounded survival culture, subtle CGI creature, real actor on location, quiet frontier life atmosphere. Strict exclusions: do not show cartoon, anime, illustration, fantasy tribe, barbarian costume, ceremonial armor, cyberpunk outfit, neon, clean sci-fi uniform, magic ornaments, colorful feathers, monster attack, giant creature, spaceship, city, fashion editorial, painterly concept art, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "G",
+    name: "Minimal Art Film",
+    prompt: "minimalist live-action art-house hard sci-fi film still on a superflat alien salt planet, vast empty white salt mirror flat under a pale grey-blue sky, one tiny surface surveyor placed low in the frame, a single barely visible sail-backed creature far on the horizon, shallow water reflecting the sky, no mountains, no structures, almost no color, soft natural overcast light, long static composition, negative space, quiet wind, photorealistic, real location feeling, restrained alien ecology, subtle CGI creature, elegant austere atmosphere, cinematic but extremely minimal. Strict exclusions: do not show cartoon, anime, illustration, busy composition, action scene, dramatic monster pose, colorful sky, neon, fantasy landscape, mountains, city, spaceship, large foreground creature, heroic character, glossy armor, magical aura, overdesigned props, painterly style, game art, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  },
+  {
+    letter: "H",
+    name: "Practical Effects Retro",
+    prompt: "live-action practical effects hard sci-fi film still on a superflat alien salt planet, one surface surveyor in weathered practical costume standing in shallow salt water, matte fabric cloak, scratched goggles, real mud and salt stains, a single sail-backed alien creature in the distance designed like a physical creature puppet enhanced with subtle CGI, translucent membrane sail, wet shell body, grey-blue overcast sky, wind and salt mist, realistic location shoot, analog 35mm film grain, grounded production design, tactile props, restrained color palette, believable 1980s practical sci-fi realism without retro futurism. Strict exclusions: do not show cartoon, anime, illustration, digital concept art, glossy modern CGI, clean futuristic armor, neon lights, cyberpunk, fantasy monster, giant kaiju, glowing eyes, spaceship, city, colorful sky, magic, heroic poster, multiple creatures, overdesigned creature, plastic toy look, blurry, low detail. One coherent live-action frame, exactly one human surveyor and exactly one distant sail-backed creature."
+  }
+];
+
+const endpoint = "https://imfin.it/api/generate";
+const presetGrid = document.getElementById("presetGrid");
+const promptInput = document.getElementById("promptInput");
+const ratioSelect = document.getElementById("ratioSelect");
+const hint = document.getElementById("hint");
+const resultVisual = document.getElementById("resultVisual");
+const resultImage = document.getElementById("resultImage");
+const resultStatus = document.getElementById("resultStatus");
+const generateButton = document.getElementById("generateButton");
+const rerollButton = document.getElementById("rerollButton");
+const openOriginal = document.getElementById("openOriginal");
+
+function escapeHtml(value) {
+  return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+}
+
+function buildImageUrl(prompt, ratio, reroll=false) {
+  const q = new URLSearchParams({ prompt, model: "gemini", ar: ratio });
+  if (reroll) {
+    q.set("reroll", "true");
+    q.set("_", Date.now().toString());
+  }
+  return endpoint + "?" + q.toString();
+}
+
+function setResultState(state, statusText) {
+  resultVisual.classList.remove("loading", "loaded");
+  if (state) resultVisual.classList.add(state);
+  resultVisual.dataset.state = statusText;
+  resultStatus.textContent = statusText;
+}
+
+function generateFromPrompt(prompt, reroll=false) {
+  const cleanPrompt = prompt.trim();
+  hint.textContent = "";
+  if (!cleanPrompt) {
+    hint.textContent = "请输入提示词";
+    promptInput.focus();
+    return;
+  }
+
+  const ratio = ratioSelect.value;
+  const url = buildImageUrl(cleanPrompt, ratio, reroll);
+  generateButton.disabled = true;
+  rerollButton.disabled = true;
+  openOriginal.classList.add("disabled");
+  openOriginal.removeAttribute("href");
+  setResultState("loading", "生成中...");
+
+  resultImage.onload = () => {
+    setResultState("loaded", "已完成");
+    openOriginal.href = url;
+    openOriginal.classList.remove("disabled");
+    generateButton.disabled = false;
+    rerollButton.disabled = false;
+  };
+  resultImage.onerror = () => {
+    setResultState("", "生成失败，请重试");
+    generateButton.disabled = false;
+    rerollButton.disabled = false;
+  };
+  resultImage.src = url;
+}
+
+function generateCustomImage(reroll=false) {
+  generateFromPrompt(promptInput.value, reroll);
+}
+
+function usePreset(index) {
+  promptInput.value = presets[index].prompt;
+  hint.textContent = "";
+  document.getElementById("generator").scrollIntoView({ behavior: "smooth", block: "start" });
+  promptInput.focus();
+}
+
+function generatePreset(index) {
+  promptInput.value = presets[index].prompt;
+  generateFromPrompt(presets[index].prompt, true);
+}
+
+function presetTemplate(item, index) {
+  return `
+    <article class="preset-card">
+      <div class="preset-title">
+        <span class="badge">${item.letter}</span>
+        <h2>${item.name}</h2>
+      </div>
+      <div class="actions">
+        <button onclick="usePreset(${index})">使用此提示词</button>
+        <button onclick="generatePreset(${index})">直接生成此风格</button>
+      </div>
+      <details>
+        <summary>查看提示词</summary>
+        <pre>${escapeHtml(item.prompt)}</pre>
+      </details>
+    </article>
+  `;
+}
+
+presetGrid.innerHTML = presets.map(presetTemplate).join("");
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+query=mexico lifestyle o pages=6 candidates=73 unique_candidates=66171 accepted=2213
+query=mexico lifestyle w pages=6 candidates=65 unique_candidates=66206 accepted=2213
+query=mexico lifestyle q pages=6 candidates=74 unique_candidates=66253 accepted=2213
+query=mexico lifestyle n pages=6 candidates=74 unique_candidates=66299 accepted=2213
+query=mexico lifestyle x pages=6 candidates=71 unique_candidates=66339 accepted=2213
+query=mexico lifestyle s pages=6 candidates=71 unique_candidates=66372 accepted=2213
+query=mexico lifestyle y pages=6 candidates=73 unique_candidates=66393 accepted=2213
+query=mexico lifestyle r pages=6 candidates=64 unique_candidates=66418 accepted=2213
+query=mexico lifestyle l pages=6 candidates=78 unique_candidates=66443 accepted=2213
+query=mexico lifestyle k pages=6 candidates=83 unique_candidates=66475 accepted=2213
+query=mexico lifestyle v pages=6 candidates=60 unique_candidates=66503 accepted=2213
+query=mexico lifestyle p pages=6 candidates=74 unique_candidates=66531 accepted=2213
+query=mexico lifestyle t pages=6 candidates=78 unique_candidates=66554 accepted=2213
+query=mexico lifestyle u pages=6 candidates=70 unique_candidates=66566 accepted=2213
+query=mexico lifestyle m pages=6 candidates=77 unique_candidates=66588 accepted=2213
+query=mexico lifestyle j pages=6 candidates=76 unique_candidates=66623 accepted=2213
+validated batch accepted+17 rejected+483 total=2230
+validated batch accepted+0 rejected+301 total=2230
+query=mexico travel vlog l pages=6 candidates=92 unique_candidates=66668 accepted=2230
+query=mexico travel vlog k pages=6 candidates=74 unique_candidates=66689 accepted=2230
+query=mexico travel vlog h pages=6 candidates=79 unique_candidates=66704 accepted=2230
+query=mexico travel vlog b pages=6 candidates=85 unique_candidates=66741 accepted=2230
+query=mexico travel vlog g pages=6 candidates=84 unique_candidates=66778 accepted=2230
+query=mexico travel vlog c pages=6 candidates=84 unique_candidates=66798 accepted=2230
+query=mexico travel vlog n pages=6 candidates=89 unique_candidates=66810 accepted=2230
+query=mexico travel vlog o pages=6 candidates=83 unique_candidates=66830 accepted=2230
+query=mexico travel vlog m pages=6 candidates=94 unique_candidates=66848 accepted=2230
+query=mexico lifestyle z pages=6 candidates=148 unique_candidates=66940 accepted=2230
+query=mexico travel vlog j pages=6 candidates=78 unique_candidates=66955 accepted=2230
+query=mexico travel vlog e pages=6 candidates=91 unique_candidates=66976 accepted=2230
+query=mexico travel vlog i pages=6 candidates=93 unique_candidates=66979 accepted=2230
+query=mexico travel vlog a pages=6 candidates=88 unique_candidates=66982 accepted=2230
+query=mexico travel vlog f pages=6 candidates=84 unique_candidates=66997 accepted=2230
+query=mexico travel vlog d pages=6 candidates=84 unique_candidates=67013 accepted=2230
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1952, in <module>
+    raise SystemExit(main())
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1927, in main
+    summary = run_crawl(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1789, in run_crawl
+    accepted, rejected = validate_candidates(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1527, in validate_candidates
+    rows = enrich_rows_with_about(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1577, in enrich_rows_with_about
+    for future in as_completed(futures):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt

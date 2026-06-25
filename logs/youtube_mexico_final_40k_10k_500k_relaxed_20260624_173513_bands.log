@@ -1,0 +1,52 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+validated seeded accepted+7 rejected+52 total=12184 strict_mx=4343
+query=tijuana tecnologia pages=6 candidates=80 unique_candidates=97539 accepted=12184
+validated batch accepted+2 rejected+15 total=12186 strict_mx=4345
+query=yucatan tutorial pages=6 candidates=74 unique_candidates=97554 accepted=12186
+validated batch accepted+6 rejected+9 total=12192 strict_mx=4345
+query=cancun manualidades pages=6 candidates=70 unique_candidates=97564 accepted=12192
+validated batch accepted+5 rejected+5 total=12197 strict_mx=4346
+query=oaxaca relocation pages=6 candidates=79 unique_candidates=97576 accepted=12197
+validated batch accepted+2 rejected+10 total=12199 strict_mx=4346
+query=oaxaca marketing pages=6 candidates=76 unique_candidates=97586 accepted=12199
+query=oaxaca podcast pages=6 candidates=63 unique_candidates=97604 accepted=12199
+validated batch accepted+1 rejected+27 total=12200 strict_mx=4346
+query=veracruz recetas pages=6 candidates=59 unique_candidates=97614 accepted=12200
+validated batch accepted+0 rejected+10 total=12200 strict_mx=4346
+query=nuevo leon comida pages=6 candidates=61 unique_candidates=97618 accepted=12200
+query failed query=nuevo leon lifestyle error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+validated batch accepted+1 rejected+3 total=12201 strict_mx=4347
+query=nuevo leon relocation pages=6 candidates=69 unique_candidates=97628 accepted=12201
+validated batch accepted+3 rejected+7 total=12204 strict_mx=4347
+query=sinaloa influencer pages=6 candidates=67 unique_candidates=97636 accepted=12204
+query=michoacan historia pages=6 candidates=86 unique_candidates=97650 accepted=12204
+query=sinaloa youtuber pages=6 candidates=77 unique_candidates=97664 accepted=12204
+validated batch accepted+5 rejected+31 total=12209 strict_mx=4350
+query=sinaloa viajes pages=6 candidates=65 unique_candidates=97672 accepted=12209
+validated batch accepted+3 rejected+5 total=12212 strict_mx=4351
+query=sonora comida pages=6 candidates=65 unique_candidates=97674 accepted=12212
+query=sonora food vlog pages=6 candidates=74 unique_candidates=97688 accepted=12212
+query=sonora creador de contenido pages=6 candidates=70 unique_candidates=97708 accepted=12212
+validated batch accepted+7 rejected+29 total=12219 strict_mx=4352
+query=sonora manualidades pages=6 candidates=67 unique_candidates=97724 accepted=12219
+validated batch accepted+6 rejected+10 total=12225 strict_mx=4355
+query=chiapas misterio pages=6 candidates=71 unique_candidates=97734 accepted=12225
+validated batch accepted+0 rejected+10 total=12225 strict_mx=4355
+query=chihuahua canal pages=6 candidates=56 unique_candidates=97742 accepted=12225
+query=chiapas tutorial pages=6 candidates=73 unique_candidates=97751 accepted=12225
+query=chihuahua food vlog pages=6 candidates=68 unique_candidates=97767 accepted=12225
+query=chihuahua recetas pages=6 candidates=69 unique_candidates=97779 accepted=12225
+query=chihuahua gaming pages=6 candidates=57 unique_candidates=97789 accepted=12225
+query=chihuahua travel vlog pages=6 candidates=73 unique_candidates=97806 accepted=12225
+query=chihuahua creador de contenido pages=6 candidates=74 unique_candidates=97814 accepted=12225
+validated batch accepted+27 rejected+53 total=12252 strict_mx=4358
+query=coahuila turismo pages=6 candidates=71 unique_candidates=97817 accepted=12252
+validated batch accepted+0 rejected+3 total=12252 strict_mx=4358
+query=durango lifestyle pages=6 candidates=69 unique_candidates=97831 accepted=12252
+validated batch accepted+2 rejected+12 total=12254 strict_mx=4358
+query=durango cocina pages=6 candidates=68 unique_candidates=97842 accepted=12254
+validated batch accepted+2 rejected+9 total=12256 strict_mx=4358
+query=morelos food vlog pages=6 candidates=75 unique_candidates=97856 accepted=12256
+validated batch accepted+0 rejected+14 total=12256 strict_mx=4358
+query=morelos medicina pages=6 candidates=78 unique_candidates=97864 accepted=12256

@@ -1,0 +1,72 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+query=mexico creador de contenido pages=6 candidates=74 unique_candidates=67332 accepted=0
+query=mexico fitness pages=6 candidates=58 unique_candidates=67351 accepted=0
+query=mexico maquillaje pages=6 candidates=58 unique_candidates=67374 accepted=0
+query=youtubers mexicanos 2025 pages=6 candidates=64 unique_candidates=67393 accepted=0
+query=mexico tecnologia pages=6 candidates=72 unique_candidates=67422 accepted=0
+query=mexico beauty youtuber pages=6 candidates=68 unique_candidates=67455 accepted=0
+query=mexico cocina pages=6 candidates=63 unique_candidates=67468 accepted=0
+query=mexican youtuber pages=6 candidates=18 unique_candidates=67469 accepted=0
+query=canales mexicanos pequeños pages=6 candidates=55 unique_candidates=67483 accepted=0
+query=mexico comida pages=6 candidates=70 unique_candidates=67497 accepted=0
+query=mexico lifestyle pages=6 candidates=63 unique_candidates=67499 accepted=0
+query=canales mexicanos 2025 pages=6 candidates=71 unique_candidates=67523 accepted=0
+query=mexico travel vlog pages=6 candidates=93 unique_candidates=67524 accepted=0
+query=mexico recetas pages=6 candidates=54 unique_candidates=67534 accepted=0
+query=youtubers mexicanos 2024 pages=6 candidates=66 unique_candidates=67542 accepted=0
+query=youtube channel mexico 100k subscribers pages=6 candidates=71 unique_candidates=67568 accepted=0
+query failed query=mexico viajes error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=canales mexicanos 2024 pages=6 candidates=64 unique_candidates=67575 accepted=0
+query failed query=mexico food vlog error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexico vlog error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexico tech youtuber pages=6 candidates=63 unique_candidates=67597 accepted=0
+query=mexico youtuber pages=6 candidates=70 unique_candidates=67605 accepted=0
+query=canales mexicanos 2026 pages=6 candidates=67 unique_candidates=67629 accepted=0
+query=creador de contenido mexico pages=6 candidates=77 unique_candidates=67640 accepted=0
+query=mexico turismo pages=6 candidates=86 unique_candidates=67651 accepted=0
+query=mexico canal pages=6 candidates=85 unique_candidates=67690 accepted=0
+query=small youtuber mexico pages=6 candidates=63 unique_candidates=67713 accepted=0
+query=mexico creator business email pages=6 candidates=67 unique_candidates=67752 accepted=0
+query=canal mexicano 100 mil suscriptores pages=6 candidates=62 unique_candidates=67768 accepted=0
+query=youtubers mexicanos 2026 pages=6 candidates=68 unique_candidates=67774 accepted=0
+query=influencer mexico youtube pages=6 candidates=69 unique_candidates=67782 accepted=0
+query=mexico influencer pages=6 candidates=88 unique_candidates=67819 accepted=0
+validated batch accepted+287 rejected+213 total=287
+Traceback (most recent call last):
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1585, in enrich_rows_with_about
+    for future in as_completed(futures):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1960, in <module>
+    raise SystemExit(main())
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1935, in main
+    summary = run_crawl(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1797, in run_crawl
+    accepted, rejected = validate_candidates(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1534, in validate_candidates
+    rows = enrich_rows_with_about(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1587, in enrich_rows_with_about
+    apply_about_fallback(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 636, in __exit__
+    self.shutdown(wait=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 229, in shutdown
+    t.join()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 1053, in join
+    self._wait_for_tstate_lock()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 1069, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt

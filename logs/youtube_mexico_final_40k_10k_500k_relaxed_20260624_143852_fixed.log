@@ -1,0 +1,896 @@
+/Users/biantongchuangchuanmei/Desktop/pachong/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+validated seeded accepted+500 rejected+0 total=894 strict_mx=407
+validated seeded accepted+500 rejected+0 total=1394 strict_mx=492
+validated seeded accepted+500 rejected+0 total=1894 strict_mx=652
+validated seeded accepted+500 rejected+0 total=2394 strict_mx=963
+validated seeded accepted+500 rejected+0 total=2894 strict_mx=1210
+validated seeded accepted+500 rejected+0 total=3394 strict_mx=1448
+validated seeded accepted+500 rejected+0 total=3894 strict_mx=1644
+validated seeded accepted+500 rejected+0 total=4394 strict_mx=1844
+validated seeded accepted+500 rejected+0 total=4894 strict_mx=2047
+validated seeded accepted+283 rejected+217 total=5177 strict_mx=2085
+validated seeded accepted+163 rejected+337 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+0 rejected+500 total=5340 strict_mx=2121
+validated seeded accepted+4 rejected+496 total=5344 strict_mx=2121
+validated seeded accepted+22 rejected+478 total=5366 strict_mx=2121
+validated seeded accepted+3 rejected+497 total=5369 strict_mx=2121
+validated seeded accepted+3 rejected+497 total=5372 strict_mx=2121
+validated seeded accepted+5 rejected+495 total=5377 strict_mx=2121
+validated seeded accepted+24 rejected+476 total=5401 strict_mx=2126
+validated seeded accepted+10 rejected+490 total=5411 strict_mx=2126
+validated seeded accepted+7 rejected+493 total=5418 strict_mx=2126
+validated seeded accepted+7 rejected+493 total=5425 strict_mx=2126
+validated seeded accepted+2 rejected+423 total=5427 strict_mx=2126
+query=mexico vlog pages=6 candidates=84 unique_candidates=67831 accepted=5427
+validated batch accepted+4 rejected+8 total=5431 strict_mx=2126
+query=mexico viajes pages=6 candidates=78 unique_candidates=67834 accepted=5431
+query=mexico food vlog pages=6 candidates=64 unique_candidates=67851 accepted=5431
+validated batch accepted+10 rejected+10 total=5441 strict_mx=2128
+query=mexico gaming pages=6 candidates=69 unique_candidates=67883 accepted=5441
+query=mexico banda pages=6 candidates=82 unique_candidates=67918 accepted=5441
+query=mexico emprendedor pages=6 candidates=65 unique_candidates=67940 accepted=5441
+query=mexico mariachi pages=6 candidates=87 unique_candidates=67981 accepted=5441
+query=mexico corridos pages=6 candidates=84 unique_candidates=68013 accepted=5441
+query=mexico moda pages=6 candidates=77 unique_candidates=68035 accepted=5441
+query=mexico musica pages=6 candidates=86 unique_candidates=68060 accepted=5441
+query=mexico negocios pages=6 candidates=61 unique_candidates=68080 accepted=5441
+query=mexico familia vlog pages=6 candidates=60 unique_candidates=68090 accepted=5441
+query=mexico musica regional pages=6 candidates=75 unique_candidates=68109 accepted=5441
+query=mexico real estate pages=6 candidates=70 unique_candidates=68128 accepted=5441
+query=mexico news pages=6 candidates=88 unique_candidates=68151 accepted=5441
+query=mexico mama vlog pages=6 candidates=67 unique_candidates=68162 accepted=5441
+query=mexico bienes raices pages=6 candidates=68 unique_candidates=68171 accepted=5441
+query=mexico noticias pages=6 candidates=77 unique_candidates=68184 accepted=5441
+query=mexico relocation pages=6 candidates=43 unique_candidates=68185 accepted=5441
+validated batch accepted+155 rejected+179 total=5596 strict_mx=2177
+query=mexico humor pages=6 candidates=62 unique_candidates=68205 accepted=5596
+query=mexico fotografia pages=6 candidates=75 unique_candidates=68233 accepted=5596
+query failed query=mexico motos error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexico marketing error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexico arquitectura pages=6 candidates=59 unique_candidates=68242 accepted=5596
+query=mexico educacion pages=6 candidates=84 unique_candidates=68266 accepted=5596
+query=mexico diseño pages=6 candidates=59 unique_candidates=68278 accepted=5596
+query=mexico anime pages=6 candidates=68 unique_candidates=68324 accepted=5596
+query=mexico autos pages=6 candidates=68 unique_candidates=68344 accepted=5596
+query=mexico manualidades pages=6 candidates=63 unique_candidates=68362 accepted=5596
+query failed query=mexico podcast error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexico kpop pages=6 candidates=72 unique_candidates=68378 accepted=5596
+query=mexico salud pages=6 candidates=78 unique_candidates=68404 accepted=5596
+query failed query=mexico medicina error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexico finanzas pages=6 candidates=64 unique_candidates=68418 accepted=5596
+query failed query=mexico futbol error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+validated batch accepted+96 rejected+137 total=5692 strict_mx=2225
+query=mexican vlog pages=6 candidates=56 unique_candidates=68420 accepted=5692
+query=mexican creador de contenido pages=6 candidates=33 unique_candidates=68429 accepted=5692
+query=mexico unboxing pages=6 candidates=66 unique_candidates=68454 accepted=5692
+query=mexican canal pages=6 candidates=70 unique_candidates=68471 accepted=5692
+query=mexican turismo pages=6 candidates=64 unique_candidates=68483 accepted=5692
+query=mexican lifestyle pages=6 candidates=53 unique_candidates=68486 accepted=5692
+query=mexico review pages=6 candidates=78 unique_candidates=68512 accepted=5692
+query=mexico misterio pages=6 candidates=73 unique_candidates=68541 accepted=5692
+query=mexican travel vlog pages=6 candidates=69 unique_candidates=68542 accepted=5692
+query=mexican food vlog pages=6 candidates=17 unique_candidates=68542 accepted=5692
+query=mexico historia pages=6 candidates=82 unique_candidates=68587 accepted=5692
+query=mexico tutorial pages=6 candidates=72 unique_candidates=68610 accepted=5692
+query=mexican viajes pages=6 candidates=68 unique_candidates=68612 accepted=5692
+query=mexico baseball pages=6 candidates=55 unique_candidates=68628 accepted=5692
+query=mexican comida pages=6 candidates=19 unique_candidates=68629 accepted=5692
+query=mexican influencer pages=6 candidates=25 unique_candidates=68632 accepted=5692
+validated batch accepted+86 rejected+128 total=5778 strict_mx=2240
+query=mexican emprendedor pages=6 candidates=29 unique_candidates=68637 accepted=5778
+query=mexican moda pages=6 candidates=26 unique_candidates=68641 accepted=5778
+query=mexican fitness pages=6 candidates=6 unique_candidates=68642 accepted=5778
+query=mexican beauty youtuber pages=6 candidates=16 unique_candidates=68642 accepted=5778
+query=mexican tech youtuber pages=6 candidates=42 unique_candidates=68647 accepted=5778
+query=mexican tecnologia pages=6 candidates=54 unique_candidates=68664 accepted=5778
+query=mexican recetas pages=6 candidates=28 unique_candidates=68667 accepted=5778
+query=mexican real estate pages=6 candidates=60 unique_candidates=68671 accepted=5778
+query=mexican bienes raices pages=6 candidates=55 unique_candidates=68673 accepted=5778
+query=mexican relocation pages=6 candidates=43 unique_candidates=68681 accepted=5778
+query=mexican negocios pages=6 candidates=33 unique_candidates=68685 accepted=5778
+query=mexican gaming pages=6 candidates=3 unique_candidates=68685 accepted=5778
+query=mexican mama vlog pages=6 candidates=13 unique_candidates=68685 accepted=5778
+query=mexican cocina pages=6 candidates=28 unique_candidates=68697 accepted=5778
+query=mexican familia vlog pages=6 candidates=16 unique_candidates=68701 accepted=5778
+query=mexican maquillaje pages=6 candidates=22 unique_candidates=68704 accepted=5778
+validated batch accepted+12 rejected+60 total=5790 strict_mx=2244
+query=mexican corridos pages=6 candidates=15 unique_candidates=68708 accepted=5790
+query=mexican podcast pages=6 candidates=20 unique_candidates=68712 accepted=5790
+query=mexican musica regional pages=6 candidates=29 unique_candidates=68718 accepted=5790
+query=mexican banda pages=6 candidates=28 unique_candidates=68722 accepted=5790
+query=mexican salud pages=6 candidates=22 unique_candidates=68728 accepted=5790
+query=mexican musica pages=6 candidates=20 unique_candidates=68731 accepted=5790
+query=mexican mariachi pages=6 candidates=29 unique_candidates=68742 accepted=5790
+query=mexican marketing pages=6 candidates=17 unique_candidates=68749 accepted=5790
+query=mexican finanzas pages=6 candidates=25 unique_candidates=68754 accepted=5790
+query=mexican motos pages=6 candidates=44 unique_candidates=68768 accepted=5790
+query=mexican news pages=6 candidates=65 unique_candidates=68782 accepted=5790
+query=mexican humor pages=6 candidates=12 unique_candidates=68784 accepted=5790
+query=mexican educacion pages=6 candidates=51 unique_candidates=68796 accepted=5790
+query=mexican autos pages=6 candidates=55 unique_candidates=68812 accepted=5790
+query=mexican fotografia pages=6 candidates=50 unique_candidates=68839 accepted=5790
+query=mexican noticias pages=6 candidates=37 unique_candidates=68841 accepted=5790
+validated batch accepted+44 rejected+93 total=5834 strict_mx=2256
+query=mexican arquitectura pages=6 candidates=45 unique_candidates=68851 accepted=5834
+query=mexicana creador de contenido pages=6 candidates=61 unique_candidates=68857 accepted=5834
+query=mexican diseño pages=6 candidates=45 unique_candidates=68867 accepted=5834
+query=mexican manualidades pages=6 candidates=25 unique_candidates=68875 accepted=5834
+query=mexican unboxing pages=6 candidates=25 unique_candidates=68884 accepted=5834
+query=mexican review pages=6 candidates=6 unique_candidates=68884 accepted=5834
+query=mexican futbol pages=6 candidates=25 unique_candidates=68894 accepted=5834
+query=mexicana youtuber pages=6 candidates=61 unique_candidates=68900 accepted=5834
+query=mexican baseball pages=6 candidates=27 unique_candidates=68904 accepted=5834
+query=mexican tutorial pages=6 candidates=3 unique_candidates=68904 accepted=5834
+query=mexican anime pages=6 candidates=12 unique_candidates=68906 accepted=5834
+query=mexican kpop pages=6 candidates=16 unique_candidates=68911 accepted=5834
+query=mexican misterio pages=6 candidates=32 unique_candidates=68921 accepted=5834
+query=mexicana vlog pages=6 candidates=77 unique_candidates=68933 accepted=5834
+query=mexican historia pages=6 candidates=66 unique_candidates=68950 accepted=5834
+query=mexican medicina pages=6 candidates=31 unique_candidates=68968 accepted=5834
+validated batch accepted+57 rejected+70 total=5891 strict_mx=2266
+query=mexicana maquillaje pages=6 candidates=61 unique_candidates=68979 accepted=5891
+query=mexicana canal pages=6 candidates=127 unique_candidates=69004 accepted=5891
+query=mexicana food vlog pages=6 candidates=63 unique_candidates=69014 accepted=5891
+query=mexicana turismo pages=6 candidates=75 unique_candidates=69027 accepted=5891
+query=mexicana lifestyle pages=6 candidates=61 unique_candidates=69037 accepted=5891
+query=mexicana gaming pages=6 candidates=59 unique_candidates=69055 accepted=5891
+query=mexicana tech youtuber pages=6 candidates=67 unique_candidates=69073 accepted=5891
+query=mexicana influencer pages=6 candidates=83 unique_candidates=69085 accepted=5891
+query=mexicana viajes pages=6 candidates=60 unique_candidates=69090 accepted=5891
+query=mexicana tecnologia pages=6 candidates=78 unique_candidates=69108 accepted=5891
+query=mexicana fitness pages=6 candidates=63 unique_candidates=69130 accepted=5891
+query=mexicana recetas pages=6 candidates=53 unique_candidates=69135 accepted=5891
+query=mexicana travel vlog pages=6 candidates=80 unique_candidates=69144 accepted=5891
+query failed query=mexicana comida error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexicana beauty youtuber pages=6 candidates=61 unique_candidates=69154 accepted=5891
+query=mexicana cocina pages=6 candidates=53 unique_candidates=69156 accepted=5891
+validated batch accepted+71 rejected+117 total=5962 strict_mx=2289
+query=mexicana moda pages=6 candidates=61 unique_candidates=69173 accepted=5962
+query=mexicana mama vlog pages=6 candidates=52 unique_candidates=69181 accepted=5962
+query=mexicana noticias pages=6 candidates=85 unique_candidates=69191 accepted=5962
+query=mexicana emprendedor pages=6 candidates=61 unique_candidates=69199 accepted=5962
+query=mexicana relocation pages=6 candidates=59 unique_candidates=69203 accepted=5962
+query=mexicana real estate pages=6 candidates=70 unique_candidates=69209 accepted=5962
+query=mexicana corridos pages=6 candidates=87 unique_candidates=69241 accepted=5962
+query=mexicana educacion pages=6 candidates=81 unique_candidates=69259 accepted=5962
+query=mexicana musica pages=6 candidates=84 unique_candidates=69277 accepted=5962
+query=mexicana familia vlog pages=6 candidates=61 unique_candidates=69282 accepted=5962
+query=mexicana musica regional pages=6 candidates=79 unique_candidates=69290 accepted=5962
+query=mexicana news pages=6 candidates=97 unique_candidates=69299 accepted=5962
+query=mexicana negocios pages=6 candidates=73 unique_candidates=69313 accepted=5962
+query=mexicana mariachi pages=6 candidates=81 unique_candidates=69330 accepted=5962
+query=mexicana bienes raices pages=6 candidates=68 unique_candidates=69341 accepted=5962
+query=mexicana banda pages=6 candidates=71 unique_candidates=69351 accepted=5962
+validated batch accepted+78 rejected+117 total=6040 strict_mx=2318
+query=mexicana motos pages=6 candidates=63 unique_candidates=69371 accepted=6040
+query=mexicana humor pages=6 candidates=67 unique_candidates=69395 accepted=6040
+query=mexicana autos pages=6 candidates=66 unique_candidates=69405 accepted=6040
+query=mexicana fotografia pages=6 candidates=66 unique_candidates=69434 accepted=6040
+query=mexicana futbol pages=6 candidates=56 unique_candidates=69447 accepted=6040
+query=mexicana manualidades pages=6 candidates=61 unique_candidates=69456 accepted=6040
+query=mexicana podcast pages=6 candidates=57 unique_candidates=69470 accepted=6040
+query=mexicana kpop pages=6 candidates=65 unique_candidates=69485 accepted=6040
+query=mexicana medicina pages=6 candidates=72 unique_candidates=69508 accepted=6040
+query=mexicana anime pages=6 candidates=66 unique_candidates=69519 accepted=6040
+query=mexicana diseño pages=6 candidates=67 unique_candidates=69529 accepted=6040
+query=mexicana baseball pages=6 candidates=68 unique_candidates=69540 accepted=6040
+query=mexicana marketing pages=6 candidates=78 unique_candidates=69575 accepted=6040
+query=mexicana finanzas pages=6 candidates=64 unique_candidates=69579 accepted=6040
+query=mexicana salud pages=6 candidates=71 unique_candidates=69591 accepted=6040
+query failed query=mexicana arquitectura error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+validated batch accepted+85 rejected+155 total=6125 strict_mx=2359
+query=mexicana misterio pages=6 candidates=74 unique_candidates=69607 accepted=6125
+query=mexicano influencer pages=6 candidates=65 unique_candidates=69614 accepted=6125
+query=mexicano turismo pages=6 candidates=76 unique_candidates=69629 accepted=6125
+query=mexicana review pages=6 candidates=71 unique_candidates=69652 accepted=6125
+query=mexicano lifestyle pages=6 candidates=73 unique_candidates=69653 accepted=6125
+query=mexicano viajes pages=6 candidates=71 unique_candidates=69655 accepted=6125
+query=mexicano vlog pages=6 candidates=70 unique_candidates=69657 accepted=6125
+query=mexicano canal pages=6 candidates=66 unique_candidates=69664 accepted=6125
+query=mexicana tutorial pages=6 candidates=73 unique_candidates=69689 accepted=6125
+query=mexicano creador de contenido pages=6 candidates=65 unique_candidates=69697 accepted=6125
+query=mexicano youtuber pages=6 candidates=65 unique_candidates=69706 accepted=6125
+query=mexicana unboxing pages=6 candidates=72 unique_candidates=69731 accepted=6125
+query=mexicano comida pages=6 candidates=67 unique_candidates=69737 accepted=6125
+query=mexicano food vlog pages=6 candidates=73 unique_candidates=69739 accepted=6125
+query failed query=mexicano travel vlog error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexicana historia pages=6 candidates=76 unique_candidates=69760 accepted=6125
+validated batch accepted+73 rejected+96 total=6198 strict_mx=2384
+query=mexicano beauty youtuber pages=6 candidates=61 unique_candidates=69769 accepted=6198
+query=mexicano recetas pages=6 candidates=57 unique_candidates=69771 accepted=6198
+query=mexicano maquillaje pages=6 candidates=59 unique_candidates=69779 accepted=6198
+query=mexicano moda pages=6 candidates=69 unique_candidates=69788 accepted=6198
+query=mexicano cocina pages=6 candidates=57 unique_candidates=69789 accepted=6198
+query=mexicano relocation pages=6 candidates=55 unique_candidates=69792 accepted=6198
+query=mexicano tech youtuber pages=6 candidates=67 unique_candidates=69798 accepted=6198
+query=mexicano gaming pages=6 candidates=53 unique_candidates=69805 accepted=6198
+query=mexicano mama vlog pages=6 candidates=61 unique_candidates=69810 accepted=6198
+query=mexicano real estate pages=6 candidates=69 unique_candidates=69814 accepted=6198
+query=mexicano negocios pages=6 candidates=61 unique_candidates=69820 accepted=6198
+query=mexicano familia vlog pages=6 candidates=66 unique_candidates=69827 accepted=6198
+query=mexicano bienes raices pages=6 candidates=73 unique_candidates=69836 accepted=6198
+query=mexicano emprendedor pages=6 candidates=66 unique_candidates=69842 accepted=6198
+query=mexicano tecnologia pages=6 candidates=79 unique_candidates=69852 accepted=6198
+query=mexicano fitness pages=6 candidates=68 unique_candidates=69873 accepted=6198
+validated batch accepted+35 rejected+78 total=6233 strict_mx=2399
+query=mexicano banda pages=6 candidates=65 unique_candidates=69891 accepted=6233
+query=mexicano salud pages=6 candidates=73 unique_candidates=69897 accepted=6233
+query=mexicano humor pages=6 candidates=55 unique_candidates=69904 accepted=6233
+query=mexicano marketing pages=6 candidates=82 unique_candidates=69924 accepted=6233
+query=mexicano mariachi pages=6 candidates=89 unique_candidates=69932 accepted=6233
+query=mexicano news pages=6 candidates=97 unique_candidates=69943 accepted=6233
+query=mexicano motos pages=6 candidates=69 unique_candidates=69952 accepted=6233
+query=mexicano finanzas pages=6 candidates=62 unique_candidates=69962 accepted=6233
+query=mexicano corridos pages=6 candidates=83 unique_candidates=69968 accepted=6233
+query=mexicano podcast pages=6 candidates=60 unique_candidates=69972 accepted=6233
+query=mexicano noticias pages=6 candidates=78 unique_candidates=69979 accepted=6233
+query=mexicano musica regional pages=6 candidates=75 unique_candidates=69990 accepted=6233
+query=mexicano autos pages=6 candidates=68 unique_candidates=69999 accepted=6233
+query=mexicano fotografia pages=6 candidates=73 unique_candidates=70022 accepted=6233
+query=mexicano musica pages=6 candidates=77 unique_candidates=70029 accepted=6233
+query=mexicano educacion pages=6 candidates=80 unique_candidates=70046 accepted=6233
+validated batch accepted+60 rejected+113 total=6293 strict_mx=2426
+query=mexicano arquitectura pages=6 candidates=60 unique_candidates=70053 accepted=6293
+query=mexicano tutorial pages=6 candidates=81 unique_candidates=70069 accepted=6293
+query=cdmx youtuber pages=6 candidates=72 unique_candidates=70079 accepted=6293
+query=mexicano diseño pages=6 candidates=69 unique_candidates=70089 accepted=6293
+query=cdmx creador de contenido pages=6 candidates=72 unique_candidates=70113 accepted=6293
+query=cdmx vlog pages=6 candidates=91 unique_candidates=70132 accepted=6293
+query failed query=mexicano baseball error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexicano historia pages=6 candidates=78 unique_candidates=70149 accepted=6293
+query failed query=mexicano medicina error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano manualidades error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano review error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano futbol error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano anime error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano unboxing error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=mexicano misterio error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=mexicano kpop pages=6 candidates=70 unique_candidates=70172 accepted=6293
+validated batch accepted+35 rejected+91 total=6328 strict_mx=2440
+query=cdmx lifestyle pages=6 candidates=74 unique_candidates=70177 accepted=6328
+query=cdmx canal pages=6 candidates=59 unique_candidates=70187 accepted=6328
+query=cdmx viajes pages=6 candidates=76 unique_candidates=70202 accepted=6328
+query=cdmx comida pages=6 candidates=61 unique_candidates=70213 accepted=6328
+query=cdmx tech youtuber pages=6 candidates=73 unique_candidates=70226 accepted=6328
+query=cdmx fitness pages=6 candidates=64 unique_candidates=70253 accepted=6328
+query=cdmx cocina pages=6 candidates=63 unique_candidates=70260 accepted=6328
+query=cdmx recetas pages=6 candidates=73 unique_candidates=70284 accepted=6328
+query=cdmx tecnologia pages=6 candidates=68 unique_candidates=70301 accepted=6328
+query=cdmx maquillaje pages=6 candidates=65 unique_candidates=70318 accepted=6328
+query=cdmx beauty youtuber pages=6 candidates=60 unique_candidates=70340 accepted=6328
+query=cdmx influencer pages=6 candidates=79 unique_candidates=70359 accepted=6328
+query=cdmx turismo pages=6 candidates=77 unique_candidates=70376 accepted=6328
+query=cdmx travel vlog pages=6 candidates=87 unique_candidates=70379 accepted=6328
+query=cdmx gaming pages=6 candidates=57 unique_candidates=70397 accepted=6328
+query=cdmx food vlog pages=6 candidates=74 unique_candidates=70406 accepted=6328
+validated batch accepted+70 rejected+164 total=6398 strict_mx=2475
+query=cdmx corridos pages=6 candidates=63 unique_candidates=70426 accepted=6398
+query=cdmx banda pages=6 candidates=78 unique_candidates=70456 accepted=6398
+query=cdmx mama vlog pages=6 candidates=85 unique_candidates=70481 accepted=6398
+query=cdmx musica pages=6 candidates=77 unique_candidates=70509 accepted=6398
+query=cdmx bienes raices pages=6 candidates=56 unique_candidates=70519 accepted=6398
+query=cdmx relocation pages=6 candidates=65 unique_candidates=70529 accepted=6398
+query=cdmx mariachi pages=6 candidates=75 unique_candidates=70559 accepted=6398
+query=cdmx moda pages=6 candidates=58 unique_candidates=70573 accepted=6398
+query=cdmx educacion pages=6 candidates=81 unique_candidates=70594 accepted=6398
+query=cdmx news pages=6 candidates=80 unique_candidates=70605 accepted=6398
+query=cdmx familia vlog pages=6 candidates=76 unique_candidates=70628 accepted=6398
+query=cdmx real estate pages=6 candidates=79 unique_candidates=70642 accepted=6398
+query=cdmx negocios pages=6 candidates=75 unique_candidates=70648 accepted=6398
+query=cdmx noticias pages=6 candidates=72 unique_candidates=70656 accepted=6398
+query=cdmx musica regional pages=6 candidates=71 unique_candidates=70677 accepted=6398
+query=cdmx emprendedor pages=6 candidates=62 unique_candidates=70687 accepted=6398
+validated batch accepted+75 rejected+206 total=6473 strict_mx=2517
+query=cdmx marketing pages=6 candidates=71 unique_candidates=70706 accepted=6473
+query=cdmx podcast pages=6 candidates=75 unique_candidates=70719 accepted=6473
+query=cdmx humor pages=6 candidates=57 unique_candidates=70745 accepted=6473
+query=cdmx salud pages=6 candidates=65 unique_candidates=70754 accepted=6473
+query=cdmx autos pages=6 candidates=61 unique_candidates=70772 accepted=6473
+query=cdmx anime pages=6 candidates=71 unique_candidates=70804 accepted=6473
+query=cdmx medicina pages=6 candidates=75 unique_candidates=70826 accepted=6473
+query=cdmx motos pages=6 candidates=77 unique_candidates=70848 accepted=6473
+query=cdmx arquitectura pages=6 candidates=54 unique_candidates=70866 accepted=6473
+query=cdmx manualidades pages=6 candidates=68 unique_candidates=70891 accepted=6473
+query=cdmx futbol pages=6 candidates=64 unique_candidates=70921 accepted=6473
+query=cdmx kpop pages=6 candidates=69 unique_candidates=70951 accepted=6473
+query=cdmx finanzas pages=6 candidates=71 unique_candidates=70966 accepted=6473
+query=cdmx fotografia pages=6 candidates=69 unique_candidates=70989 accepted=6473
+query=cdmx diseño pages=6 candidates=63 unique_candidates=70999 accepted=6473
+query=cdmx baseball pages=6 candidates=76 unique_candidates=71031 accepted=6473
+validated batch accepted+102 rejected+242 total=6575 strict_mx=2584
+query=cdmx unboxing pages=6 candidates=70 unique_candidates=71051 accepted=6575
+query=cdmx historia pages=6 candidates=72 unique_candidates=71065 accepted=6575
+query=cdmx misterio pages=6 candidates=74 unique_candidates=71081 accepted=6575
+query=ciudad de mexico youtuber pages=6 candidates=77 unique_candidates=71089 accepted=6575
+query=ciudad de mexico comida pages=6 candidates=63 unique_candidates=71091 accepted=6575
+query=ciudad de mexico creador de contenido pages=6 candidates=70 unique_candidates=71097 accepted=6575
+query=cdmx review pages=6 candidates=78 unique_candidates=71107 accepted=6575
+query=ciudad de mexico travel vlog pages=6 candidates=90 unique_candidates=71110 accepted=6575
+query=ciudad de mexico canal pages=6 candidates=96 unique_candidates=71116 accepted=6575
+query=ciudad de mexico turismo pages=6 candidates=75 unique_candidates=71126 accepted=6575
+query=ciudad de mexico influencer pages=6 candidates=80 unique_candidates=71130 accepted=6575
+query=cdmx tutorial pages=6 candidates=77 unique_candidates=71148 accepted=6575
+query=ciudad de mexico viajes pages=6 candidates=101 unique_candidates=71154 accepted=6575
+query=ciudad de mexico lifestyle pages=6 candidates=81 unique_candidates=71156 accepted=6575
+query=ciudad de mexico food vlog pages=6 candidates=74 unique_candidates=71162 accepted=6575
+query=ciudad de mexico vlog pages=6 candidates=93 unique_candidates=71169 accepted=6575
+validated batch accepted+44 rejected+94 total=6619 strict_mx=2595
+query=ciudad de mexico emprendedor pages=6 candidates=70 unique_candidates=71178 accepted=6619
+query=ciudad de mexico mama vlog pages=6 candidates=68 unique_candidates=71188 accepted=6619
+query=ciudad de mexico maquillaje pages=6 candidates=68 unique_candidates=71199 accepted=6619
+query=ciudad de mexico beauty youtuber pages=6 candidates=73 unique_candidates=71207 accepted=6619
+query=ciudad de mexico fitness pages=6 candidates=69 unique_candidates=71221 accepted=6619
+query=ciudad de mexico gaming pages=6 candidates=68 unique_candidates=71241 accepted=6619
+query=ciudad de mexico tecnologia pages=6 candidates=80 unique_candidates=71267 accepted=6619
+query=ciudad de mexico negocios pages=6 candidates=71 unique_candidates=71270 accepted=6619
+query=ciudad de mexico moda pages=6 candidates=78 unique_candidates=71280 accepted=6619
+query=ciudad de mexico real estate pages=6 candidates=72 unique_candidates=71289 accepted=6619
+query=ciudad de mexico cocina pages=6 candidates=66 unique_candidates=71292 accepted=6619
+query=ciudad de mexico bienes raices pages=6 candidates=65 unique_candidates=71296 accepted=6619
+query=ciudad de mexico relocation pages=6 candidates=41 unique_candidates=71298 accepted=6619
+query=ciudad de mexico tech youtuber pages=6 candidates=72 unique_candidates=71316 accepted=6619
+query=ciudad de mexico familia vlog pages=6 candidates=78 unique_candidates=71321 accepted=6619
+query=ciudad de mexico recetas pages=6 candidates=62 unique_candidates=71333 accepted=6619
+validated batch accepted+51 rejected+113 total=6670 strict_mx=2614
+query=ciudad de mexico musica regional pages=6 candidates=76 unique_candidates=71341 accepted=6670
+query=ciudad de mexico finanzas pages=6 candidates=81 unique_candidates=71357 accepted=6670
+query=ciudad de mexico banda pages=6 candidates=82 unique_candidates=71374 accepted=6670
+query=ciudad de mexico noticias pages=6 candidates=77 unique_candidates=71376 accepted=6670
+query=ciudad de mexico educacion pages=6 candidates=71 unique_candidates=71383 accepted=6670
+query=ciudad de mexico podcast pages=6 candidates=80 unique_candidates=71395 accepted=6670
+query=ciudad de mexico corridos pages=6 candidates=84 unique_candidates=71409 accepted=6670
+query=ciudad de mexico motos pages=6 candidates=72 unique_candidates=71419 accepted=6670
+query=ciudad de mexico mariachi pages=6 candidates=71 unique_candidates=71439 accepted=6670
+query=ciudad de mexico fotografia pages=6 candidates=74 unique_candidates=71450 accepted=6670
+query=ciudad de mexico marketing pages=6 candidates=71 unique_candidates=71472 accepted=6670
+query failed query=ciudad de mexico news error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=ciudad de mexico musica error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=ciudad de mexico autos error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=ciudad de mexico salud pages=6 candidates=71 unique_candidates=71481 accepted=6670
+query=ciudad de mexico humor pages=6 candidates=64 unique_candidates=71491 accepted=6670
+validated batch accepted+55 rejected+103 total=6725 strict_mx=2641
+query=ciudad de mexico manualidades pages=6 candidates=70 unique_candidates=71504 accepted=6725
+query=ciudad de mexico baseball pages=6 candidates=78 unique_candidates=71520 accepted=6725
+query=ciudad de mexico futbol pages=6 candidates=79 unique_candidates=71532 accepted=6725
+query=ciudad de mexico misterio pages=6 candidates=76 unique_candidates=71544 accepted=6725
+query=ciudad de mexico tutorial pages=6 candidates=77 unique_candidates=71549 accepted=6725
+query=ciudad de mexico medicina pages=6 candidates=81 unique_candidates=71568 accepted=6725
+query=ciudad de mexico historia pages=6 candidates=77 unique_candidates=71578 accepted=6725
+query=ciudad de mexico unboxing pages=6 candidates=81 unique_candidates=71610 accepted=6725
+query=guadalajara creador de contenido pages=6 candidates=74 unique_candidates=71627 accepted=6725
+query=ciudad de mexico kpop pages=6 candidates=69 unique_candidates=71647 accepted=6725
+query=ciudad de mexico review pages=6 candidates=83 unique_candidates=71651 accepted=6725
+query=ciudad de mexico diseño pages=6 candidates=67 unique_candidates=71660 accepted=6725
+query=ciudad de mexico arquitectura pages=6 candidates=66 unique_candidates=71664 accepted=6725
+query=ciudad de mexico anime pages=6 candidates=70 unique_candidates=71684 accepted=6725
+query=guadalajara vlog pages=6 candidates=86 unique_candidates=71710 accepted=6725
+query=guadalajara youtuber pages=6 candidates=83 unique_candidates=71720 accepted=6725
+validated batch accepted+84 rejected+145 total=6809 strict_mx=2682
+query=guadalajara beauty youtuber pages=6 candidates=69 unique_candidates=71735 accepted=6809
+query=guadalajara canal pages=6 candidates=62 unique_candidates=71743 accepted=6809
+query=guadalajara food vlog pages=6 candidates=79 unique_candidates=71758 accepted=6809
+query=guadalajara turismo pages=6 candidates=82 unique_candidates=71776 accepted=6809
+query=guadalajara influencer pages=6 candidates=70 unique_candidates=71786 accepted=6809
+query=guadalajara fitness pages=6 candidates=67 unique_candidates=71819 accepted=6809
+query=guadalajara comida pages=6 candidates=63 unique_candidates=71827 accepted=6809
+query=guadalajara viajes pages=6 candidates=76 unique_candidates=71838 accepted=6809
+query=guadalajara tech youtuber pages=6 candidates=75 unique_candidates=71861 accepted=6809
+query=guadalajara lifestyle pages=6 candidates=83 unique_candidates=71871 accepted=6809
+query=guadalajara tecnologia pages=6 candidates=78 unique_candidates=71897 accepted=6809
+query=guadalajara cocina pages=6 candidates=66 unique_candidates=71910 accepted=6809
+query failed query=guadalajara maquillaje error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=guadalajara recetas pages=6 candidates=68 unique_candidates=71927 accepted=6809
+query=guadalajara travel vlog pages=6 candidates=86 unique_candidates=71930 accepted=6809
+query=guadalajara gaming pages=6 candidates=62 unique_candidates=71941 accepted=6809
+validated batch accepted+66 rejected+155 total=6875 strict_mx=2698
+query=guadalajara mariachi pages=6 candidates=89 unique_candidates=71971 accepted=6875
+query=guadalajara negocios pages=6 candidates=75 unique_candidates=71980 accepted=6875
+query=guadalajara familia vlog pages=6 candidates=86 unique_candidates=71997 accepted=6875
+query=guadalajara banda pages=6 candidates=76 unique_candidates=72024 accepted=6875
+query=guadalajara moda pages=6 candidates=70 unique_candidates=72042 accepted=6875
+query=guadalajara relocation pages=6 candidates=67 unique_candidates=72050 accepted=6875
+query=guadalajara real estate pages=6 candidates=67 unique_candidates=72063 accepted=6875
+query=guadalajara musica regional pages=6 candidates=75 unique_candidates=72072 accepted=6875
+query=guadalajara musica pages=6 candidates=88 unique_candidates=72088 accepted=6875
+query=guadalajara bienes raices pages=6 candidates=68 unique_candidates=72104 accepted=6875
+query=guadalajara news pages=6 candidates=87 unique_candidates=72135 accepted=6875
+query=guadalajara emprendedor pages=6 candidates=72 unique_candidates=72151 accepted=6875
+query=guadalajara noticias pages=6 candidates=77 unique_candidates=72161 accepted=6875
+query=guadalajara corridos pages=6 candidates=91 unique_candidates=72201 accepted=6875
+query=guadalajara educacion pages=6 candidates=76 unique_candidates=72218 accepted=6875
+query=guadalajara mama vlog pages=6 candidates=87 unique_candidates=72233 accepted=6875
+validated batch accepted+84 rejected+208 total=6959 strict_mx=2729
+query=guadalajara arquitectura pages=6 candidates=72 unique_candidates=72248 accepted=6959
+query=guadalajara podcast pages=6 candidates=63 unique_candidates=72264 accepted=6959
+query=guadalajara diseño pages=6 candidates=73 unique_candidates=72281 accepted=6959
+query=guadalajara futbol pages=6 candidates=60 unique_candidates=72300 accepted=6959
+query=guadalajara humor pages=6 candidates=65 unique_candidates=72320 accepted=6959
+query=guadalajara kpop pages=6 candidates=64 unique_candidates=72336 accepted=6959
+query=guadalajara fotografia pages=6 candidates=72 unique_candidates=72351 accepted=6959
+query=guadalajara marketing pages=6 candidates=96 unique_candidates=72389 accepted=6959
+query=guadalajara medicina pages=6 candidates=69 unique_candidates=72407 accepted=6959
+query=guadalajara motos pages=6 candidates=67 unique_candidates=72426 accepted=6959
+query=guadalajara autos pages=6 candidates=58 unique_candidates=72443 accepted=6959
+query=guadalajara anime pages=6 candidates=65 unique_candidates=72466 accepted=6959
+query=guadalajara finanzas pages=6 candidates=74 unique_candidates=72485 accepted=6959
+query=guadalajara manualidades pages=6 candidates=70 unique_candidates=72507 accepted=6959
+query=guadalajara baseball pages=6 candidates=61 unique_candidates=72524 accepted=6959
+query=guadalajara salud pages=6 candidates=68 unique_candidates=72539 accepted=6959
+validated batch accepted+62 rejected+244 total=7021 strict_mx=2765
+query=guadalajara unboxing pages=6 candidates=85 unique_candidates=72563 accepted=7021
+query=guadalajara review pages=6 candidates=79 unique_candidates=72579 accepted=7021
+query=monterrey turismo pages=6 candidates=79 unique_candidates=72593 accepted=7021
+query=guadalajara historia pages=6 candidates=78 unique_candidates=72618 accepted=7021
+query=monterrey food vlog pages=6 candidates=82 unique_candidates=72648 accepted=7021
+query=monterrey influencer pages=6 candidates=78 unique_candidates=72676 accepted=7021
+query=monterrey canal pages=6 candidates=75 unique_candidates=72700 accepted=7021
+query=monterrey youtuber pages=6 candidates=72 unique_candidates=72714 accepted=7021
+query=monterrey comida pages=6 candidates=70 unique_candidates=72732 accepted=7021
+query=guadalajara tutorial pages=6 candidates=92 unique_candidates=72764 accepted=7021
+query=monterrey vlog pages=6 candidates=89 unique_candidates=72786 accepted=7021
+query=monterrey travel vlog pages=6 candidates=78 unique_candidates=72798 accepted=7021
+query=guadalajara misterio pages=6 candidates=71 unique_candidates=72822 accepted=7021
+query=monterrey creador de contenido pages=6 candidates=75 unique_candidates=72833 accepted=7021
+query=monterrey lifestyle pages=6 candidates=77 unique_candidates=72848 accepted=7021
+query=monterrey viajes pages=6 candidates=76 unique_candidates=72853 accepted=7021
+validated batch accepted+64 rejected+250 total=7085 strict_mx=2790
+query=monterrey gaming pages=6 candidates=60 unique_candidates=72873 accepted=7085
+query=monterrey fitness pages=6 candidates=64 unique_candidates=72894 accepted=7085
+query=monterrey bienes raices pages=6 candidates=54 unique_candidates=72909 accepted=7085
+query=monterrey real estate pages=6 candidates=64 unique_candidates=72922 accepted=7085
+query=monterrey cocina pages=6 candidates=61 unique_candidates=72930 accepted=7085
+query=monterrey beauty youtuber pages=6 candidates=64 unique_candidates=72949 accepted=7085
+query=monterrey recetas pages=6 candidates=67 unique_candidates=72969 accepted=7085
+query=monterrey familia vlog pages=6 candidates=70 unique_candidates=72991 accepted=7085
+query=monterrey tech youtuber pages=6 candidates=72 unique_candidates=73018 accepted=7085
+query=monterrey negocios pages=6 candidates=76 unique_candidates=73029 accepted=7085
+query=monterrey maquillaje pages=6 candidates=73 unique_candidates=73049 accepted=7085
+query=monterrey relocation pages=6 candidates=71 unique_candidates=73060 accepted=7085
+query=monterrey emprendedor pages=6 candidates=78 unique_candidates=73097 accepted=7085
+query=monterrey moda pages=6 candidates=73 unique_candidates=73117 accepted=7085
+query=monterrey tecnologia pages=6 candidates=76 unique_candidates=73127 accepted=7085
+query=monterrey mama vlog pages=6 candidates=80 unique_candidates=73144 accepted=7085
+validated batch accepted+75 rejected+216 total=7160 strict_mx=2818
+query=monterrey mariachi pages=6 candidates=69 unique_candidates=73170 accepted=7160
+query=monterrey corridos pages=6 candidates=84 unique_candidates=73202 accepted=7160
+query=monterrey news pages=6 candidates=64 unique_candidates=73213 accepted=7160
+query=monterrey podcast pages=6 candidates=65 unique_candidates=73228 accepted=7160
+query=monterrey autos pages=6 candidates=64 unique_candidates=73246 accepted=7160
+query failed query=monterrey educacion error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=monterrey noticias pages=6 candidates=43 unique_candidates=73248 accepted=7160
+query=monterrey musica pages=6 candidates=83 unique_candidates=73280 accepted=7160
+query=monterrey banda pages=6 candidates=62 unique_candidates=73297 accepted=7160
+query=monterrey finanzas pages=6 candidates=62 unique_candidates=73316 accepted=7160
+query=monterrey humor pages=6 candidates=58 unique_candidates=73331 accepted=7160
+query=monterrey motos pages=6 candidates=62 unique_candidates=73344 accepted=7160
+query=monterrey fotografia pages=6 candidates=61 unique_candidates=73360 accepted=7160
+query=monterrey musica regional pages=6 candidates=77 unique_candidates=73381 accepted=7160
+query=monterrey marketing pages=6 candidates=74 unique_candidates=73398 accepted=7160
+query=monterrey salud pages=6 candidates=55 unique_candidates=73418 accepted=7160
+validated batch accepted+70 rejected+204 total=7230 strict_mx=2855
+query=monterrey review pages=6 candidates=93 unique_candidates=73441 accepted=7230
+query=jalisco vlog pages=6 candidates=58 unique_candidates=73445 accepted=7230
+query=monterrey misterio pages=6 candidates=72 unique_candidates=73471 accepted=7230
+query=jalisco youtuber pages=6 candidates=58 unique_candidates=73477 accepted=7230
+query=monterrey arquitectura pages=6 candidates=62 unique_candidates=73484 accepted=7230
+query=monterrey baseball pages=6 candidates=64 unique_candidates=73497 accepted=7230
+query failed query=monterrey diseño error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query failed query=monterrey kpop error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=monterrey anime pages=6 candidates=71 unique_candidates=73525 accepted=7230
+query=monterrey tutorial pages=6 candidates=81 unique_candidates=73543 accepted=7230
+query=monterrey unboxing pages=6 candidates=75 unique_candidates=73573 accepted=7230
+query=monterrey historia pages=6 candidates=84 unique_candidates=73601 accepted=7230
+query=monterrey medicina pages=6 candidates=74 unique_candidates=73623 accepted=7230
+query failed query=jalisco creador de contenido error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=monterrey manualidades pages=6 candidates=74 unique_candidates=73647 accepted=7230
+query=monterrey futbol pages=6 candidates=59 unique_candidates=73659 accepted=7230
+validated batch accepted+62 rejected+179 total=7292 strict_mx=2879
+query=jalisco lifestyle pages=6 candidates=67 unique_candidates=73675 accepted=7292
+query=jalisco fitness pages=6 candidates=66 unique_candidates=73692 accepted=7292
+query=jalisco tecnologia pages=6 candidates=74 unique_candidates=73708 accepted=7292
+query=jalisco food vlog pages=6 candidates=67 unique_candidates=73717 accepted=7292
+query=jalisco viajes pages=6 candidates=65 unique_candidates=73721 accepted=7292
+query=jalisco maquillaje pages=6 candidates=58 unique_candidates=73734 accepted=7292
+query=jalisco cocina pages=6 candidates=66 unique_candidates=73745 accepted=7292
+query=jalisco turismo pages=6 candidates=64 unique_candidates=73751 accepted=7292
+query=jalisco comida pages=6 candidates=72 unique_candidates=73755 accepted=7292
+query=jalisco influencer pages=6 candidates=81 unique_candidates=73767 accepted=7292
+query=jalisco recetas pages=6 candidates=66 unique_candidates=73770 accepted=7292
+query=jalisco gaming pages=6 candidates=72 unique_candidates=73790 accepted=7292
+query=jalisco tech youtuber pages=6 candidates=75 unique_candidates=73809 accepted=7292
+query=jalisco canal pages=6 candidates=64 unique_candidates=73821 accepted=7292
+query=jalisco travel vlog pages=6 candidates=74 unique_candidates=73828 accepted=7292
+query=jalisco beauty youtuber pages=6 candidates=65 unique_candidates=73847 accepted=7292
+validated batch accepted+33 rejected+155 total=7325 strict_mx=2885
+query=jalisco moda pages=6 candidates=65 unique_candidates=73863 accepted=7325
+query=jalisco negocios pages=6 candidates=73 unique_candidates=73873 accepted=7325
+query=jalisco emprendedor pages=6 candidates=68 unique_candidates=73883 accepted=7325
+query=jalisco news pages=6 candidates=101 unique_candidates=73897 accepted=7325
+query=jalisco mariachi pages=6 candidates=78 unique_candidates=73923 accepted=7325
+query=jalisco mama vlog pages=6 candidates=63 unique_candidates=73932 accepted=7325
+query=jalisco musica regional pages=6 candidates=78 unique_candidates=73939 accepted=7325
+query=jalisco familia vlog pages=6 candidates=61 unique_candidates=73943 accepted=7325
+query=jalisco banda pages=6 candidates=73 unique_candidates=73971 accepted=7325
+query=jalisco noticias pages=6 candidates=78 unique_candidates=73975 accepted=7325
+query=jalisco musica pages=6 candidates=77 unique_candidates=73987 accepted=7325
+query=jalisco relocation pages=6 candidates=68 unique_candidates=73993 accepted=7325
+query=jalisco bienes raices pages=6 candidates=56 unique_candidates=74001 accepted=7325
+query=jalisco corridos pages=6 candidates=82 unique_candidates=74027 accepted=7325
+query=jalisco educacion pages=6 candidates=64 unique_candidates=74030 accepted=7325
+query=jalisco real estate pages=6 candidates=66 unique_candidates=74038 accepted=7325
+validated batch accepted+51 rejected+140 total=7376 strict_mx=2901
+query=jalisco diseño pages=6 candidates=65 unique_candidates=74068 accepted=7376
+query=jalisco kpop pages=6 candidates=74 unique_candidates=74089 accepted=7376
+query=jalisco podcast pages=6 candidates=71 unique_candidates=74107 accepted=7376
+query=jalisco marketing pages=6 candidates=76 unique_candidates=74124 accepted=7376
+query=jalisco futbol pages=6 candidates=67 unique_candidates=74133 accepted=7376
+query=jalisco salud pages=6 candidates=68 unique_candidates=74147 accepted=7376
+query=jalisco finanzas pages=6 candidates=60 unique_candidates=74164 accepted=7376
+query=jalisco anime pages=6 candidates=64 unique_candidates=74189 accepted=7376
+query=jalisco humor pages=6 candidates=54 unique_candidates=74203 accepted=7376
+query=jalisco motos pages=6 candidates=67 unique_candidates=74218 accepted=7376
+query=jalisco baseball pages=6 candidates=67 unique_candidates=74230 accepted=7376
+query=jalisco medicina pages=6 candidates=66 unique_candidates=74243 accepted=7376
+query=jalisco fotografia pages=6 candidates=70 unique_candidates=74262 accepted=7376
+query=jalisco arquitectura pages=6 candidates=51 unique_candidates=74267 accepted=7376
+query=jalisco autos pages=6 candidates=62 unique_candidates=74280 accepted=7376
+query=jalisco manualidades pages=6 candidates=67 unique_candidates=74298 accepted=7376
+validated batch accepted+55 rejected+205 total=7431 strict_mx=2918
+query=puebla turismo pages=6 candidates=77 unique_candidates=74319 accepted=7431
+query=puebla youtuber pages=6 candidates=84 unique_candidates=74325 accepted=7431
+query=puebla vlog pages=6 candidates=84 unique_candidates=74348 accepted=7431
+query=jalisco historia pages=6 candidates=77 unique_candidates=74366 accepted=7431
+query=jalisco review pages=6 candidates=72 unique_candidates=74393 accepted=7431
+query=puebla lifestyle pages=6 candidates=80 unique_candidates=74406 accepted=7431
+query=puebla creador de contenido pages=6 candidates=73 unique_candidates=74430 accepted=7431
+query=puebla canal pages=6 candidates=59 unique_candidates=74438 accepted=7431
+query=puebla influencer pages=6 candidates=69 unique_candidates=74446 accepted=7431
+query failed query=jalisco unboxing error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=jalisco tutorial pages=6 candidates=53 unique_candidates=74461 accepted=7431
+query=puebla viajes pages=6 candidates=64 unique_candidates=74469 accepted=7431
+query=puebla food vlog pages=6 candidates=77 unique_candidates=74482 accepted=7431
+query=puebla travel vlog pages=6 candidates=82 unique_candidates=74490 accepted=7431
+query failed query=jalisco misterio error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=puebla comida pages=6 candidates=67 unique_candidates=74496 accepted=7431
+validated batch accepted+51 rejected+147 total=7482 strict_mx=2934
+query=puebla emprendedor pages=6 candidates=47 unique_candidates=74508 accepted=7482
+query=puebla recetas pages=6 candidates=68 unique_candidates=74520 accepted=7482
+query failed query=puebla tecnologia error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=puebla bienes raices pages=6 candidates=59 unique_candidates=74534 accepted=7482
+query failed query=puebla maquillaje error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=puebla moda pages=6 candidates=67 unique_candidates=74549 accepted=7482
+query=puebla fitness pages=6 candidates=68 unique_candidates=74571 accepted=7482
+query failed query=puebla familia vlog error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=puebla tech youtuber pages=6 candidates=80 unique_candidates=74588 accepted=7482
+query failed query=puebla beauty youtuber error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=puebla relocation pages=6 candidates=68 unique_candidates=74599 accepted=7482
+query=puebla cocina pages=6 candidates=73 unique_candidates=74606 accepted=7482
+query=puebla real estate pages=6 candidates=62 unique_candidates=74623 accepted=7482
+query=puebla mama vlog pages=6 candidates=85 unique_candidates=74637 accepted=7482
+query=puebla gaming pages=6 candidates=71 unique_candidates=74658 accepted=7482
+query=puebla negocios pages=6 candidates=65 unique_candidates=74665 accepted=7482
+validated batch accepted+31 rejected+138 total=7513 strict_mx=2946
+query=puebla news pages=6 candidates=93 unique_candidates=74673 accepted=7513
+query=puebla salud pages=6 candidates=63 unique_candidates=74685 accepted=7513
+query=puebla mariachi pages=6 candidates=66 unique_candidates=74704 accepted=7513
+query=puebla banda pages=6 candidates=92 unique_candidates=74740 accepted=7513
+query=puebla finanzas pages=6 candidates=69 unique_candidates=74749 accepted=7513
+query=puebla musica regional pages=6 candidates=77 unique_candidates=74775 accepted=7513
+query=puebla noticias pages=6 candidates=72 unique_candidates=74788 accepted=7513
+query=puebla fotografia pages=6 candidates=52 unique_candidates=74798 accepted=7513
+query=puebla musica pages=6 candidates=80 unique_candidates=74838 accepted=7513
+query=puebla corridos pages=6 candidates=91 unique_candidates=74878 accepted=7513
+query=puebla educacion pages=6 candidates=69 unique_candidates=74894 accepted=7513
+query=puebla podcast pages=6 candidates=55 unique_candidates=74899 accepted=7513
+query=puebla motos pages=6 candidates=64 unique_candidates=74908 accepted=7513
+query=puebla humor pages=6 candidates=53 unique_candidates=74928 accepted=7513
+query=puebla autos pages=6 candidates=76 unique_candidates=74941 accepted=7513
+query=puebla marketing pages=6 candidates=69 unique_candidates=74957 accepted=7513
+validated batch accepted+65 rejected+227 total=7578 strict_mx=2980
+query=puebla misterio pages=6 candidates=68 unique_candidates=74974 accepted=7578
+query=puebla anime pages=6 candidates=52 unique_candidates=75001 accepted=7578
+query=puebla tutorial pages=6 candidates=83 unique_candidates=75015 accepted=7578
+query=tijuana youtuber pages=6 candidates=73 unique_candidates=75029 accepted=7578
+query=puebla unboxing pages=6 candidates=84 unique_candidates=75048 accepted=7578
+query=puebla diseño pages=6 candidates=61 unique_candidates=75059 accepted=7578
+query=puebla medicina pages=6 candidates=75 unique_candidates=75071 accepted=7578
+query=puebla historia pages=6 candidates=80 unique_candidates=75084 accepted=7578
+query=puebla futbol pages=6 candidates=72 unique_candidates=75114 accepted=7578
+query=puebla kpop pages=6 candidates=62 unique_candidates=75137 accepted=7578
+query=tijuana creador de contenido pages=6 candidates=76 unique_candidates=75151 accepted=7578
+query=puebla review pages=6 candidates=78 unique_candidates=75157 accepted=7578
+query=puebla manualidades pages=6 candidates=56 unique_candidates=75172 accepted=7578
+query=tijuana vlog pages=6 candidates=91 unique_candidates=75199 accepted=7578
+query=puebla arquitectura pages=6 candidates=68 unique_candidates=75211 accepted=7578
+query=puebla baseball pages=6 candidates=46 unique_candidates=75219 accepted=7578
+validated batch accepted+58 rejected+204 total=7636 strict_mx=3007
+query=tijuana beauty youtuber pages=6 candidates=61 unique_candidates=75236 accepted=7636
+query=tijuana maquillaje pages=6 candidates=59 unique_candidates=75254 accepted=7636
+query=tijuana canal pages=6 candidates=69 unique_candidates=75273 accepted=7636
+query=tijuana tech youtuber pages=6 candidates=81 unique_candidates=75291 accepted=7636
+query=tijuana fitness pages=6 candidates=65 unique_candidates=75312 accepted=7636
+query=tijuana travel vlog pages=6 candidates=79 unique_candidates=75324 accepted=7636
+query=tijuana cocina pages=6 candidates=60 unique_candidates=75330 accepted=7636
+query=tijuana lifestyle pages=6 candidates=77 unique_candidates=75339 accepted=7636
+query=tijuana influencer pages=6 candidates=71 unique_candidates=75351 accepted=7636
+query=tijuana recetas pages=6 candidates=68 unique_candidates=75366 accepted=7636
+query=tijuana turismo pages=6 candidates=75 unique_candidates=75380 accepted=7636
+query=tijuana food vlog pages=6 candidates=71 unique_candidates=75392 accepted=7636
+query=tijuana gaming pages=6 candidates=69 unique_candidates=75405 accepted=7636
+query=tijuana viajes pages=6 candidates=73 unique_candidates=75413 accepted=7636
+query=tijuana comida pages=6 candidates=64 unique_candidates=75415 accepted=7636
+query failed query=tijuana tecnologia error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+validated batch accepted+51 rejected+145 total=7687 strict_mx=3019
+query=tijuana negocios pages=6 candidates=74 unique_candidates=75431 accepted=7687
+query=tijuana bienes raices pages=6 candidates=60 unique_candidates=75446 accepted=7687
+query=tijuana real estate pages=6 candidates=68 unique_candidates=75459 accepted=7687
+query=tijuana relocation pages=6 candidates=77 unique_candidates=75477 accepted=7687
+query=tijuana musica pages=6 candidates=74 unique_candidates=75512 accepted=7687
+query=tijuana educacion pages=6 candidates=84 unique_candidates=75538 accepted=7687
+query=tijuana corridos pages=6 candidates=81 unique_candidates=75558 accepted=7687
+query=tijuana news pages=6 candidates=61 unique_candidates=75563 accepted=7687
+query=tijuana moda pages=6 candidates=62 unique_candidates=75588 accepted=7687
+query=tijuana mama vlog pages=6 candidates=89 unique_candidates=75628 accepted=7687
+query=tijuana noticias pages=6 candidates=155 unique_candidates=75702 accepted=7687
+query=tijuana banda pages=6 candidates=67 unique_candidates=75716 accepted=7687
+query=tijuana emprendedor pages=6 candidates=65 unique_candidates=75730 accepted=7687
+query=tijuana musica regional pages=6 candidates=62 unique_candidates=75745 accepted=7687
+query=tijuana familia vlog pages=6 candidates=82 unique_candidates=75768 accepted=7687
+query failed query=tijuana mariachi error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+validated batch accepted+61 rejected+292 total=7748 strict_mx=3031
+query=tijuana salud pages=6 candidates=70 unique_candidates=75783 accepted=7748
+query=tijuana autos pages=6 candidates=59 unique_candidates=75805 accepted=7748
+query=tijuana humor pages=6 candidates=57 unique_candidates=75814 accepted=7748
+query=tijuana anime pages=6 candidates=60 unique_candidates=75833 accepted=7748
+query=tijuana diseño pages=6 candidates=63 unique_candidates=75842 accepted=7748
+query=tijuana manualidades pages=6 candidates=65 unique_candidates=75861 accepted=7748
+query=tijuana kpop pages=6 candidates=61 unique_candidates=75877 accepted=7748
+query=tijuana podcast pages=6 candidates=57 unique_candidates=75892 accepted=7748
+query=tijuana arquitectura pages=6 candidates=65 unique_candidates=75908 accepted=7748
+query=tijuana medicina pages=6 candidates=73 unique_candidates=75925 accepted=7748
+query=tijuana fotografia pages=6 candidates=55 unique_candidates=75931 accepted=7748
+query=tijuana baseball pages=6 candidates=64 unique_candidates=75941 accepted=7748
+query=tijuana finanzas pages=6 candidates=63 unique_candidates=75949 accepted=7748
+query=tijuana marketing pages=6 candidates=70 unique_candidates=75973 accepted=7748
+query=tijuana futbol pages=6 candidates=66 unique_candidates=75987 accepted=7748
+query failed query=tijuana motos error=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+validated batch accepted+32 rejected+187 total=7780 strict_mx=3039
+query=queretaro influencer pages=6 candidates=69 unique_candidates=75996 accepted=7780
+query=queretaro food vlog pages=6 candidates=74 unique_candidates=76008 accepted=7780
+query=queretaro viajes pages=6 candidates=80 unique_candidates=76020 accepted=7780
+query=queretaro comida pages=6 candidates=65 unique_candidates=76030 accepted=7780
+query=tijuana review pages=6 candidates=77 unique_candidates=76036 accepted=7780
+query=tijuana unboxing pages=6 candidates=79 unique_candidates=76052 accepted=7780
+query=queretaro canal pages=6 candidates=69 unique_candidates=76064 accepted=7780
+query=queretaro youtuber pages=6 candidates=88 unique_candidates=76069 accepted=7780
+query=tijuana historia pages=6 candidates=72 unique_candidates=76086 accepted=7780
+query=queretaro travel vlog pages=6 candidates=75 unique_candidates=76098 accepted=7780
+query=queretaro vlog pages=6 candidates=84 unique_candidates=76109 accepted=7780
+query=queretaro lifestyle pages=6 candidates=80 unique_candidates=76115 accepted=7780
+query=queretaro turismo pages=6 candidates=83 unique_candidates=76122 accepted=7780
+query=tijuana misterio pages=6 candidates=71 unique_candidates=76146 accepted=7780
+query failed query=tijuana tutorial error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=queretaro creador de contenido pages=6 candidates=68 unique_candidates=76154 accepted=7780
+validated batch accepted+46 rejected+121 total=7826 strict_mx=3058
+query=queretaro cocina pages=6 candidates=70 unique_candidates=76161 accepted=7826
+query=queretaro beauty youtuber pages=6 candidates=68 unique_candidates=76173 accepted=7826
+query=queretaro maquillaje pages=6 candidates=69 unique_candidates=76187 accepted=7826
+query=queretaro real estate pages=6 candidates=79 unique_candidates=76201 accepted=7826
+query=queretaro recetas pages=6 candidates=78 unique_candidates=76216 accepted=7826
+query=queretaro emprendedor pages=6 candidates=63 unique_candidates=76227 accepted=7826
+query=queretaro fitness pages=6 candidates=62 unique_candidates=76240 accepted=7826
+query=queretaro tecnologia pages=6 candidates=82 unique_candidates=76263 accepted=7826
+query=queretaro negocios pages=6 candidates=69 unique_candidates=76278 accepted=7826
+query=queretaro moda pages=6 candidates=62 unique_candidates=76289 accepted=7826
+query=queretaro familia vlog pages=6 candidates=73 unique_candidates=76300 accepted=7826
+query=queretaro mama vlog pages=6 candidates=76 unique_candidates=76308 accepted=7826
+query=queretaro tech youtuber pages=6 candidates=76 unique_candidates=76315 accepted=7826
+query=queretaro bienes raices pages=6 candidates=63 unique_candidates=76320 accepted=7826
+query=queretaro gaming pages=6 candidates=69 unique_candidates=76342 accepted=7826
+query=queretaro relocation pages=6 candidates=67 unique_candidates=76344 accepted=7826
+validated batch accepted+36 rejected+154 total=7862 strict_mx=3081
+query=queretaro marketing pages=6 candidates=67 unique_candidates=76363 accepted=7862
+query=queretaro mariachi pages=6 candidates=78 unique_candidates=76387 accepted=7862
+query=queretaro corridos pages=6 candidates=91 unique_candidates=76421 accepted=7862
+query=queretaro salud pages=6 candidates=68 unique_candidates=76434 accepted=7862
+query=queretaro banda pages=6 candidates=79 unique_candidates=76463 accepted=7862
+query=queretaro podcast pages=6 candidates=53 unique_candidates=76471 accepted=7862
+query=queretaro finanzas pages=6 candidates=70 unique_candidates=76476 accepted=7862
+query=queretaro humor pages=6 candidates=57 unique_candidates=76490 accepted=7862
+query=queretaro musica regional pages=6 candidates=82 unique_candidates=76507 accepted=7862
+query=queretaro autos pages=6 candidates=80 unique_candidates=76527 accepted=7862
+query=queretaro news pages=6 candidates=75 unique_candidates=76528 accepted=7862
+query=queretaro musica pages=6 candidates=85 unique_candidates=76542 accepted=7862
+query=queretaro noticias pages=6 candidates=49 unique_candidates=76544 accepted=7862
+query=queretaro motos pages=6 candidates=64 unique_candidates=76558 accepted=7862
+query=queretaro educacion pages=6 candidates=64 unique_candidates=76570 accepted=7862
+query=queretaro fotografia pages=6 candidates=78 unique_candidates=76590 accepted=7862
+validated batch accepted+42 rejected+204 total=7904 strict_mx=3103
+query=queretaro medicina pages=6 candidates=72 unique_candidates=76603 accepted=7904
+query=yucatan vlog pages=6 candidates=86 unique_candidates=76628 accepted=7904
+query=queretaro review pages=6 candidates=81 unique_candidates=76637 accepted=7904
+query=queretaro baseball pages=6 candidates=131 unique_candidates=76700 accepted=7904
+query=queretaro manualidades pages=6 candidates=61 unique_candidates=76710 accepted=7904
+query=queretaro anime pages=6 candidates=52 unique_candidates=76737 accepted=7904
+query=yucatan creador de contenido pages=6 candidates=61 unique_candidates=76754 accepted=7904
+query=queretaro misterio pages=6 candidates=73 unique_candidates=76767 accepted=7904
+query=queretaro tutorial pages=6 candidates=77 unique_candidates=76772 accepted=7904
+query=queretaro kpop pages=6 candidates=57 unique_candidates=76786 accepted=7904
+query=yucatan youtuber pages=6 candidates=64 unique_candidates=76791 accepted=7904
+query=queretaro arquitectura pages=6 candidates=53 unique_candidates=76801 accepted=7904
+query=queretaro historia pages=6 candidates=82 unique_candidates=76817 accepted=7904
+query=queretaro unboxing pages=6 candidates=82 unique_candidates=76831 accepted=7904
+query=queretaro diseño pages=6 candidates=110 unique_candidates=76858 accepted=7904
+query=queretaro futbol pages=6 candidates=62 unique_candidates=76878 accepted=7904
+validated batch accepted+65 rejected+223 total=7969 strict_mx=3126
+query=yucatan maquillaje pages=6 candidates=61 unique_candidates=76887 accepted=7969
+query=yucatan food vlog pages=6 candidates=83 unique_candidates=76910 accepted=7969
+query=yucatan beauty youtuber pages=6 candidates=68 unique_candidates=76931 accepted=7969
+query=yucatan fitness pages=6 candidates=64 unique_candidates=76944 accepted=7969
+query=yucatan comida pages=6 candidates=70 unique_candidates=76954 accepted=7969
+query=yucatan tecnologia pages=6 candidates=71 unique_candidates=76973 accepted=7969
+query=yucatan tech youtuber pages=6 candidates=72 unique_candidates=76993 accepted=7969
+query=yucatan turismo pages=6 candidates=78 unique_candidates=77005 accepted=7969
+query=yucatan gaming pages=6 candidates=82 unique_candidates=77043 accepted=7969
+query=yucatan canal pages=6 candidates=84 unique_candidates=77066 accepted=7969
+query=yucatan viajes pages=6 candidates=70 unique_candidates=77074 accepted=7969
+query=yucatan cocina pages=6 candidates=58 unique_candidates=77086 accepted=7969
+query=yucatan lifestyle pages=6 candidates=76 unique_candidates=77091 accepted=7969
+query failed query=yucatan recetas error=403 Client Error: Forbidden for url: https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+query=yucatan influencer pages=6 candidates=57 unique_candidates=77097 accepted=7969
+query=yucatan travel vlog pages=6 candidates=80 unique_candidates=77110 accepted=7969
+validated batch accepted+56 rejected+176 total=8025 strict_mx=3136
+query=yucatan corridos pages=6 candidates=74 unique_candidates=77136 accepted=8025
+query=yucatan news pages=6 candidates=77 unique_candidates=77154 accepted=8025
+query=yucatan negocios pages=6 candidates=66 unique_candidates=77172 accepted=8025
+query=yucatan emprendedor pages=6 candidates=67 unique_candidates=77188 accepted=8025
+query=yucatan mariachi pages=6 candidates=65 unique_candidates=77200 accepted=8025
+query=yucatan mama vlog pages=6 candidates=84 unique_candidates=77214 accepted=8025
+query=yucatan relocation pages=6 candidates=41 unique_candidates=77216 accepted=8025
+query=yucatan moda pages=6 candidates=73 unique_candidates=77233 accepted=8025
+query=yucatan educacion pages=6 candidates=73 unique_candidates=77245 accepted=8025
+query=yucatan musica regional pages=6 candidates=80 unique_candidates=77269 accepted=8025
+query=yucatan bienes raices pages=6 candidates=56 unique_candidates=77280 accepted=8025
+query=yucatan familia vlog pages=6 candidates=79 unique_candidates=77294 accepted=8025
+query=yucatan noticias pages=6 candidates=54 unique_candidates=77298 accepted=8025
+query=yucatan musica pages=6 candidates=80 unique_candidates=77317 accepted=8025
+query=yucatan banda pages=6 candidates=71 unique_candidates=77338 accepted=8025
+query=yucatan real estate pages=6 candidates=59 unique_candidates=77342 accepted=8025
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1956, in <module>
+    raise SystemExit(main())
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1931, in main
+    summary = run_crawl(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1836, in run_crawl
+    validate_pending_batches("batch")
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1762, in validate_pending_batches
+    accepted, rejected = validate_candidates(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1546, in validate_candidates
+    rows = enrich_rows_with_about(
+  File "/Users/biantongchuangchuanmei/Desktop/pachong/src/youtube_mexico_crawler.py", line 1597, in enrich_rows_with_about
+    for future in as_completed(futures):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt
